@@ -143,22 +143,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* ── CRITICAL PATH: preload + preconnect FIRST so the preload scanner
             discovers the LCP image before any script tag can delay it ── */}
 
-        {/* Preconnect to external image CDN — must come before any <script> tags
+        {/* Preconnect to image host — must come before any <script> tags
             so the TCP+TLS handshake starts at the very beginning of the critical path.
             crossOrigin="anonymous" matches the CORS mode used by next/image AVIF fetches. */}
-        <link rel="preconnect" href="https://img.rocket.new" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://img.rocket.new" />
+        <link rel="preconnect" href="https://webuildpro.in" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://webuildpro.in" />
 
         {/* Preload hero LCP image — placed FIRST in <head> so the browser's preload
             scanner discovers it before any script or style can delay it.
-            q=60 matches the quality prop on the hero <Image> exactly — no double-fetch.
-            imageSizes mirrors the sizes prop: mobile phones get the 640px AVIF variant. */}
+            Images are unoptimized (static export), so this matches the hero <Image> src exactly. */}
         <link
           rel="preload"
           as="image"
-          href="/_next/image?url=https%3A%2F%2Fimg.rocket.new%2FgeneratedImages%2Frocket_gen_img_1cf73093f-1784552159557.png&w=640&q=60"
-          imageSrcSet="/_next/image?url=https%3A%2F%2Fimg.rocket.new%2FgeneratedImages%2Frocket_gen_img_1cf73093f-1784552159557.png&w=640&q=60 640w, /_next/image?url=https%3A%2F%2Fimg.rocket.new%2FgeneratedImages%2Frocket_gen_img_1cf73093f-1784552159557.png&w=1080&q=60 1080w, /_next/image?url=https%3A%2F%2Fimg.rocket.new%2FgeneratedImages%2Frocket_gen_img_1cf73093f-1784552159557.png&w=1920&q=60 1920w"
-          imageSizes="(max-width: 640px) 640px, (max-width: 1024px) 1080px, 1920px"
+          href="https://webuildpro.in/images/1cf73093f-1784552159557.png"
           fetchPriority="high"
         />
 

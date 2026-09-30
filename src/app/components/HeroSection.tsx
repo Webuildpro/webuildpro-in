@@ -60,7 +60,7 @@ export default function HeroSection() {
              decoding="async" avoids blocking the main thread during image decode on mobile.
              The explicit style height ensures the browser doesn't defer fetch waiting for layout. */}
         <Image
-          src="https://img.rocket.new/generatedImages/rocket_gen_img_1cf73093f-1784552159557.png"
+          src="https://webuildpro.in/images/1cf73093f-1784552159557.png"
           alt="Dark engineering workbench with circuit boards and precision tools at the WEBUILDPRO lab in Bangalore, industrial environment with dim orange-tinted lighting"
           fill
           priority

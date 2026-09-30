@@ -32,7 +32,7 @@ export default function IndustrialContent() {
       <section className="relative min-h-[60vh] flex items-end overflow-hidden blueprint-grid pt-24 pb-0 bg-background">
         <div className="absolute inset-0 opacity-25">
           <AppImage
-            src="https://img.rocket.new/generatedImages/rocket_gen_img_1e8db4b4b-1784552159372.png"
+            src="https://webuildpro.in/images/1e8db4b4b-1784552159372.png"
             alt="Industrial drone assembly on workbench at WEBUILDPRO Bangalore lab, precise components laid out, dim blue-tinted overhead lighting"
             fill
             sizes="100vw"
@@ -92,7 +92,7 @@ export default function IndustrialContent() {
             <div className="col-span-2 row-span-1 card-glow bg-background border border-border rounded p-6 relative overflow-hidden flex flex-col justify-between min-h-[200px]">
               <div className="absolute top-0 right-0 w-1/2 h-full opacity-20">
                 <AppImage
-                  src="https://img.rocket.new/generatedImages/rocket_gen_img_1e8db4b4b-1784552159372.png"
+                  src="https://webuildpro.in/images/1e8db4b4b-1784552159372.png"
                   alt="Custom drone frame assembly on workbench at WEBUILDPRO Bangalore industrial lab"
                   fill
                   sizes="50vw"

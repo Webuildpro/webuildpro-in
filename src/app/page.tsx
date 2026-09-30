@@ -71,8 +71,8 @@ export default function HomePage() {
     name: 'WeBuildPro',
     alternateName: 'WeBuildPro Engineering Projects',
     url: 'https://webuildpro.in',
-    logo: "https://img.rocket.new/generatedImages/rocket_gen_img_1cf73093f-1784552159557.png",
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1cf73093f-1784552159557.png",
+    logo: "https://webuildpro.in/images/1cf73093f-1784552159557.png",
+    image: "https://webuildpro.in/images/1cf73093f-1784552159557.png",
     description: 'Final year engineering project centre in Bangalore offering hardware-tested IEEE projects for BE, B.Tech, M.Tech students.',
     telephone: '+91-95382-08573',
     address: {

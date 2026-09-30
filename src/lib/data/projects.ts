@@ -41,7 +41,7 @@ export const branchData: Record<string, BranchData> = {
     tagline: 'AI systems and software that run on real data — not demo datasets.',
     description: 'From deep learning pipelines to blockchain systems, we build CSE final-year projects that actually execute — with proper datasets, trained models, and documented architecture.',
     domains: ['Machine Learning', 'Deep Learning', 'Computer Vision', 'NLP', 'Blockchain', 'IoT Integration', 'Cloud & Edge AI', 'Network Security', 'Data Engineering'],
-    heroImage: "https://img.rocket.new/generatedImages/rocket_gen_img_161efa977-1773272377613.png",
+    heroImage: "https://webuildpro.in/images/161efa977-1773272377613.png",
     faq: [
     { q: 'Do you support IEEE paper-based projects?', a: 'Yes. We implement both IEEE and non-IEEE titles. If you have a specific paper, bring the DOI and we will scope the implementation against your timeline.' },
     { q: 'Can you build a project that uses a GPU for training?', a: 'Yes. Training is done on our hardware in the lab. You receive the trained model weights, inference code, and performance benchmarks as part of the delivery.' },
@@ -178,7 +178,7 @@ export const branchData: Record<string, BranchData> = {
     tagline: 'Fabricated, assembled and tested — not rendered in CAD and left there.',
     description: 'Mechanical projects at WeBuildPro are physically built in our Peenya lab using CNC, 3D printing, welding and precision tooling. Every build is tested before it leaves the bench.',
     domains: ['Robotics & Automation', 'Thermal Systems', 'Manufacturing', 'Renewable Energy', 'Mechatronics', 'CAD/CAM', 'Fluid Mechanics', 'Material Science'],
-    heroImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1e68218a1-1788087015129.png",
+    heroImage: "https://webuildpro.in/images/1e68218a1-1788087015129.png",
     faq: [
     { q: 'Do you provide CAD files as part of the delivery?', a: 'Yes. Full SolidWorks or Fusion 360 CAD files, engineering drawings, and BOM are included in every mechanical project delivery.' },
     { q: 'Can you fabricate parts that need CNC machining?', a: 'Yes. We have access to CNC machining, laser cutting, 3D printing and sheet metal fabrication within the Peenya industrial estate — minutes from our lab.' },
@@ -307,7 +307,7 @@ export const branchData: Record<string, BranchData> = {
     tagline: 'Circuits that work on the bench, not just in simulation.',
     description: 'ECE projects at WeBuildPro are fully fabricated — PCB designed, populated, tested and verified. You receive a working board, not a breadboard prototype with flying wires.',
     domains: ['Embedded Systems', 'RF & Wireless', 'VLSI & FPGA', 'Signal Processing', 'IoT', 'Drone & UAV', 'Communication Systems', 'Sensor Networks'],
-    heroImage: "https://img.rocket.new/generatedImages/rocket_gen_img_14fbaad7a-1765008574736.png",
+    heroImage: "https://webuildpro.in/images/14fbaad7a-1765008574736.png",
     faq: [
     { q: 'Do you design and fabricate custom PCBs?', a: 'Yes. PCB design in KiCad or Altium, gerber generation, fabrication and SMD assembly are all done in-house. You receive the final assembled and tested board.' },
     { q: 'Can you do FPGA-based projects?', a: 'Yes. We work with Xilinx Artix-7 (Basys 3 / Arty) and Intel Cyclone boards. VHDL and Verilog both supported.' },
@@ -612,7 +612,7 @@ export const branchData: Record<string, BranchData> = {
     tagline: 'Power systems and control loops — designed, wired and verified under load.',
     description: 'EEE projects at WeBuildPro are built on proper power electronics hardware — not simulated in MATLAB and called done. Every project is tested at the rated voltage and current before delivery.',
     domains: ['Power Electronics', 'Renewable Energy', 'Motor Drives', 'PLC & SCADA', 'EV & Battery Systems', 'Industrial Automation', 'Smart Grid', 'Control Systems'],
-    heroImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1a009f90c-1765197239094.png",
+    heroImage: "https://webuildpro.in/images/1a009f90c-1765197239094.png",
     faq: [
     { q: 'Do you work with high-voltage projects?', a: 'We build and test power electronics at voltages up to 230V AC and 48V DC on our bench. Projects requiring higher voltages are scoped on a case-by-case basis with appropriate safety protocols.' },
     { q: 'Can you support PLC-based projects?', a: 'Yes. We work with Siemens S7-1200, Allen-Bradley Micro820, and Delta DVP series PLCs. SCADA integration using Ignition or WinCC is also in scope.' },
@@ -692,7 +692,7 @@ export const branchData: Record<string, BranchData> = {
     tagline: 'Structural models, material studies and smart infrastructure — physically tested.',
     description: 'Civil and mining projects at WeBuildPro combine physical model fabrication with instrumentation and data acquisition — giving you a project that demonstrates real engineering behaviour, not just a literature review.',
     domains: ['Structural Engineering', 'Geotechnical', 'Transportation', 'Environmental', 'Construction Technology', 'Smart Infrastructure', 'Mining Safety', 'Water Resources'],
-    heroImage: "https://img.rocket.new/generatedImages/rocket_gen_img_154b9d489-1788087013543.png",
+    heroImage: "https://webuildpro.in/images/154b9d489-1788087013543.png",
     faq: [
     { q: 'Can you build physical scale models for civil projects?', a: 'Yes. Structural models, formwork systems and soil test rigs are fabricated in our lab. We also instrument them with load cells, strain gauges and displacement sensors for quantitative testing.' },
     { q: 'Do you support GIS and remote sensing projects?', a: 'Yes. We work with QGIS, ArcGIS, Google Earth Engine and drone-captured orthophotos for mapping, flood risk analysis and land use projects.' },
