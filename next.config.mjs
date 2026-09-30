@@ -2,6 +2,9 @@ import { imageHosts } from './image-hosts.config.mjs';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Static export for Cloudflare Pages deployment
+  output: 'export',
+
   // Disabled: source maps add ~30% to JS bundle size — hurts FCP on slow connections
   productionBrowserSourceMaps: false,
 
@@ -23,6 +26,8 @@ const nextConfig = {
   },
 
   images: {
+    // Required for static export — Next.js image optimization needs a server
+    unoptimized: true,
     remotePatterns: imageHosts,
     // 1 year TTL for immutable optimized images — reduces repeat-visit fetches
     minimumCacheTTL: 31536000,
