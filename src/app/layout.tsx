@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
   weight: ['400', '700'],
   variable: '--font-sans',
   display: 'swap',
-  adjustFontFallback: true,
+  adjustFontFallback: false,
   preload: true,
 });
 
@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ['400', '600'],
   variable: '--font-mono',
   display: 'optional',
-  adjustFontFallback: true,
+  adjustFontFallback: false,
   preload: false,
 });
 
