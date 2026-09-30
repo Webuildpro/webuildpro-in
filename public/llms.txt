@@ -1,0 +1,28 @@
+# WEBUILDPRO India
+
+> WEBUILDPRO is an engineering project, internship and industrial prototyping centre in Bangalore (Peenya, Karnataka). We build final year projects, IEEE projects, mini projects, custom drones and industrial prototypes for CSE, ECE, EEE, Mechanical and Civil students — designed, built and tested in our lab, online and offline, delivered pan-India.
+
+## Key Pages
+
+- [Home](https://webuildpro.in/): Engineering projects, internships and industrial prototypes in Bangalore.
+- [Projects](https://webuildpro.in/projects): Final year projects across all five branches.
+- [Mini Projects](https://webuildpro.in/mini-projects): Affordable mini projects for 1st–6th semester students.
+- [Industrial Prototyping](https://webuildpro.in/industrial): Custom drones, IoT, automation and prototypes.
+- [Internships](https://webuildpro.in/internships): Hands-on engineering internships.
+- [About](https://webuildpro.in/about): About WEBUILDPRO India.
+- [Contact](https://webuildpro.in/contact): Get a quote or reach us.
+- [Blog](https://webuildpro.in/blog): Project ideas and guides.
+
+## Branches
+
+- [CSE / ISE / AI-ML Projects](https://webuildpro.in/projects/cse)
+- [ECE Projects](https://webuildpro.in/projects/ece)
+- [EEE Projects](https://webuildpro.in/projects/eee)
+- [Mechanical Projects](https://webuildpro.in/projects/mechanical)
+- [Civil Projects](https://webuildpro.in/projects/civil)
+
+## Contact
+
+- Phone / WhatsApp: +91 95382 08573
+- Location: Peenya 2nd Stage, Bengaluru 560058, Karnataka, India
+- Instagram: https://www.instagram.com/webuildpro/
