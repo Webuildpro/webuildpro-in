@@ -13,7 +13,7 @@ const stats = [
 
 const workspacePhotos = [
 {
-  src: "https://webuildpro.in/images/1cf73093f-1784552159557.png",
+  src: "/images/1cf73093f-1784552159557.webp",
   alt: 'Engineer at electronics workbench with oscilloscope and PCB test setup at WEBUILDPRO Bangalore lab'
 },
 {
@@ -21,19 +21,19 @@ const workspacePhotos = [
   alt: 'Close-up of circuit board with SMD components, dark background, precision soldering at WEBUILDPRO Bangalore'
 },
 {
-  src: "https://webuildpro.in/images/103406215-1784552159060.png",
+  src: "/images/103406215-1784552159060.webp",
   alt: 'Drone frame assembly on workbench, carbon fibre arms and motor mounts at WEBUILDPRO Bangalore workshop'
 },
 {
-  src: "https://webuildpro.in/images/1d0b78d8c-1766165853310.png",
+  src: "/images/1d0b78d8c-1766165853310.webp",
   alt: 'Robotic arm steel components laid out on engineering workbench at WEBUILDPRO Bangalore'
 },
 {
-  src: 'https://webuildpro.in/images/19ad06f89-1777065811253.png',
+  src: '/images/19ad06f89-1777065811253.webp',
   alt: '3D printer producing a component in orange filament at WEBUILDPRO industrial prototyping lab in Bangalore'
 },
 {
-  src: "https://webuildpro.in/images/1cf73093f-1784552159557.png",
+  src: "/images/1cf73093f-1784552159557.webp",
   alt: 'PCB assembly line with components and soldering station at WEBUILDPRO engineering workshop in Bangalore'
 }];
 
@@ -372,15 +372,15 @@ export default function AboutContent() {
           {/* 9-thumbnail grid — each links to profile, images lazy-loaded */}
           <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-9 gap-2 mb-6">
             {[
-            { src: 'https://webuildpro.in/images/1ae1b3938-1767521812037.png', alt: 'PCB assembly close-up at WEBUILDPRO Bangalore lab, blue LED indicators on dark background' },
-            { src: "https://webuildpro.in/images/1e8db4b4b-1784552159372.png", alt: 'Quadcopter drone frame assembly on workbench at WEBUILDPRO engineering lab in Bangalore' },
+            { src: '/images/1ae1b3938-1767521812037.webp', alt: 'PCB assembly close-up at WEBUILDPRO Bangalore lab, blue LED indicators on dark background' },
+            { src: "/images/1e8db4b4b-1784552159372.webp", alt: 'Quadcopter drone frame assembly on workbench at WEBUILDPRO engineering lab in Bangalore' },
             { src: "https://images.unsplash.com/photo-1663355176396-31843c79e396", alt: 'Electronic circuit board with SMD components, close macro shot, dark background, WEBUILDPRO Bangalore' },
             { src: 'https://images.unsplash.com/photo-1735494034924-f4fd13af1cea', alt: 'Robotic arm mechanical assembly in workshop, steel components, WEBUILDPRO Bangalore' },
-            { src: "https://webuildpro.in/images/1cf73093f-1784552159557.png", alt: 'Engineer working at electronics lab bench with oscilloscope at WEBUILDPRO Bangalore facility' },
-            { src: 'https://webuildpro.in/images/19ad06f89-1777065811253.png', alt: '3D printer in operation with orange filament at WEBUILDPRO industrial prototyping lab in Bangalore' },
-            { src: 'https://webuildpro.in/images/103406215-1784552159060.png', alt: 'Drone frame assembly on workbench, carbon fibre arms and motor mounts at WEBUILDPRO Bangalore workshop' },
-            { src: "https://webuildpro.in/images/1d0b78d8c-1766165853310.png", alt: 'Robotic arm steel components laid out on engineering workbench at WEBUILDPRO Bangalore' },
-            { src: "https://webuildpro.in/images/1cf73093f-1784552159557.png", alt: 'PCB assembly line with components and soldering station at WEBUILDPRO engineering workshop in Bangalore' }]?.
+            { src: "/images/1cf73093f-1784552159557.webp", alt: 'Engineer working at electronics lab bench with oscilloscope at WEBUILDPRO Bangalore facility' },
+            { src: '/images/19ad06f89-1777065811253.webp', alt: '3D printer in operation with orange filament at WEBUILDPRO industrial prototyping lab in Bangalore' },
+            { src: '/images/103406215-1784552159060.webp', alt: 'Drone frame assembly on workbench, carbon fibre arms and motor mounts at WEBUILDPRO Bangalore workshop' },
+            { src: "/images/1d0b78d8c-1766165853310.webp", alt: 'Robotic arm steel components laid out on engineering workbench at WEBUILDPRO Bangalore' },
+            { src: "/images/1cf73093f-1784552159557.webp", alt: 'PCB assembly line with components and soldering station at WEBUILDPRO engineering workshop in Bangalore' }]?.
             map((img, i) =>
             <a
               key={i}

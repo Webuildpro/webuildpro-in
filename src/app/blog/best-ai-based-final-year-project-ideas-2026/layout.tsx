@@ -4,7 +4,7 @@ import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'best-ai-based-final-year-project-ideas-2026';
-const PAGE_TITLE = 'Best AI-Based Final Year Project Ideas (2026) | WEBUILDPRO';
+const PAGE_TITLE = 'Best AI-Based Final Year Project Ideas (2026)';
 const PAGE_DESCRIPTION =
   '30+ best AI projects & AI-based final year project ideas for 2026 — machine learning, deep learning, computer vision & generative AI. Built by WEBUILDPRO Bangalore. WhatsApp 9538208573.';
 const PAGE_DATE = '2026-08-07';
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     languages: { 'en-IN': `${BASE_URL}/blog/${SLUG}` },
   },
   openGraph: {
-    title: 'Best AI-Based Final Year Project Ideas (2026) | WEBUILDPRO Bangalore',
+    title: 'Best AI-Based Final Year Project Ideas (2026)',
     description: PAGE_DESCRIPTION,
     type: 'article',
     publishedTime: PAGE_DATE,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     authors: ['Chyavan'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'Best AI-Based Final Year Project Ideas 2026 — WEBUILDPRO Bangalore',

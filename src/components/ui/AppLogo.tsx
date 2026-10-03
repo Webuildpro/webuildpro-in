@@ -13,7 +13,7 @@ interface AppLogoProps {
 }
 
 const AppLogo = memo(function AppLogo({
-  src = '/assets/images/wbinlogo-1786121366410.jpeg',
+  src = '/assets/images/og-webuildpro.jpg',
   iconName = 'SparklesIcon',
   size = 64,
   className = '',

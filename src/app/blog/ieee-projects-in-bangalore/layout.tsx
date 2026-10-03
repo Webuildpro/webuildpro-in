@@ -4,7 +4,7 @@ import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'ieee-projects-in-bangalore';
-const PAGE_TITLE = 'IEEE Projects in Bangalore 2026 | WEBUILDPRO Makers';
+const PAGE_TITLE = 'IEEE Projects in Bangalore (2026) — Best Makers';
 const PAGE_DESCRIPTION =
   'Best IEEE project centre in Bangalore for CSE, ECE, EEE, Mechanical & Civil. 2026 IEEE final year projects built, tested & delivered. WhatsApp +91 95382 08573.';
 const PAGE_DATE = '2026-08-06';
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     authors: ['Chyavan'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'IEEE Projects in Bangalore 2026 — WEBUILDPRO Complete Guide',

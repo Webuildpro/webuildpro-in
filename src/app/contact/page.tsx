@@ -1,6 +1,9 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
+import FaqSection from '@/app/components/FaqSection';
+import JsonLdScript from '@/components/JsonLdScript';
+import { faqSchema } from '@/lib/jsonld';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import dynamic from 'next/dynamic';
 import ContactPageContent from './components/ContactPageContent';
@@ -12,18 +15,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Contact Project Centre in Bangalore | WEBUILDPRO India',
+  title: 'Contact Project Centre in Bangalore',
   description:
-    'Contact WEBUILDPRO India — engineering project centre in Bangalore. Free 15-min call with an engineer, fixed quote in 24 hours. CSE, ECE, EEE, Mechanical, Civil. Pan-India delivery.',
+    'Contact WEBUILDPRO in Peenya, Bangalore. Call or WhatsApp +91 95382 08573 for a fixed project quote within 24 hours. Open Mon–Sat, 10 AM – 7 PM.',
   alternates: {
     canonical: `${BASE_URL}/contact`,
-    languages: { 'en-IN': `${BASE_URL}/contact` },
   },
   openGraph: {
     title: 'Contact WEBUILDPRO India — Project Centre in Bangalore',
     description:
       'Free 15-minute call with an engineer. Fixed quote in 24 hours. No obligation. Bangalore — Peenya 2nd Stage, Bengaluru 560058.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'WEBUILDPRO India contact — project centre in Bangalore' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO India contact — project centre in Bangalore' }],
   },
 };
 
@@ -45,6 +47,11 @@ const contactFaqs = [
 export default function ContactPage() {
   return (
     <>
+      <JsonLdScript
+        nodes={[
+          faqSchema(contactFaqs),
+        ]}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', url: '/' },
@@ -54,6 +61,7 @@ export default function ContactPage() {
       <Header />
       <main id="main-content">
         <ContactPageContent />
+        <FaqSection faqs={contactFaqs} />
       </main>
       <Footer />
       <LazyPageExtras />

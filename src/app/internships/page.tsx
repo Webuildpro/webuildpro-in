@@ -1,6 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
+import JsonLdScript from '@/components/JsonLdScript';
+import { faqSchema, serviceSchema } from '@/lib/jsonld';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import dynamic from 'next/dynamic';
 import InternshipsContent from './components/InternshipsContent';
@@ -12,18 +14,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Engineering Internship in Bangalore | WEBUILDPRO India',
+  title: 'Engineering Internship in Bangalore',
   description:
-    'Engineering internship in Bangalore — Embedded IoT, Drone, Robotics, AI/ML & PCB Design tracks. Real hardware, verifiable certificate. 2–8 weeks, online & offline, pan-India.',
+    'Engineering internships in Bangalore for CSE, ECE, EEE & Mechanical students. Work on real builds and take home a project plus a verifiable certificate.',
   alternates: {
     canonical: `${BASE_URL}/internships`,
-    languages: { 'en-IN': `${BASE_URL}/internships` },
   },
   openGraph: {
-    title: 'Engineering Internship in Bangalore | WEBUILDPRO India',
+    title: 'Engineering Internship in Bangalore',
     description:
       'An internship where you actually touch the hardware. Real components, real deadlines, verifiable certificate.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'WEBUILDPRO engineering internship in Bangalore' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO engineering internship in Bangalore' }],
   },
 };
 
@@ -57,6 +58,12 @@ const tracks = [
 export default function InternshipsPage() {
   return (
     <>
+      <JsonLdScript
+        nodes={[
+          serviceSchema({ name: 'Engineering Internships in Bangalore', description: 'Engineering internship in Bangalore — Embedded IoT, Drone, Robotics, AI/ML & PCB Design tracks. Real hardware, verifiable certificate. 2–8 weeks, online & offline, pan-India.', path: '/internships', serviceType: 'Engineering internship' }),
+          faqSchema(internFaqs),
+        ]}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', url: '/' },

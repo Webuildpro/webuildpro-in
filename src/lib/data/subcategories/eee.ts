@@ -27,7 +27,7 @@ export const eeeSubCategories: SubCategory[] = [
     slug: "power-electronics-projects-in-bangalore",
     branch: "eee",
     keyword: "Power Electronics Projects in Bangalore",
-    metaTitle: "Power Electronics Projects in Bangalore | WEBUILDPRO",
+    metaTitle: "Power Electronics Projects in Bangalore",
     metaDescription: "Final year power electronics projects in Bangalore for EEE. Converters, inverters & control circuits built and tested. Online & offline.",
     intro: "Looking for power electronics projects in Bangalore for your final year? WEBUILDPRO builds working power electronics projects for EEE students in Bangalore — converters, inverters and control circuits designed, built and tested in our lab. Power electronics is a core EEE domain valued by energy and manufacturing companies. Every project below is a genuine build delivered with circuit diagrams, source code where applicable, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
@@ -47,7 +47,7 @@ export const eeeSubCategories: SubCategory[] = [
     slug: "plc-automation-projects-in-bangalore",
     branch: "eee",
     keyword: "PLC & Automation Projects in Bangalore",
-    metaTitle: "PLC & Automation Projects in Bangalore | WEBUILDPRO",
+    metaTitle: "PLC & Automation Projects in Bangalore",
     metaDescription: "Final year PLC and industrial automation projects in Bangalore for EEE. Working automation systems with documentation. Online & offline.",
     intro: "WEBUILDPRO builds PLC and automation projects in Bangalore for EEE final year students — real industrial automation using PLCs and microcontrollers. Automation is one of the most employable skills in the power and manufacturing sector. Every project below is a working build delivered with ladder logic or code, wiring diagrams, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
@@ -67,7 +67,7 @@ export const eeeSubCategories: SubCategory[] = [
     slug: "ev-projects-in-bangalore",
     branch: "eee",
     keyword: "Electric Vehicle (EV) Projects in Bangalore",
-    metaTitle: "EV Projects in Bangalore for EEE | WEBUILDPRO",
+    metaTitle: "EV Projects in Bangalore for EEE",
     metaDescription: "Final year electric vehicle projects in Bangalore for EEE. Battery, charging & BMS projects built and tested. Online & offline delivery.",
     intro: "WEBUILDPRO builds electric vehicle projects in Bangalore for EEE final year students — battery systems, charging and management projects in one of the fastest-growing industries. EV projects are highly relevant to today's job market. Every project below is a working build delivered with circuit diagrams, code where applicable, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
@@ -87,7 +87,7 @@ export const eeeSubCategories: SubCategory[] = [
     slug: "solar-energy-projects-in-bangalore",
     branch: "eee",
     keyword: "Solar Energy Projects in Bangalore",
-    metaTitle: "Solar Energy Projects in Bangalore for EEE | WEBUILDPRO",
+    metaTitle: "Solar Energy Projects in Bangalore for EEE",
     metaDescription: "Final year solar energy projects in Bangalore for EEE. Solar tracking, monitoring & harvesting systems with docs. Online & offline.",
     intro: "WEBUILDPRO builds solar energy projects in Bangalore for EEE final year students — solar tracking, monitoring and harvesting systems that are timely and impactful. Every project below is a working build delivered with circuit diagrams, code where applicable, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
@@ -107,7 +107,7 @@ export const eeeSubCategories: SubCategory[] = [
     slug: "motor-control-projects-in-bangalore",
     branch: "eee",
     keyword: "Motor Control Projects in Bangalore",
-    metaTitle: "Motor Control Projects in Bangalore for EEE | WEBUILDPRO",
+    metaTitle: "Motor Control Projects in Bangalore for EEE",
     metaDescription: "Final year motor control projects in Bangalore for EEE. BLDC, induction & speed-control systems built and tested. Online & offline.",
     intro: "WEBUILDPRO builds motor control projects in Bangalore for EEE final year students — speed control, drives and monitoring for BLDC, induction and DC motors. Motor control is a core industrial skill. Every project below is a working build delivered with circuit diagrams, code, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [

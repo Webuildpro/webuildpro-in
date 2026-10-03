@@ -9,7 +9,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Terms & Conditions — WEBUILDPRO India',
+  title: 'Terms & Conditions',
   description: 'Terms & Conditions for WEBUILDPRO India, Bangalore — quotation validity, payment, IP transfer, NDA, revision policy and cancellation terms for engineering services.',
   alternates: {
     canonical: `${BASE_URL}/terms`,

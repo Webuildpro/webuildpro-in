@@ -6,7 +6,8 @@ import LazyPageExtras from '@/components/LazyPageExtras';
 
 import { branchData } from '@/lib/data/projects';
 import EceSubPageContent from '@/app/projects/ece/[sub]/components/EceSubPageContent';
-import Footer from '@/components/Footer';
+import JsonLdScript from '@/components/JsonLdScript';
+import { breadcrumbSchema, faqSchema, itemListSchema, serviceSchema } from '@/lib/jsonld';
 
 
 
@@ -36,7 +37,7 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'iot-projects-in-bangalore',
     h1: 'IoT Projects in Bangalore',
-    metaTitle: 'IoT Projects in Bangalore | WEBUILDPRO ECE',
+    metaTitle: 'IoT Projects in Bangalore',
     metaDescription:
       'Get a fully-built IoT final-year project in Bangalore. WEBUILDPRO delivers working hardware + source code for ECE students. Call +91 95382 08573.',
     intro:
@@ -60,7 +61,7 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'embedded-systems-projects-in-bangalore',
     h1: 'Embedded Systems Projects in Bangalore',
-    metaTitle: 'Embedded Systems Projects in Bangalore | WEBUILDPRO ECE',
+    metaTitle: 'Embedded Systems Projects in Bangalore',
     metaDescription:
       'Fully-built embedded systems projects for ECE final year in Bangalore. Custom PCB, firmware, and documentation. WEBUILDPRO — call +91 95382 08573.',
     intro:
@@ -84,7 +85,7 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'robotics-projects-in-bangalore',
     h1: 'Robotics Projects in Bangalore',
-    metaTitle: 'Robotics Projects in Bangalore | WEBUILDPRO ECE',
+    metaTitle: 'Robotics Projects in Bangalore',
     metaDescription:
       'Robotics final-year projects for ECE students in Bangalore. Fully built robotic arms, rovers and autonomous bots. WEBUILDPRO — +91 95382 08573.',
     intro:
@@ -108,7 +109,7 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'drone-projects-in-bangalore',
     h1: 'Drone Projects in Bangalore',
-    metaTitle: 'Drone Projects in Bangalore | WEBUILDPRO ECE',
+    metaTitle: 'Drone Projects in Bangalore',
     metaDescription:
       'Custom drone final-year projects for ECE students in Bangalore. Agriculture drones, hybrid drone-rovers, inventory drones. WEBUILDPRO — +91 95382 08573.',
     intro:
@@ -132,7 +133,7 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'vlsi-projects-in-bangalore',
     h1: 'VLSI Projects in Bangalore',
-    metaTitle: 'VLSI Projects in Bangalore | WEBUILDPRO ECE',
+    metaTitle: 'VLSI Projects in Bangalore',
     metaDescription:
       'VLSI and FPGA final-year projects for ECE students in Bangalore. Verilog, VHDL, Xilinx Artix-7. WEBUILDPRO — call +91 95382 08573.',
     intro:
@@ -156,7 +157,7 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'biomedical-projects-in-bangalore',
     h1: 'Biomedical Projects in Bangalore',
-    metaTitle: 'Biomedical Projects in Bangalore | WEBUILDPRO ECE',
+    metaTitle: 'Biomedical Projects in Bangalore',
     metaDescription:
       'Biomedical ECE final-year projects in Bangalore — patient monitors, wearables, health IoT. WEBUILDPRO delivers working hardware. +91 95382 08573.',
     intro:
@@ -180,7 +181,7 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'communication-projects-in-bangalore',
     h1: 'Communication Projects in Bangalore',
-    metaTitle: 'Communication Projects in Bangalore | WEBUILDPRO ECE',
+    metaTitle: 'Communication Projects in Bangalore',
     metaDescription:
       'Communication systems ECE final-year projects in Bangalore — RF, LoRa, wireless, IIoT. WEBUILDPRO builds working hardware. +91 95382 08573.',
     intro:
@@ -225,8 +226,9 @@ export async function generateMetadata({
       title: config.metaTitle,
       description: config.metaDescription,
       url: `https://webuildpro.in/projects/ece/${config.slug}`,
-      siteName: 'WEBUILDPRO',
+      siteName: 'WEBUILDPRO India',
       type: 'website',
+      images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: config.h1 }],
     },
   };
 }
@@ -247,8 +249,22 @@ export default async function EceSubPage({
 
   const siblings = ECE_SUBS.filter((s) => s.slug !== config.slug);
 
+  const path = `/projects/ece/${config.slug}`;
+  const schema = [
+    breadcrumbSchema([
+      { name: 'Home', url: '/' },
+      { name: 'Projects', url: '/projects' },
+      { name: 'ECE Projects', url: '/projects/ece' },
+      { name: config.h1, url: path },
+    ]),
+    serviceSchema({ name: config.h1, description: config.metaDescription, path, serviceType: 'ECE final year project development' }),
+    itemListSchema(config.h1, filteredProjects.map((p) => ({ name: p.title }))),
+    faqSchema(config.faq),
+  ];
+
   return (
     <>
+      <JsonLdScript nodes={schema} />
       <Header />
       <EceSubPageContent
         config={config}

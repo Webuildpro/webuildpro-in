@@ -2,7 +2,7 @@
  * BlogPostingJsonLd — injects a BlogPosting JSON-LD script for blog post pages.
  */
 
-const BASE_URL = 'https://webuildpro.in';
+import { ORG_ID, safeJsonLd, SITE_URL as BASE_URL } from '@/lib/jsonld';
 
 interface BlogPostingJsonLdProps {
   headline: string;
@@ -24,6 +24,8 @@ export default function BlogPostingJsonLd({
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
+    '@id': `${BASE_URL}/blog/${slug}#article`,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/blog/${slug}` },
     headline,
     datePublished,
     dateModified,
@@ -31,24 +33,19 @@ export default function BlogPostingJsonLd({
       '@type': 'Person',
       name: 'Chyavan',
       url: `${BASE_URL}/about`,
+      worksFor: { '@id': ORG_ID },
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'WeBuildPro',
-      logo: {
-        '@type': 'ImageObject',
-        url: `${BASE_URL}/assets/images/app_logo.png`,
-      },
-    },
-    image: image || `${BASE_URL}/assets/images/wbinlogo-1786121366410.jpeg`,
+    publisher: { '@id': ORG_ID },
+    image: image || `${BASE_URL}/assets/images/og-webuildpro.jpg`,
     url: `${BASE_URL}/blog/${slug}`,
     description,
+    inLanguage: 'en-IN',
   };
 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
     />
   );
 }

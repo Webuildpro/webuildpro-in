@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import JsonLdScript from '@/components/JsonLdScript';
+import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/jsonld';
 import dynamic from 'next/dynamic';
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
@@ -12,18 +14,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Final Year Engineering Projects in Bangalore | WEBUILDPRO',
+  title: 'Final Year Engineering Projects in Bangalore',
   description:
-    'Final year projects in Bangalore for CSE, ECE, EEE, Mechanical & Civil — IEEE & non-IEEE, tested hardware, source code & report material. Online & offline, delivered pan-India.',
+    'Final year engineering projects in Bangalore — IEEE & non-IEEE, built and tested in our Peenya lab. Code, report, PPT & viva prep included. Online & offline.',
   alternates: {
     canonical: `${BASE_URL}/final-year-projects-bangalore`,
-    languages: { 'en-IN': `${BASE_URL}/final-year-projects-bangalore` },
   },
   openGraph: {
-    title: 'Final Year Engineering Projects in Bangalore | WEBUILDPRO',
+    title: 'Final Year Engineering Projects in Bangalore',
     description:
       'Final year projects in Bangalore for CSE, ECE, EEE, Mechanical and Civil. IEEE & non-IEEE, tested hardware, source code included. Online & offline delivery.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'Final Year Engineering Projects in Bangalore — WEBUILDPRO' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'Final Year Engineering Projects in Bangalore — WEBUILDPRO' }],
   },
 };
 
@@ -94,6 +95,13 @@ const branchProjects = [
 export default function FinalYearProjectsBangalorePage() {
   return (
     <>
+      <JsonLdScript
+        nodes={[
+          breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Final Year Projects in Bangalore', url: '/final-year-projects-bangalore' }]),
+          serviceSchema({ name: 'Final Year Engineering Projects in Bangalore', description: 'Final year projects in Bangalore for CSE, ECE, EEE, Mechanical & Civil — IEEE & non-IEEE, tested hardware, source code & report material. Online & offline, delivered pan-India.', path: '/final-year-projects-bangalore' }),
+          faqSchema(pageFaqs),
+        ]}
+      />
       <Header />
       <main id="main-content" className="min-h-screen bg-background pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

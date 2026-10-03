@@ -4,7 +4,7 @@ import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'innovative-final-year-project-ideas-ece-2026';
-const PAGE_TITLE = 'Innovative Final Year Project Ideas for ECE (2026) | WEBUILDPRO';
+const PAGE_TITLE = 'Innovative Final Year Project Ideas for ECE (2026)';
 const PAGE_DESCRIPTION =
   '40+ innovative & latest final year project ideas for ECE students in Bangalore — IoT, embedded, VLSI, robotics, drones & biomedical. Built by WEBUILDPRO. WhatsApp 9538208573.';
 const PAGE_DATE = '2026-08-07';
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     languages: { 'en-IN': `${BASE_URL}/blog/${SLUG}` },
   },
   openGraph: {
-    title: 'Innovative Final Year Project Ideas for ECE (2026) | WEBUILDPRO Bangalore',
+    title: 'Innovative Final Year Project Ideas for ECE (2026)',
     description: PAGE_DESCRIPTION,
     type: 'article',
     publishedTime: PAGE_DATE,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     authors: ['Chyavan'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'Innovative Final Year Project Ideas for ECE Students 2026 — WEBUILDPRO Bangalore',

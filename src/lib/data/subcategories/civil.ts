@@ -27,7 +27,7 @@ export const civilSubCategories: SubCategory[] = [
     slug: 'structural-projects-in-bangalore',
     branch: 'civil',
     keyword: 'Structural Engineering Projects in Bangalore',
-    metaTitle: 'Structural Engineering Projects in Bangalore | WEBUILDPRO',
+    metaTitle: 'Structural Engineering Projects in Bangalore',
     metaDescription:
       'Final year structural engineering projects in Bangalore for Civil. Working models, analysis and documentation. Online & offline delivery.',
     intro:
@@ -88,7 +88,7 @@ export const civilSubCategories: SubCategory[] = [
     slug: 'transportation-projects-in-bangalore',
     branch: 'civil',
     keyword: 'Transportation Engineering Projects in Bangalore',
-    metaTitle: 'Transportation Engineering Projects Bangalore | WEBUILDPRO',
+    metaTitle: 'Transportation Engineering Projects Bangalore',
     metaDescription:
       'Final year transportation engineering projects in Bangalore for Civil. Traffic, pavement and road-safety models with documentation. Online & offline.',
     intro:
@@ -149,7 +149,7 @@ export const civilSubCategories: SubCategory[] = [
     slug: 'geotechnical-projects-in-bangalore',
     branch: 'civil',
     keyword: 'Geotechnical Engineering Projects in Bangalore',
-    metaTitle: 'Geotechnical Engineering Projects Bangalore | WEBUILDPRO',
+    metaTitle: 'Geotechnical Engineering Projects Bangalore',
     metaDescription:
       'Final year geotechnical engineering projects in Bangalore for Civil. Soil testing, foundation models and slope stability with documentation.',
     intro:
@@ -210,7 +210,7 @@ export const civilSubCategories: SubCategory[] = [
     slug: 'water-resources-projects-in-bangalore',
     branch: 'civil',
     keyword: 'Water Resources Engineering Projects in Bangalore',
-    metaTitle: 'Water Resources Projects Bangalore for Civil | WEBUILDPRO',
+    metaTitle: 'Water Resources Projects Bangalore for Civil',
     metaDescription:
       'Final year water resources engineering projects in Bangalore for Civil. Hydraulics, irrigation and water-treatment models with documentation.',
     intro:
@@ -271,7 +271,7 @@ export const civilSubCategories: SubCategory[] = [
     slug: 'environmental-projects-in-bangalore',
     branch: 'civil',
     keyword: 'Environmental Engineering Projects in Bangalore',
-    metaTitle: 'Environmental Engineering Projects Bangalore | WEBUILDPRO',
+    metaTitle: 'Environmental Engineering Projects Bangalore',
     metaDescription:
       'Final year environmental engineering projects in Bangalore for Civil. Waste management, pollution control and green-building models with documentation.',
     intro:
@@ -332,7 +332,7 @@ export const civilSubCategories: SubCategory[] = [
     slug: 'construction-management-projects-in-bangalore',
     branch: 'civil',
     keyword: 'Construction Management Projects in Bangalore',
-    metaTitle: 'Construction Management Projects Bangalore | WEBUILDPRO',
+    metaTitle: 'Construction Management Projects Bangalore',
     metaDescription:
       'Final year construction management projects in Bangalore for Civil. Scheduling, cost estimation and BIM projects with documentation. Online & offline.',
     intro:

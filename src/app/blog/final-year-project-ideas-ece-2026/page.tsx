@@ -14,7 +14,7 @@ import CircuitDivider from '@/components/CircuitDivider';
 import { notFound } from 'next/navigation';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-ece-2026';
-const PAGE_TITLE = 'Final Year Project Ideas for ECE (2026) | WEBUILDPRO';
+const PAGE_TITLE = 'Final Year Project Ideas for ECE (2026)';
 const PAGE_DESCRIPTION =
   '40+ final year project ideas for ECE students in 2026 — IoT, Embedded, Robotics, VLSI & Biomedical. Built in Bangalore by WEBUILDPRO, online & offline.';
 const PAGE_DATE = '2026-08-01';
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     languages: { 'en-IN': `${BASE_URL}/blog/${SLUG}` },
   },
   openGraph: {
-    title: 'Final Year Project Ideas for ECE (2026) — 40+ Topics | WEBUILDPRO Bangalore',
+    title: 'Final Year Project Ideas for ECE (2026) — 40+ Topics',
     description: PAGE_DESCRIPTION,
     type: 'article',
     publishedTime: PAGE_DATE,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     authors: ['WEBUILDPRO India'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'Final Year Project Ideas for ECE Students 2026 — WEBUILDPRO Bangalore',

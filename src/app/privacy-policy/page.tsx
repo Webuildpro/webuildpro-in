@@ -9,7 +9,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Privacy Policy — WEBUILDPRO India',
+  title: 'Privacy Policy',
   description: 'Privacy Policy for WEBUILDPRO India, Bangalore — how we collect, store and use your data. GDPR-aligned, no data sold, Google Sheets storage, contact form data only.',
   alternates: {
     canonical: `${BASE_URL}/privacy-policy`,

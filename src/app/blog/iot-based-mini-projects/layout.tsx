@@ -5,7 +5,7 @@ import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'iot-based-mini-projects';
-const PAGE_TITLE = 'IoT Based Mini Projects (2026) — Ideas, Steps & Kits | WEBUILDPRO';
+const PAGE_TITLE = 'IoT Based Mini Projects (2026) — Ideas, Steps & Kits';
 const PAGE_DESCRIPTION =
   '30+ IoT based mini projects for engineering students with steps, components & descriptions. Buy working IoT mini projects in Bangalore. WhatsApp +91 95382 08573.';
 const PAGE_DATE = '2026-09-11';
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     authors: ['Chyavan'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'IoT Based Mini Projects 2026 — WEBUILDPRO Bangalore',

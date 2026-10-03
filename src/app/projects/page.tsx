@@ -15,17 +15,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Engineering Projects in Bangalore — All Branches | WEBUILDPRO',
+  title: 'Engineering Projects in Bangalore (All Branches)',
   description:
-    'Engineering projects in Bangalore across CSE, Mechanical, ECE, EEE & Civil — 60+ titles, working hardware, source code & viva support. Online & offline, delivered pan-India.',
+    'Engineering projects in Bangalore for every branch — CSE, ECE, EEE, Mechanical & Civil. 300+ final year projects built, tested and delivered across India.',
   alternates: {
     canonical: `${BASE_URL}/projects`,
     languages: { 'en-IN': `${BASE_URL}/projects` },
   },
   openGraph: {
-    title: 'Engineering Projects in Bangalore — All Branches | WEBUILDPRO',
+    title: 'Engineering Projects in Bangalore — All Branches',
     description: 'Browse all engineering project branches at WEBUILDPRO India in Bangalore. CSE, Mechanical, ECE, EEE, Civil projects with working hardware.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'WEBUILDPRO India engineering projects in Bangalore' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO India engineering projects in Bangalore' }],
   },
 };
 

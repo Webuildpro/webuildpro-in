@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import Icon from '@/components/ui/AppIcon';
 import LazyPageExtras from '@/components/LazyPageExtras';
+import { locationFaqs } from './faqs';
 
 const WA_LINK =
   'https://wa.me/919538208573?text=Hi%20WEBUILDPRO%2C%20I%20need%20an%20engineering%20project%20%E2%80%94%20can%20you%20help%3F';
@@ -270,28 +271,7 @@ export default function EngineeringProjectsBtmLayout() {
                   FAQ
                 </h2>
                 <div className="space-y-4">
-                  {[
-                    {
-                      q: 'Do you serve BTM Layout students?',
-                      a: 'Yes — online and offline, all branches. We deliver projects to BTM Layout students across CSE, ECE, EEE, Mechanical and Civil engineering.',
-                    },
-                    {
-                      q: 'Engineering, mini and IEEE projects for BTM Layout?',
-                      a: 'All three, fully documented. From mini projects in BTM Layout to IEEE projects in BTM Layout with genuine base papers — every project includes source code, circuit diagrams, report, PPT and a viva walkthrough.',
-                    },
-                    {
-                      q: 'Custom idea? Can you build it?',
-                      a: 'Send it on WhatsApp for a 24-hour quote. We build from your spec — not from a fixed catalogue.',
-                    },
-                    {
-                      q: 'How long does a project take?',
-                      a: 'Most academic projects run 2–4 weeks. Complex hardware or multi-domain projects run 4–6 weeks. We give you a firm timeline in the quote before you pay anything.',
-                    },
-                    {
-                      q: 'Can I get the project delivered online without visiting Bangalore?',
-                      a: 'Yes. We deliver full remote projects — video walkthroughs, screen-share mentoring, milestone demo calls, and the finished unit shipped to your door with source code and documentation.',
-                    },
-                  ].map((faq, i) => (
+                  {locationFaqs.map((faq, i) => (
                     <div key={i} className="bg-card border border-border rounded p-5">
                       <h3 className="font-semibold text-foreground text-sm mb-2">{faq.q}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">{faq.a}</p>

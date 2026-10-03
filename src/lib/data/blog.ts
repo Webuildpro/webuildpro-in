@@ -1,6 +1,10 @@
 export interface BlogArticle {
   slug: string;
   title: string;
+  /** Shorter <title> for search results when the headline is too long; the layout appends the brand. */
+  seoTitle?: string;
+  /** Set when another post covers the same query: canonicalises to it and drops this URL from the sitemap. */
+  canonicalSlug?: string;
   description: string;
   datePublished: string;
   dateModified: string;
@@ -12,7 +16,7 @@ export interface BlogArticle {
 export const blogArticles: BlogArticle[] = [
   {
     slug: 'generative-ai-projects-for-final-year-2026',
-    title: 'Generative AI Projects for Final Year (2026) | WEBUILDPRO',
+    title: 'Generative AI Projects for Final Year (2026)',
     description:
       '20+ generative AI project ideas for final year with descriptions & steps. Text, image, code & voice GenAI projects built in Bangalore. WhatsApp +91 95382 08573.',
     datePublished: '2026-09-11',
@@ -23,7 +27,7 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     slug: 'agentic-ai-projects-for-final-year-2026',
-    title: 'Agentic AI Projects for Final Year (2026) | WEBUILDPRO',
+    title: 'Agentic AI Projects for Final Year (2026)',
     description:
       '20+ agentic AI project ideas for final year students with descriptions & how-to steps. AI agents, LLM & RAG projects built in Bangalore. WhatsApp +91 95382 08573.',
     datePublished: '2026-09-11',
@@ -34,7 +38,7 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     slug: 'iot-based-mini-projects',
-    title: 'IoT Based Mini Projects (2026) — Ideas, Steps & Kits | WEBUILDPRO',
+    title: 'IoT Based Mini Projects (2026) — Ideas, Steps & Kits',
     description:
       '30+ IoT based mini projects for engineering students with steps, components & descriptions. Buy working IoT mini projects in Bangalore. WhatsApp +91 95382 08573.',
     datePublished: '2026-09-11',
@@ -57,6 +61,7 @@ export const blogArticles: BlogArticle[] = [
   {
     slug: 'innovative-final-year-project-ideas-aeronautical-2026',
     title: 'Innovative Final Year Project Ideas for Aeronautical Students (2026)',
+    seoTitle: 'Aeronautical Final Year Project Ideas (2026)',
     description:
       '30+ innovative final year project ideas for Aeronautical & Aerospace students in Bangalore — drones/UAV, aerodynamics, propulsion, CFD. Built by WEBUILDPRO. WhatsApp 9538208573.',
     datePublished: '2026-08-07',
@@ -112,6 +117,7 @@ export const blogArticles: BlogArticle[] = [
   {
     slug: 'ieee-projects-in-bangalore',
     title: 'IEEE Projects in Bangalore (2026): The Complete Guide to Choosing the Best IEEE Project Makers',
+    seoTitle: 'IEEE Projects in Bangalore (2026) — Best Makers',
     description:
       'Best IEEE project centre in Bangalore for CSE, ECE, EEE, Mechanical & Civil. 2026 IEEE final year projects built, tested & delivered. WhatsApp +91 95382 08573.',
     datePublished: '2026-08-06',
@@ -134,6 +140,7 @@ export const blogArticles: BlogArticle[] = [
   {
     slug: 'trending-final-year-project-ideas-2026',
     title: 'Trending Final Year Project Ideas for 2026 (AI, IoT, Robotics, Drones & More)',
+    seoTitle: 'Trending Final Year Project Ideas 2026',
     description:
       '50+ trending final year project ideas for 2026 across AI/ML, IoT, robotics, drones, embedded & blockchain. Built and tested in Bangalore — online & offline.',
     datePublished: '2026-08-03',
@@ -145,6 +152,7 @@ export const blogArticles: BlogArticle[] = [
   {
     slug: 'mini-project-ideas-mechanical-eee-civil-2026',
     title: 'Mini Project Ideas for Mechanical, EEE & Civil Students (2026)',
+    seoTitle: 'Mini Project Ideas: Mechanical, EEE & Civil',
     description:
       'Simple, working mini project ideas for Mechanical, EEE and Civil students in Bangalore. 1st–6th sem builds with fabrication & guidance. Online & offline.',
     datePublished: '2026-08-03',
@@ -178,6 +186,7 @@ export const blogArticles: BlogArticle[] = [
   {
     slug: 'final-year-project-ideas-ece-2026',
     title: 'Final Year Project Ideas for ECE Students (2026) — 40+ Topics with Details',
+    seoTitle: '40+ Final Year Project Ideas for ECE (2026)',
     description: 'Explore 40+ final year project ideas for ECE students in 2026 — grouped by domain (IoT, Embedded, Robotics, VLSI, Biomedical & more) with descriptions, tech stack and difficulty. WEBUILDPRO builds these in Bangalore.',
     datePublished: '2026-08-01',
     dateModified: '2026-08-01',
@@ -379,6 +388,7 @@ We build all 40+ projects listed above in our Bangalore lab — custom hardware,
   {
     slug: 'how-to-choose-final-year-engineering-project',
     title: 'How to Choose a Final Year Engineering Project That Actually Impresses the Panel',
+    seoTitle: 'How to Choose a Final Year Engineering Project',
     description: 'A practical guide to picking a final year engineering project that works on demo day, survives viva questions and stands out from the crowd — from engineers who build them.',
     datePublished: '2026-01-15',
     dateModified: '2026-07-01',
@@ -458,6 +468,7 @@ If you need help picking the right project for your branch, timeline and skill l
   {
     slug: 'final-year-project-cost-bangalore-2026',
     title: 'Final Year Project Cost in Bangalore: What You Should Actually Be Paying (2026)',
+    seoTitle: 'Final Year Project Cost in Bangalore (2026)',
     description: 'A transparent breakdown of what final year engineering projects actually cost in Bangalore in 2026 — components, fabrication, documentation and what the price difference between centres actually means.',
     datePublished: '2026-02-10',
     dateModified: '2026-07-01',
@@ -535,6 +546,7 @@ At WEBUILDPRO India in Bangalore, we give you a fixed, itemised quote within 24 
   },
   {
     slug: 'ieee-vs-non-ieee-projects',
+    canonicalSlug: 'ieee-vs-non-ieee-projects-2026',
     title: 'IEEE vs Non-IEEE Projects: Which One Should You Pick?',
     description: 'A clear-headed comparison of IEEE and non-IEEE final year engineering projects — what the difference actually means, which universities require which, and how to choose based on your goals.',
     datePublished: '2026-03-05',
@@ -612,6 +624,7 @@ At WEBUILDPRO India in Bangalore, we build both IEEE and non-IEEE projects acros
   {
     slug: 'realistic-timeline-hardware-project',
     title: 'A Realistic Timeline for Building a Working Hardware Project',
+    seoTitle: 'Hardware Project Timeline: A Realistic Guide',
     description: 'The honest breakdown of how long a hardware engineering project actually takes — from requirements to demo day — and why most students underestimate it by half.',
     datePublished: '2026-04-12',
     dateModified: '2026-07-01',
@@ -714,6 +727,7 @@ This is exactly what a good project centre in Bangalore provides. At WEBUILDPRO 
   {
     slug: 'startups-bangalore-hardware-prototype',
     title: 'How Startups in Bangalore Can Build a Hardware Prototype Without an In-House Team',
+    seoTitle: 'Hardware Prototype Development for Bangalore Startups',
     description: 'A practical guide for startup founders in Bangalore who need a working hardware prototype but don\'t have an in-house engineering team — what to outsource, what to keep, and how to avoid the common traps.',
     datePublished: '2026-05-08',
     dateModified: '2026-07-01',
@@ -817,6 +831,7 @@ A partner who can answer all of these clearly is worth engaging. One who can't i
   {
     slug: 'drone-development-india-2026',
     title: 'Drone Development in India: Rules, Costs and What\'s Actually Possible in 2026',
+    seoTitle: 'Drone Development in India (2026): Rules & Costs',
     description: 'A practical guide to custom drone development in India in 2026 — DGCA regulations, realistic costs, what types of drones are actually buildable, and how to commission a custom drone in Bangalore.',
     datePublished: '2026-06-15',
     dateModified: '2026-07-01',
@@ -916,6 +931,7 @@ WEBUILDPRO India builds custom drones in Bangalore for survey, inspection, agric
   {
     slug: 'best-project-centre-bangalore-guide',
     title: 'Best Project Centre in Bangalore: How to Actually Choose One (2026 Guide)',
+    seoTitle: 'Best Project Centre in Bangalore: 2026 Guide',
     description: 'What separates a real engineering project centre in Bangalore from a reseller? Questions to ask before paying, red flags, online vs offline options. 2026 guide.',
     datePublished: '2026-07-10',
     dateModified: '2026-07-10',
@@ -1008,6 +1024,7 @@ We offer online, offline and hybrid delivery. Every project is tested before it 
   {
     slug: 'final-year-projects-bangalore-complete-guide',
     title: 'Final Year Engineering Projects in Bangalore: Complete Guide for 2026',
+    seoTitle: 'Final Year Projects in Bangalore: 2026 Guide',
     description: 'Timelines, cost ranges, IEEE vs non-IEEE, documentation you should get, VTU/Anna University notes. The complete guide to final year projects in Bangalore.',
     datePublished: '2026-07-11',
     dateModified: '2026-07-11',
@@ -1096,6 +1113,7 @@ Read the full guide: [Best Project Centre in Bangalore: How to Actually Choose O
   {
     slug: 'best-cse-aiml-final-year-projects-bangalore',
     title: 'Best CSE / AI-ML Final Year Projects in Bangalore (with Ideas)',
+    seoTitle: 'Best CSE & AI-ML Projects in Bangalore',
     description: 'Top computer science and AI/ML final year project ideas in Bangalore — 15+ titles with tech stacks, how to pick one, and where to build it.',
     datePublished: '2026-07-12',
     dateModified: '2026-07-12',
@@ -1176,6 +1194,7 @@ WEBUILDPRO builds CSE and AI/ML final year projects in our Peenya lab in Bangalo
   {
     slug: 'top-electronics-ece-projects-bangalore',
     title: 'Top Electronics & ECE Projects in Bangalore for Final Year',
+    seoTitle: 'Top ECE Final Year Projects in Bangalore',
     description: 'Best electronics and ECE final year project ideas in Bangalore — IoT, embedded, VLSI, communication. What hardware is involved and where to build them.',
     datePublished: '2026-07-13',
     dateModified: '2026-07-13',
@@ -1253,6 +1272,7 @@ WEBUILDPRO builds ECE final year projects in our Peenya lab in Bangalore. We des
   {
     slug: 'mechanical-engineering-projects-bangalore',
     title: 'Mechanical Engineering Projects in Bangalore: Ideas + Where to Build Them',
+    seoTitle: 'Mechanical Engineering Projects in Bangalore',
     description: 'Top mechanical engineering final year project ideas in Bangalore — fabrication, automation, design. Lead times, what equipment is needed, and where to build them.',
     datePublished: '2026-07-14',
     dateModified: '2026-07-14',
@@ -1334,6 +1354,7 @@ WEBUILDPRO builds mechanical final year projects in our Peenya lab in Bangalore.
   {
     slug: 'eee-electrical-projects-bangalore',
     title: 'EEE & Electrical Projects in Bangalore: 2026 Project Ideas',
+    seoTitle: 'EEE Projects in Bangalore: 2026 Ideas',
     description: 'Best EEE and electrical engineering final year project ideas in Bangalore — power electronics, PLC, EV, solar. What hardware is involved and where to build them.',
     datePublished: '2026-07-15',
     dateModified: '2026-07-15',
@@ -1404,6 +1425,7 @@ WEBUILDPRO builds EEE final year projects in our Peenya lab in Bangalore. We wor
   {
     slug: 'civil-engineering-projects-bangalore',
     title: 'Civil Engineering Projects in Bangalore: Modern Ideas for Final Year',
+    seoTitle: 'Civil Engineering Projects in Bangalore',
     description: 'Best civil engineering final year project ideas in Bangalore — smart infrastructure, IoT SHM, materials, GIS. What equipment is needed and where to build them.',
     datePublished: '2026-07-16',
     dateModified: '2026-07-16',
@@ -1474,6 +1496,7 @@ WEBUILDPRO builds civil engineering final year projects in our Peenya lab in Ban
   {
     slug: 'best-internship-centre-bangalore',
     title: 'Best Internship Centre in Bangalore for Engineering Students (Online & Offline)',
+    seoTitle: 'Best Engineering Internship Centre in Bangalore',
     description: 'What a real engineering internship should include, online vs in-person, certificates that actually mean something. Best internship centre in Bangalore guide.',
     datePublished: '2026-07-17',
     dateModified: '2026-07-17',
@@ -1548,6 +1571,7 @@ We offer online, offline and hybrid options. [Apply for the next batch](/interns
   {
     slug: 'online-vs-offline-engineering-projects',
     title: 'Online vs Offline Engineering Projects: Which Is Right for You?',
+    seoTitle: 'Online vs Offline Engineering Projects',
     description: 'Honest comparison of online and offline engineering project delivery in Bangalore. Who each suits, what to expect, and how to choose.',
     datePublished: '2026-07-18',
     dateModified: '2026-07-18',
@@ -1630,7 +1654,9 @@ WEBUILDPRO offers all three options. [Get a free quote](/contact) or [browse pro
   },
   {
     slug: 'how-much-do-final-year-projects-cost-bangalore',
+    canonicalSlug: 'final-year-project-cost-bangalore-2026',
     title: 'How Much Do Final Year Projects Cost in Bangalore? (2026 Price Guide)',
+    seoTitle: 'Final Year Project Price Guide Bangalore 2026',
     description: 'Transparent breakdown of final year project costs in Bangalore in 2026 — cost drivers, price ranges by branch, and how to avoid overpaying.',
     datePublished: '2026-07-19',
     dateModified: '2026-07-19',

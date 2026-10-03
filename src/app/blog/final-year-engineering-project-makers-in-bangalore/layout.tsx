@@ -4,7 +4,7 @@ import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-engineering-project-makers-in-bangalore';
-const PAGE_TITLE = 'Best Final Year Project Makers in Bangalore | WEBUILDPRO';
+const PAGE_TITLE = 'Best Final Year Project Makers in Bangalore';
 const PAGE_DESCRIPTION =
   "Bangalore's trusted final year & engineering project makers — CSE, ECE, EEE, Mechanical, Civil. 300+ built, tested & delivered. Real makers, not resellers. WhatsApp us.";
 const PAGE_DATE = '2026-08-07';
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     languages: { 'en-IN': `${BASE_URL}/blog/${SLUG}` },
   },
   openGraph: {
-    title: 'Final Year Engineering Project Makers in Bangalore | WEBUILDPRO',
+    title: 'Final Year Engineering Project Makers in Bangalore',
     description: PAGE_DESCRIPTION,
     type: 'article',
     publishedTime: PAGE_DATE,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     authors: ['Chyavan'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'Final Year Engineering Project Makers in Bangalore — WEBUILDPRO',

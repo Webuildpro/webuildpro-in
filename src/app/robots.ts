@@ -2,129 +2,40 @@ export const dynamic = 'force-static';
 
 import type { MetadataRoute } from 'next';
 
+// Search and AI answer-engine crawlers are explicitly welcome. A bot that matches a named group
+// ignores the '*' group, so every group carries the same disallow list.
+const AI_AND_SEARCH_BOTS = [
+  'Googlebot',
+  'Bingbot',
+  'GPTBot',
+  'OAI-SearchBot',
+  'ChatGPT-User',
+  'ClaudeBot',
+  'Claude-User',
+  'Claude-SearchBot',
+  'PerplexityBot',
+  'Perplexity-User',
+  'Google-Extended',
+  'Applebot',
+  'Applebot-Extended',
+  'Amazonbot',
+  'DuckDuckBot',
+  'YandexBot',
+  'CCBot',
+];
+
+// Only private or parameterised URLs are blocked. /_next/ stays crawlable so bots can render CSS/JS.
+const disallow = ['/api/', '/*?*'];
+
 export default function robots(): MetadataRoute.Robots {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
-  const publicRoutes = [
-    '/',
-    '/projects',
-    '/projects/cse',
-    '/projects/mechanical',
-    '/projects/ece',
-    '/projects/eee',
-    '/projects/civil',
-    '/internships',
-    '/industrial',
-    '/about',
-    '/contact',
-    '/blog',
-    '/privacy-policy',
-    '/terms',
-    '/project-centre-bangalore',
-    '/final-year-projects-bangalore',
-    '/internship-bangalore',
-    '/faq',
-  ];
-
   return {
     rules: [
-      {
-        userAgent: '*',
-        allow: publicRoutes,
-        disallow: [
-          '/api/',
-          '/_next/',
-          '/admin/',
-          '/dashboard/',
-          '/workspace/',
-          '/settings/',
-          '/billing/',
-          '/search',
-          '/*?*',
-          '/*?q=',
-          '/*?s=',
-          '/*?search=',
-          '/*?query=',
-          '/*?utm_',
-          '/*?ref=',
-          '/*?fbclid=',
-          '/*?gclid=',
-          '/sitemap?q=',
-          '/contact?project=',
-        ],
-        crawlDelay: 1,
-      },
-      {
-        userAgent: 'Googlebot',
-        allow: '/',
-        crawlDelay: 0.5,
-      },
-      {
-        userAgent: 'Bingbot',
-        allow: '/',
-        crawlDelay: 1,
-      },
-      // OpenAI crawlers
-      {
-        userAgent: 'GPTBot',
-        allow: publicRoutes,
-      },
-      {
-        userAgent: 'OAI-SearchBot',
-        allow: publicRoutes,
-      },
-      {
-        userAgent: 'ChatGPT-User',
-        allow: publicRoutes,
-      },
-      // Anthropic crawlers
-      {
-        userAgent: 'ClaudeBot',
-        allow: publicRoutes,
-      },
-      {
-        userAgent: 'Claude-User',
-        allow: publicRoutes,
-      },
-      {
-        userAgent: 'anthropic-ai',
-        allow: publicRoutes,
-      },
-      // Google Gemini / AI Overviews
-      {
-        userAgent: 'Google-Extended',
-        allow: publicRoutes,
-      },
-      // Perplexity
-      {
-        userAgent: 'PerplexityBot',
-        allow: publicRoutes,
-      },
-      {
-        userAgent: 'Perplexity-User',
-        allow: publicRoutes,
-      },
-      // Microsoft Copilot
-      {
-        userAgent: 'Bingbot',
-        allow: publicRoutes,
-      },
-      // Amazon
-      {
-        userAgent: 'Amazonbot',
-        allow: publicRoutes,
-      },
-      // Apple
-      {
-        userAgent: 'Applebot-Extended',
-        allow: publicRoutes,
-      },
-      // Common Crawl (training data)
-      {
-        userAgent: 'CCBot',
-        allow: publicRoutes,
-      },
+      { userAgent: '*', allow: '/', disallow },
+      { userAgent: AI_AND_SEARCH_BOTS, allow: '/', disallow },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

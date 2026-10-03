@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import JsonLdScript from '@/components/JsonLdScript';
+import { faqSchema, serviceSchema } from '@/lib/jsonld';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import dynamic from 'next/dynamic';
 import CircuitDivider from '@/components/CircuitDivider';
@@ -15,20 +17,19 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Mini Projects in Bangalore | 1st–6th Sem | WEBUILDPRO',
+  title: 'Mini Projects in Bangalore for Engineering Students',
   description:
-    'Mini projects for engineering students in Bangalore — starting ₹3,500. Ready, tested & affordable for 1st–6th sem CSE, ECE, EEE, Mechanical & Civil. Online & offline.',
+    'Mini projects for 1st–6th semester engineering students in Bangalore, from ₹3,500. Working models with code, report & demo support. Online & offline.',
   alternates: {
     canonical: `${BASE_URL}/mini-projects`,
-    languages: { 'en-IN': `${BASE_URL}/mini-projects` },
   },
   openGraph: {
-    title: 'Mini Projects in Bangalore | 1st–6th Sem | WEBUILDPRO',
+    title: 'Mini Projects in Bangalore | 1st–6th Sem',
     description:
       'Mini projects for engineering students in Bangalore — starting ₹3,500. Ready, tested & affordable for 1st–6th sem. Online & offline delivery.',
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'WEBUILDPRO India — Mini Projects for Engineering Students in Bangalore',
@@ -59,6 +60,12 @@ const miniProjectFaqs = [
 export default function MiniProjectsPage() {
   return (
     <>
+      <JsonLdScript
+        nodes={[
+          serviceSchema({ name: 'Mini Projects for Engineering Students', description: 'Mini projects for engineering students in Bangalore — starting ₹3,500. Ready, tested & affordable for 1st–6th sem CSE, ECE, EEE, Mechanical & Civil. Online & offline.', path: '/mini-projects' }),
+          faqSchema(miniProjectFaqs),
+        ]}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', url: '/' },

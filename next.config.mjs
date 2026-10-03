@@ -39,59 +39,6 @@ const nextConfig = {
     deviceSizes: [390, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
-
-  async headers() {
-    return [
-      {
-        source: '/rocket-web.js',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-      // Immutable cache for all Next.js static assets (JS chunks, CSS, fonts)
-      // These filenames are content-hashed so they can be cached forever
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-      // Long-lived cache for Next.js optimized images
-      {
-        source: '/_next/image',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=86400, stale-while-revalidate=604800',
-          },
-        ],
-      },
-      // Cache public static assets (favicon, images in /public)
-      {
-        source: '/assets/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=2592000, stale-while-revalidate=86400',
-          },
-        ],
-      },
-      {
-        source: '/favicon.ico',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=86400',
-          },
-        ],
-      },
-    ];
-  }
+  // Response headers live in public/_headers — Next.js headers() is ignored by static export.
 };
 export default nextConfig;

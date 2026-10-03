@@ -5,6 +5,8 @@ import Header from '@/components/Header';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import Icon from '@/components/ui/AppIcon';
 import { homeFaqs } from '@/lib/data/faqs';
+import JsonLdScript from '@/components/JsonLdScript';
+import { faqSchema, ORG_ID, SITE_URL, WEBSITE_ID } from '@/lib/jsonld';
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
@@ -29,20 +31,20 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Final Year Engineering Projects Bangalore | WeBuildPro',
+  title: { absolute: 'Engineering Projects & Internships in Bangalore | WEBUILDPRO' },
   description:
-  'Engineering projects in Bangalore for CSE, Mechanical, ECE, EEE & Civil — 300+ delivered, 100% on time. IEEE & non-IEEE, tested hardware, online & offline, pan-India.',
+  'Engineering projects, internships & prototypes in Bangalore for CSE, ECE, EEE, Mechanical & Civil. 300+ built and tested in our Peenya lab. Online & offline.',
   alternates: {
-    canonical: BASE_URL,
-    languages: { 'en-IN': BASE_URL }
+    canonical: BASE_URL
   },
   openGraph: {
-    title: 'Final Year Engineering Projects Bangalore | WeBuildPro',
+    url: BASE_URL,
+    title: 'Engineering Projects & Internships in Bangalore | WEBUILDPRO',
     description:
     'Final year engineering projects, internships and industrial prototypes built and tested in our Bangalore lab. 300+ delivered, 100% on time. All branches covered.',
     images: [
     {
-      url: '/assets/images/wbinlogo-1786121366410.jpeg',
+      url: '/assets/images/og-webuildpro.jpg',
       width: 1200,
       height: 630,
       alt: 'WEBUILDPRO India — Engineering Projects & Final Year Project Centre in Bangalore'
@@ -52,69 +54,20 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const faqPageSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: homeFaqs.map((faq) => ({
-      '@type': 'Question',
-      name: faq.q,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.a
-      }
-    }))
-  };
-
-  const orgSchema = {
-    '@context': 'https://schema.org',
-    '@type': ['Organization', 'LocalBusiness'],
-    name: 'WeBuildPro',
-    alternateName: 'WeBuildPro Engineering Projects',
-    url: 'https://webuildpro.in',
-    logo: "https://webuildpro.in/images/1cf73093f-1784552159557.png",
-    image: "https://webuildpro.in/images/1cf73093f-1784552159557.png",
-    description: 'Final year engineering project centre in Bangalore offering hardware-tested IEEE projects for BE, B.Tech, M.Tech students.',
-    telephone: '+91-95382-08573',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Peenya 2nd Stage',
-      addressLocality: 'Bengaluru',
-      addressRegion: 'Karnataka',
-      postalCode: '560058',
-      addressCountry: 'IN'
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 13.0291,
-      longitude: 77.5184
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '300',
-      bestRating: '5'
-    },
-    sameAs: [
-    'https://www.instagram.com/webuildpro/'],
-
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '09:00',
-      closes: '19:00'
-    }
+  const webPageSchema = {
+    '@type': 'WebPage',
+    '@id': `${SITE_URL}/#webpage`,
+    url: SITE_URL,
+    name: 'Engineering Projects & Internships in Bangalore | WEBUILDPRO',
+    isPartOf: { '@id': WEBSITE_ID },
+    about: { '@id': ORG_ID },
+    inLanguage: 'en-IN',
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '#faq'] }
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }} />
-      
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
-      
+      <JsonLdScript nodes={[webPageSchema, faqSchema(homeFaqs)]} />
       <Header />
       <main suppressHydrationWarning id="main-content">
         <HeroSection />

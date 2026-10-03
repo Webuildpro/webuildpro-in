@@ -15,17 +15,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Engineering Blog — Guides & Insights | WEBUILDPRO India Bangalore',
+  title: 'Engineering Project Ideas & Guides Blog',
   description:
-    'Engineering blog from WEBUILDPRO India Bangalore — project selection, costs, timelines, hardware prototyping & drone development. Written by engineers who build, not marketers.',
+    "Final year project ideas, IEEE topics, cost guides and build tips for CSE, ECE, EEE, Mechanical & Civil students — from WEBUILDPRO's Bangalore lab.",
   alternates: {
     canonical: `${BASE_URL}/blog`,
     languages: { 'en-IN': `${BASE_URL}/blog` },
   },
   openGraph: {
-    title: 'Engineering Blog | WEBUILDPRO India Bangalore',
+    title: 'Engineering Blog',
     description: 'Practical engineering guides from WEBUILDPRO India in Bangalore.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'WEBUILDPRO India engineering blog' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO India engineering blog' }],
   },
 };
 

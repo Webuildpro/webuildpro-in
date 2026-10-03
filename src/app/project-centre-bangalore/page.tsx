@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import JsonLdScript from '@/components/JsonLdScript';
+import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/jsonld';
 import dynamic from 'next/dynamic';
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import Icon from '@/components/ui/AppIcon';
@@ -12,18 +14,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Best Engineering Project Centre in Bangalore | WEBUILDPRO',
+  title: 'Best Engineering Project Centre in Bangalore',
   description:
-    'Best project centre in Bangalore — real Peenya lab, tested hardware, source code included. CSE, ECE, EEE, Mechanical & Civil. Online & offline delivery, shipped pan-India.',
+    'Engineering project centre in Peenya, Bangalore with a real lab. Tested hardware, source code & viva support for CSE, ECE, EEE, Mechanical & Civil students.',
   alternates: {
     canonical: `${BASE_URL}/project-centre-bangalore`,
-    languages: { 'en-IN': `${BASE_URL}/project-centre-bangalore` },
   },
   openGraph: {
-    title: 'Best Engineering Project Centre in Bangalore | WEBUILDPRO',
+    title: 'Best Engineering Project Centre in Bangalore',
     description:
       'Real lab, tested hardware, source code included. The best project centre in Bangalore for CSE, ECE, EEE, Mechanical and Civil final year projects.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'Best Engineering Project Centre in Bangalore — WEBUILDPRO' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'Best Engineering Project Centre in Bangalore — WEBUILDPRO' }],
   },
 };
 
@@ -57,6 +58,13 @@ const pageFaqs = [
 export default function ProjectCentreBangalorePage() {
   return (
     <>
+      <JsonLdScript
+        nodes={[
+          breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Engineering Project Centre in Bangalore', url: '/project-centre-bangalore' }]),
+          serviceSchema({ name: 'Engineering Project Centre in Bangalore', description: 'Best project centre in Bangalore — real Peenya lab, tested hardware, source code included. CSE, ECE, EEE, Mechanical & Civil. Online & offline delivery, shipped pan-India.', path: '/project-centre-bangalore' }),
+          faqSchema(pageFaqs),
+        ]}
+      />
       <Header />
       <main id="main-content" className="min-h-screen bg-background pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

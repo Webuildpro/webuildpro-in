@@ -166,7 +166,7 @@ export default function CivilProjectListPage() {
           <div className="print-heading flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b-2 border-gray-800 pb-6 mb-8">
             <div className="flex items-center gap-4">
               <Image
-                src="/assets/images/wbinlogo-1786121366410.jpeg"
+                src="/assets/images/og-webuildpro.jpg"
                 alt="WEBUILDPRO India"
                 width={56}
                 height={56}

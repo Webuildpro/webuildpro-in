@@ -124,18 +124,18 @@ const faqItems = [
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'FAQ — Engineering Projects, Internships & Prototypes | WEBUILDPRO India',
+  title: 'FAQ: Engineering Projects & Internships Bangalore',
   description:
-    'FAQ for WEBUILDPRO India Bangalore — final year projects, internships & industrial prototypes. CSE, ECE, EEE, Mechanical, Civil. 300+ delivered, online & offline, pan-India.',
+    "Answers on final year projects, IEEE projects, internships, pricing, timelines and online delivery from WEBUILDPRO's engineering lab in Peenya, Bangalore.",
   alternates: {
     canonical: `${BASE_URL}/faq`,
     languages: { 'en-IN': `${BASE_URL}/faq` },
   },
   openGraph: {
-    title: 'FAQ — Engineering Projects & Internships | WEBUILDPRO India',
+    title: 'FAQ — Engineering Projects & Internships',
     description:
       'Answers to common questions about WEBUILDPRO India engineering projects, internships, and industrial prototypes in Bangalore.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'WEBUILDPRO India FAQ' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO India FAQ' }],
   },
 };
 

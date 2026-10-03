@@ -8,6 +8,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import React from 'react';
+import fs from 'node:fs';
+import path from 'node:path';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
@@ -15,8 +17,12 @@ import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
+// Posts with their own folder under app/blog are hand-built pages. Generating them here too makes
+// two routes write the same static file, and whichever is exported last silently wins.
+const hasDedicatedPage = (slug: string) => fs.existsSync(path.join(process.cwd(), 'src/app/blog', slug));
+
 export async function generateStaticParams() {
-  return blogArticles.map((a) => ({ slug: a.slug }));
+  return blogArticles.filter((a) => !hasDedicatedPage(a.slug)).map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -25,20 +31,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!article) return {};
   return {
     metadataBase: new URL(BASE_URL),
-    title: article.title,
+    title: article.seoTitle || article.title,
     description: article.description,
     alternates: {
-      canonical: `${BASE_URL}/blog/${slug}`,
-      languages: { 'en-IN': `${BASE_URL}/blog/${slug}` },
+      canonical: `${BASE_URL}/blog/${article.canonicalSlug || slug}`,
     },
     openGraph: {
+      url: `${BASE_URL}/blog/${slug}`,
       title: article.title,
       description: article.description,
       type: 'article',
       publishedTime: article.datePublished,
       modifiedTime: article.dateModified,
       authors: ['WEBUILDPRO India'],
-      images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: article.title }],
+      images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: article.title }],
     },
   };
 }

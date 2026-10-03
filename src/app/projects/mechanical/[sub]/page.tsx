@@ -5,7 +5,8 @@ import nextDynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import MechanicalSubPageContent from '@/app/projects/mechanical/[sub]/components/MechanicalSubPageContent';
-import Footer from '@/components/Footer';
+import JsonLdScript from '@/components/JsonLdScript';
+import { breadcrumbSchema, faqSchema, itemListSchema, serviceSchema } from '@/lib/jsonld';
 
 
 const MechanicalSubPageContent = nextDynamic(() => import('./components/MechanicalSubPageContent'), { ssr: true });
@@ -37,8 +38,9 @@ export async function generateMetadata({
       title: entry.metaTitle,
       description: entry.metaDescription,
       url: `https://webuildpro.in/projects/mechanical/${entry.slug}`,
-      siteName: 'WEBUILDPRO',
+      siteName: 'WEBUILDPRO India',
       type: 'website',
+      images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: entry.keyword }],
     },
   };
 }
@@ -54,8 +56,22 @@ export default async function MechanicalSubPage({
 
   const siblings = mechanicalSubCategories.filter((s) => s.slug !== entry.slug);
 
+  const path = `/projects/mechanical/${entry.slug}`;
+  const schema = [
+    breadcrumbSchema([
+      { name: 'Home', url: '/' },
+      { name: 'Projects', url: '/projects' },
+      { name: 'Mechanical Projects', url: '/projects/mechanical' },
+      { name: entry.keyword, url: path },
+    ]),
+    serviceSchema({ name: entry.keyword, description: entry.metaDescription, path, serviceType: 'Mechanical final year project development' }),
+    itemListSchema(entry.keyword, entry.projects.map((p) => ({ name: p.title, description: p.abstract }))),
+    faqSchema(entry.faqs),
+  ];
+
   return (
     <>
+      <JsonLdScript nodes={schema} />
       <Header />
       <MechanicalSubPageContent entry={entry} siblings={siblings} />
       <Footer />

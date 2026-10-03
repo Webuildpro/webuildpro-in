@@ -445,11 +445,11 @@ export default function AuthoritySection() {
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
               {[
               {
-                src: 'https://webuildpro.in/images/1ae1b3938-1767521812037.png',
+                src: '/images/1ae1b3938-1767521812037.webp',
                 alt: 'PCB assembly close-up at the WEBUILDPRO Bangalore lab, blue LED indicators on dark background'
               },
               {
-                src: "https://webuildpro.in/images/1e8db4b4b-1784552159372.png",
+                src: "/images/1e8db4b4b-1784552159372.webp",
                 alt: 'Quadcopter drone frame assembly on workbench at WEBUILDPRO engineering lab in Bangalore'
               },
               {
@@ -461,11 +461,11 @@ export default function AuthoritySection() {
                 alt: 'Robotic arm mechanical assembly in workshop, steel components, WEBUILDPRO Bangalore'
               },
               {
-                src: "https://webuildpro.in/images/1cf73093f-1784552159557.png",
+                src: "/images/1cf73093f-1784552159557.webp",
                 alt: 'Engineer working at electronics lab bench with oscilloscope at WEBUILDPRO Bangalore facility'
               },
               {
-                src: 'https://webuildpro.in/images/19ad06f89-1777065811253.png',
+                src: '/images/19ad06f89-1777065811253.webp',
                 alt: '3D printer in operation with orange filament at WEBUILDPRO industrial prototyping lab in Bangalore'
               }].
               map((img, i) =>

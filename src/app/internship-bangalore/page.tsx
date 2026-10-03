@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import JsonLdScript from '@/components/JsonLdScript';
+import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/jsonld';
 import dynamic from 'next/dynamic';
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
@@ -12,18 +14,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Engineering Internship Centre in Bangalore | WEBUILDPRO',
+  title: 'Engineering Internship Centre in Bangalore',
   description:
-    'Best internship centre in Bangalore for engineering students — Embedded, Drone, Robotics, AI/ML & PCB Design. Real hardware, verifiable certificate. Online & offline, pan-India.',
+    'Hands-on engineering internships in Bangalore. Build real hardware and software projects in our Peenya lab and earn a verifiable certificate. Online & offline.',
   alternates: {
     canonical: `${BASE_URL}/internship-bangalore`,
-    languages: { 'en-IN': `${BASE_URL}/internship-bangalore` },
   },
   openGraph: {
-    title: 'Engineering Internship Centre in Bangalore | WEBUILDPRO',
+    title: 'Engineering Internship Centre in Bangalore',
     description:
       'Best internship centre in Bangalore — real hardware, real deadlines, verifiable certificate. Embedded, Drone, Robotics, AI/ML, PCB Design. Online & offline.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'Engineering Internship Centre in Bangalore — WEBUILDPRO' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'Engineering Internship Centre in Bangalore — WEBUILDPRO' }],
   },
 };
 
@@ -94,6 +95,13 @@ const tracks = [
 export default function InternshipBangalorePage() {
   return (
     <>
+      <JsonLdScript
+        nodes={[
+          breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Engineering Internship in Bangalore', url: '/internship-bangalore' }]),
+          serviceSchema({ name: 'Engineering Internship Programme in Bangalore', description: 'Best internship centre in Bangalore for engineering students — Embedded, Drone, Robotics, AI/ML & PCB Design. Real hardware, verifiable certificate. Online & offline, pan-India.', path: '/internship-bangalore', serviceType: 'Engineering internship' }),
+          faqSchema(pageFaqs),
+        ]}
+      />
       <Header />
       <main id="main-content" className="min-h-screen bg-background pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

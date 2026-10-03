@@ -12,7 +12,7 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'trending-final-year-project-ideas-2026';
-const PAGE_TITLE = 'Trending Final Year Project Ideas 2026 (AI, IoT, Drones) | WEBUILDPRO';
+const PAGE_TITLE = 'Trending Final Year Project Ideas 2026 (AI, IoT, Drones)';
 const PAGE_DESCRIPTION =
   '50+ trending final year project ideas for 2026 across AI/ML, IoT, robotics, drones, embedded & blockchain. Built and tested in Bangalore — online & offline.';
 const PAGE_DATE = '2026-08-03';
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     authors: ['WEBUILDPRO India'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'Trending Final Year Project Ideas 2026 — WEBUILDPRO Bangalore',

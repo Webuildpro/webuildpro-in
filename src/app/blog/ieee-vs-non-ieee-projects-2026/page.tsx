@@ -12,7 +12,7 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'ieee-vs-non-ieee-projects-2026';
-const PAGE_TITLE = 'IEEE vs Non-IEEE Projects: Which to Choose? (2026) | WEBUILDPRO';
+const PAGE_TITLE = 'IEEE vs Non-IEEE Projects: Which to Choose? (2026)';
 const PAGE_DESCRIPTION =
   'IEEE vs non-IEEE final year projects explained — the real difference, pros and cons, and which one to choose for your college and career in 2026.';
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     authors: ['WEBUILDPRO India'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'IEEE vs Non-IEEE Projects 2026 — WEBUILDPRO Guide',

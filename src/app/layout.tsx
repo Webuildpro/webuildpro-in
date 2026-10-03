@@ -3,6 +3,8 @@ import type { Metadata, Viewport } from 'next';
 import { DM_Sans, JetBrains_Mono } from 'next/font/google';
 import '../styles/tailwind.css';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import JsonLdScript from '@/components/JsonLdScript';
+import { organizationSchema, websiteSchema } from '@/lib/jsonld';
 
 // Reduced to 2 critical weights (400+700) — fewer font files = faster FCP; 600 is rarely used
 const dmSans = DM_Sans({
@@ -35,50 +37,30 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Final Year Engineering Projects Bangalore | WeBuildPro',
-    template: '%s | WeBuildPro',
+    default: 'Engineering Projects & Internships in Bangalore | WEBUILDPRO',
+    template: '%s | WEBUILDPRO',
   },
   description:
-    'Final year engineering projects, internships and industrial prototypes in Bangalore. 300+ delivered, 100% on time. CSE, Mechanical, ECE, EEE, Civil projects. Engineering project centre for all branches.',
-  keywords: [
-    'engineering projects in Bangalore',
-    'engineering project center Bangalore',
-    'final year project centre Bangalore',
-    'final year projects Bangalore',
-    'engineering project consultancy Bangalore',
-    'industrial prototype company Bangalore',
-    'CSE final year projects Bangalore',
-    'mechanical engineering projects Bangalore',
-    'ECE projects Bangalore',
-    'EEE projects Bangalore',
-    'Civil engineering projects Bangalore',
-    'engineering internship Bangalore',
-    'ETEC projects Bangalore',
-    'final year project center',
-    'engineering project center in bangalore',
-  ],
+    'Final year engineering projects in Bangalore for CSE, ECE, EEE, Mechanical & Civil. 300+ built and tested in our Peenya lab. IEEE & non-IEEE, online & offline.',
   authors: [{ name: 'WEBUILDPRO India', url: BASE_URL }],
   creator: 'WEBUILDPRO India',
   publisher: 'WEBUILDPRO India',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    apple: [{ url: '/assets/images/app_logo.png' }],
   },
-  alternates: {
-    canonical: BASE_URL,
-    languages: {
-      'en-IN': BASE_URL,
-    },
-  },
+  formatDetection: { telephone: true, address: false, email: false },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     siteName: 'WEBUILDPRO India',
+    url: '/',
     title: 'Engineering Projects in Bangalore | Final Year Project Centre | WEBUILDPRO',
     description:
       'Final year engineering projects, internships and industrial prototypes built and tested in our Bangalore lab. 300+ delivered, 100% on time. All branches covered.',
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'WEBUILDPRO India — Engineering Projects & Final Year Project Centre in Bangalore',
@@ -90,9 +72,7 @@ export const metadata: Metadata = {
     title: 'Engineering Projects in Bangalore | Final Year Project Centre | WEBUILDPRO',
     description:
       'Final year engineering projects, internships and industrial prototypes built and tested in our Bangalore lab. 300+ delivered, 100% on time.',
-    images: ['/assets/images/wbinlogo-1786121366410.jpeg'],
-    creator: '@webuildpro',
-    site: '@webuildpro',
+    images: ['/assets/images/og-webuildpro.jpg'],
   },
   verification: {
     google: 'zKE19RjtlCugXFO3YnWWyyqnYlEd3B8zWUsxxp2FIoM',
@@ -100,67 +80,23 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    'max-image-preview': 'large',
-    'max-snippet': -1,
-    'max-video-preview': -1,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const localBusinessSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'WEBUILDPRO India',
-    url: 'https://webuildpro.in',
-    telephone: '+919538208573',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Peenya 2nd Stage',
-      addressLocality: 'Bengaluru',
-      addressRegion: 'Karnataka',
-      postalCode: '560058',
-      addressCountry: 'IN',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 13.0134785,
-      longitude: 77.4961966,
-    },
-    openingHours: 'Mo-Sa 10:00-19:00',
-    sameAs: [
-      'https://www.instagram.com/webuildpro.in',
-      'https://g.co/kgs/webuildpro',
-    ],
-  };
-
   return (
     <html lang="en-IN" className={`${dmSans.variable} ${jetbrainsMono.variable}`}>
       <head>
         {/* AI Crawlers Welcome */}
         {/* This site is optimized for AI answer engines: ChatGPT, Claude, Gemini, Perplexity, Grok, and Google AI Overviews. */}
         {/* All public content is crawlable and structured for AI ingestion. See /llms.txt and /faq for AI-friendly content. */}
-
-        {/* ── CRITICAL PATH: preload + preconnect FIRST so the preload scanner
-            discovers the LCP image before any script tag can delay it ── */}
-
-        {/* Preconnect to image host — must come before any <script> tags
-            so the TCP+TLS handshake starts at the very beginning of the critical path.
-            crossOrigin="anonymous" matches the CORS mode used by next/image AVIF fetches. */}
-        <link rel="preconnect" href="https://webuildpro.in" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://webuildpro.in" />
-
-        {/* Preload hero LCP image — placed FIRST in <head> so the browser's preload
-            scanner discovers it before any script or style can delay it.
-            Images are unoptimized (static export), so this matches the hero <Image> src exactly. */}
-        <link
-          rel="preload"
-          as="image"
-          href="https://webuildpro.in/images/1cf73093f-1784552159557.png"
-          fetchPriority="high"
-        />
-
-        {/* Preconnect to Google Fonts CDN (fonts are loaded by next/font but static assets come from fonts.gstatic.com) */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* Critical CSS inlined — eliminates render-blocking delay for LCP on mobile */}
         <style dangerouslySetInnerHTML={{ __html: `
@@ -171,11 +107,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           h1,h2,h3,h4,h5,h6,p{margin:0}
         ` }} />
 
-        {/* LocalBusiness structured data — site-wide */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
+        {/* Organization + WebSite entity graph — site-wide; pages reference it by @id */}
+        <JsonLdScript nodes={[organizationSchema(), websiteSchema()]} />
 
         {/* Third-party scripts — loaded after all critical resources */}
 </head>

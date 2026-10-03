@@ -1,6 +1,9 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
+import FaqSection from '@/app/components/FaqSection';
+import JsonLdScript from '@/components/JsonLdScript';
+import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/jsonld';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import dynamic from 'next/dynamic';
 import IndustrialContent from './components/IndustrialContent';
@@ -11,18 +14,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Industrial Prototype Development in Bangalore | WEBUILDPRO',
+  title: 'Industrial Prototype Development in Bangalore',
   description:
-    'Industrial prototype development in Bangalore — custom drones, IoT, PLC automation & robotics. NDA-first, full IP transfer, fixed quote in 24 hours. Delivered pan-India.',
+    'Industrial prototype development in Bangalore — custom drones, IoT devices, robotics, PLC automation & AI vision. Built under NDA in our Peenya lab.',
   alternates: {
     canonical: `${BASE_URL}/industrial`,
-    languages: { 'en-IN': `${BASE_URL}/industrial` },
   },
   openGraph: {
-    title: 'Industrial Prototype Development in Bangalore | WEBUILDPRO',
+    title: 'Industrial Prototype Development in Bangalore',
     description:
       'From spec sheet to working unit. Custom prototypes designed, fabricated and tested in Bangalore. NDA-first.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'WEBUILDPRO industrial prototyping lab in Bangalore' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO industrial prototyping lab in Bangalore' }],
   },
 };
 
@@ -44,9 +46,17 @@ const industrialFaqs = [
 export default function IndustrialPage() {
   return (
     <>
+      <JsonLdScript
+        nodes={[
+          breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Industrial Prototyping', url: '/industrial' }]),
+          serviceSchema({ name: 'Industrial Prototype Development in Bangalore', description: 'Industrial prototype development in Bangalore — custom drones, IoT, PLC automation & robotics. NDA-first, full IP transfer, fixed quote in 24 hours. Delivered pan-India.', path: '/industrial' }),
+          faqSchema(industrialFaqs),
+        ]}
+      />
       <Header />
       <main id="main-content">
         <IndustrialContent />
+        <FaqSection faqs={industrialFaqs} />
       </main>
       <Footer />
       <LazyPageExtras />

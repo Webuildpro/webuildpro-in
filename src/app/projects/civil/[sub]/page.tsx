@@ -5,7 +5,8 @@ import nextDynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import CivilSubPageContent from '@/app/projects/civil/[sub]/components/CivilSubPageContent';
-import Footer from '@/components/Footer';
+import JsonLdScript from '@/components/JsonLdScript';
+import { breadcrumbSchema, faqSchema, itemListSchema, serviceSchema } from '@/lib/jsonld';
 
 
 const CivilSubPageContent = nextDynamic(() => import('./components/CivilSubPageContent'), { ssr: true });
@@ -37,8 +38,9 @@ export async function generateMetadata({
       title: entry.metaTitle,
       description: entry.metaDescription,
       url: `https://webuildpro.in/projects/civil/${entry.slug}`,
-      siteName: 'WEBUILDPRO',
+      siteName: 'WEBUILDPRO India',
       type: 'website',
+      images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: entry.keyword }],
     },
   };
 }
@@ -54,8 +56,22 @@ export default async function CivilSubPage({
 
   const siblings = civilSubCategories.filter((s) => s.slug !== entry.slug);
 
+  const path = `/projects/civil/${entry.slug}`;
+  const schema = [
+    breadcrumbSchema([
+      { name: 'Home', url: '/' },
+      { name: 'Projects', url: '/projects' },
+      { name: 'Civil Projects', url: '/projects/civil' },
+      { name: entry.keyword, url: path },
+    ]),
+    serviceSchema({ name: entry.keyword, description: entry.metaDescription, path, serviceType: 'Civil final year project development' }),
+    itemListSchema(entry.keyword, entry.projects.map((p) => ({ name: p.title, description: p.abstract }))),
+    faqSchema(entry.faqs),
+  ];
+
   return (
     <>
+      <JsonLdScript nodes={schema} />
       <Header />
       <CivilSubPageContent entry={entry} siblings={siblings} />
       <Footer />

@@ -12,7 +12,7 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'mini-project-ideas-cse-2026';
-const PAGE_TITLE = 'Mini Project Ideas for CSE Students (2026) | WEBUILDPRO';
+const PAGE_TITLE = 'Mini Project Ideas for CSE Students (2026)';
 const PAGE_DESCRIPTION =
   '30+ simple mini project ideas for CSE/ISE/BCA/MCA students in Bangalore. Web, Python, AI & app projects with source code. Perfect for 1st–6th semester students.';
 const PAGE_DATE = '2026-08-03';
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     authors: ['WEBUILDPRO India'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'Mini Project Ideas for CSE Students 2026 — WEBUILDPRO Bangalore',

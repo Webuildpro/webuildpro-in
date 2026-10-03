@@ -19,12 +19,12 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/x-icon',
       },
       {
-        src: '/assets/images/wbinlogo-1786121366410.jpeg',
+        src: '/assets/images/og-webuildpro.jpg',
         sizes: '192x192',
         type: 'image/jpeg',
       },
       {
-        src: '/assets/images/wbinlogo-1786121366410.jpeg',
+        src: '/assets/images/og-webuildpro.jpg',
         sizes: '512x512',
         type: 'image/jpeg',
       },

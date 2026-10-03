@@ -12,18 +12,18 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Engineering Company in Bangalore | WEBUILDPRO India',
+  title: 'Engineering Company in Bangalore',
   description:
-    'Engineering company in Bangalore — Peenya lab, 4+ years, 300+ projects across CSE, Mechanical, ECE, EEE & Civil. 4.8★ Google rating. Online & offline, delivered pan-India.',
+    'WEBUILDPRO India is an engineering lab in Peenya, Bangalore that designs, builds and tests student projects, internships and industrial prototypes.',
   alternates: {
     canonical: `${BASE_URL}/about`,
     languages: { 'en-IN': `${BASE_URL}/about` },
   },
   openGraph: {
-    title: 'Engineering Company in Bangalore | WEBUILDPRO India',
+    title: 'Engineering Company in Bangalore',
     description:
       'A real engineering lab in Bangalore. Working engineers, not sales staff. 300+ projects, 4.8★ on Google.',
-    images: [{ url: '/assets/images/wbinlogo-1786121366410.jpeg', width: 1200, height: 630, alt: 'WEBUILDPRO India engineering lab in Bangalore' }],
+    images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO India engineering lab in Bangalore' }],
   },
 };
 

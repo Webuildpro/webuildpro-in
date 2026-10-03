@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'agentic-ai-projects-for-final-year-2026';
-const PAGE_TITLE = 'Agentic AI Projects for Final Year (2026) | WEBUILDPRO';
+const PAGE_TITLE = 'Agentic AI Projects for Final Year (2026)';
 const PAGE_DESCRIPTION =
   '20+ agentic AI project ideas for final year students with descriptions & how-to steps. AI agents, LLM & RAG projects built in Bangalore. WhatsApp +91 95382 08573.';
 const PAGE_DATE = '2026-09-11';
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     authors: ['WEBUILDPRO India'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'WEBUILDPRO — Agentic AI Projects for Final Year Students 2026',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: PAGE_TITLE,
     description: PAGE_DESCRIPTION,
-    images: ['/assets/images/wbinlogo-1786121366410.jpeg'],
+    images: ['/assets/images/og-webuildpro.jpg'],
   },
   robots: { index: true, follow: true },
 };

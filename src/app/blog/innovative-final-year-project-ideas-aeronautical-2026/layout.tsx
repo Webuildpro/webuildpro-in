@@ -4,7 +4,7 @@ import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'innovative-final-year-project-ideas-aeronautical-2026';
-const PAGE_TITLE = 'Aeronautical Final Year Project Ideas (2026) | WEBUILDPRO';
+const PAGE_TITLE = 'Aeronautical Final Year Project Ideas (2026)';
 const PAGE_DESCRIPTION =
   '30+ innovative final year project ideas for Aeronautical & Aerospace students in Bangalore — drones/UAV, aerodynamics, propulsion, CFD. Built by WEBUILDPRO. WhatsApp 9538208573.';
 const PAGE_DATE = '2026-08-07';
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     languages: { 'en-IN': `${BASE_URL}/blog/${SLUG}` },
   },
   openGraph: {
-    title: 'Aeronautical Final Year Project Ideas (2026) | WEBUILDPRO Bangalore',
+    title: 'Aeronautical Final Year Project Ideas (2026)',
     description: PAGE_DESCRIPTION,
     type: 'article',
     publishedTime: PAGE_DATE,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     authors: ['Chyavan'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'Innovative Final Year Project Ideas for Aeronautical Students 2026 — WEBUILDPRO Bangalore',

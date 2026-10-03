@@ -27,7 +27,7 @@ export const cseSubCategories: SubCategory[] = [
     slug: "machine-learning-projects-in-bangalore",
     branch: "cse",
     keyword: "Machine Learning Projects in Bangalore",
-    metaTitle: "Machine Learning Projects in Bangalore | WEBUILDPRO",
+    metaTitle: "Machine Learning Projects in Bangalore",
     metaDescription: "Final year machine learning projects in Bangalore for CSE. Real ML models with source code, datasets & documentation. Online & offline delivery.",
     intro: "Looking for machine learning projects in Bangalore for your final year? WEBUILDPRO builds real, working ML projects for CSE and ISE students in Bangalore — trained models, clean code and proper datasets, not toy demos. Machine learning is the single most in-demand skill for placements, so a strong ML project doubles as a portfolio piece for interviews. Every project below comes with full source code, the dataset, a trained model, report material and a walkthrough so you can explain the algorithm, the features and the results in your viva. We deliver online pan-India and offline at our Bangalore lab, and adapt each project to your college's IEEE or non-IEEE requirement.",
     projects: [
@@ -47,7 +47,7 @@ export const cseSubCategories: SubCategory[] = [
     slug: "ai-projects-in-bangalore",
     branch: "cse",
     keyword: "AI Projects in Bangalore",
-    metaTitle: "AI Projects in Bangalore for CSE | WEBUILDPRO",
+    metaTitle: "AI Projects in Bangalore for CSE",
     metaDescription: "Final year AI projects in Bangalore for CSE students. Chatbots, computer vision & intelligent apps with source code. Online & offline delivery.",
     intro: "WEBUILDPRO builds AI projects in Bangalore for CSE final year students — genuinely intelligent applications using modern AI techniques, from computer vision to natural language. Artificial intelligence is what recruiters and evaluators care about most in 2026, and a well-built AI project sets you apart in both vivas and interviews. Every AI project below is a working build delivered with source code, models, report material and a walkthrough so you understand and can defend the approach. We deliver online pan-India and offline at our Bangalore lab.",
     projects: [
@@ -67,7 +67,7 @@ export const cseSubCategories: SubCategory[] = [
     slug: "data-science-projects-in-bangalore",
     branch: "cse",
     keyword: "Data Science Projects in Bangalore",
-    metaTitle: "Data Science Projects in Bangalore | WEBUILDPRO",
+    metaTitle: "Data Science Projects in Bangalore",
     metaDescription: "Final year data science projects in Bangalore for CSE. Data analysis, prediction & visualisation with code and datasets. Online & offline.",
     intro: "WEBUILDPRO builds data science projects in Bangalore for CSE final year students — real analysis on real datasets with prediction and visualisation, not surface-level demos. Data science is a top career path, and a solid project shows you can clean data, build models and communicate results. Every project below includes source code, the dataset, visualisations, report material and a walkthrough. We deliver online pan-India and offline at our Bangalore lab.",
     projects: [
@@ -87,7 +87,7 @@ export const cseSubCategories: SubCategory[] = [
     slug: "blockchain-projects-in-bangalore",
     branch: "cse",
     keyword: "Blockchain Projects in Bangalore",
-    metaTitle: "Blockchain Projects in Bangalore for CSE | WEBUILDPRO",
+    metaTitle: "Blockchain Projects in Bangalore for CSE",
     metaDescription: "Final year blockchain projects in Bangalore for CSE. Secure, decentralised apps with smart contracts and source code. Online & offline delivery.",
     intro: "WEBUILDPRO builds blockchain projects in Bangalore for CSE final year students — secure, decentralised applications with real smart contracts. Blockchain projects signal you're on top of emerging technology, and they stand out in placements. Every project below is a working build delivered with source code, smart contracts, report material and a walkthrough so you can explain the consensus, the contract logic and the security model. We deliver online pan-India and offline at our Bangalore lab.",
     projects: [
@@ -107,7 +107,7 @@ export const cseSubCategories: SubCategory[] = [
     slug: "iot-projects-in-bangalore",
     branch: "cse",
     keyword: "IoT Projects in Bangalore for CSE",
-    metaTitle: "IoT Projects in Bangalore for CSE | WEBUILDPRO",
+    metaTitle: "IoT Projects in Bangalore for CSE",
     metaDescription: "Final year IoT projects in Bangalore for CSE/ISE. Cloud dashboards, smart systems and connected apps with code. Online & offline delivery.",
     intro: "WEBUILDPRO builds IoT projects in Bangalore for CSE and ISE final year students — the software-and-cloud side of the Internet of Things, with dashboards, data pipelines and connected apps. IoT blends embedded data with cloud software, exactly the full-stack skill product companies want. Every project below comes with source code, cloud setup, report material and a walkthrough. We deliver online pan-India and offline at our Bangalore lab.",
     projects: [
@@ -127,7 +127,7 @@ export const cseSubCategories: SubCategory[] = [
     slug: "python-projects-in-bangalore",
     branch: "cse",
     keyword: "Python Projects in Bangalore",
-    metaTitle: "Python Projects in Bangalore for CSE | WEBUILDPRO",
+    metaTitle: "Python Projects in Bangalore for CSE",
     metaDescription: "Final year Python projects in Bangalore for CSE. Automation, web apps and data tools with clean source code. Online & offline delivery.",
     intro: "WEBUILDPRO builds Python projects in Bangalore for CSE final year students — from automation tools to web apps and data utilities, all with clean, readable code you can explain. Python is the most versatile language for final year work and interviews. Every project below comes with source code, report material and a walkthrough. We deliver online pan-India and offline at our Bangalore lab.",
     projects: [
@@ -147,7 +147,7 @@ export const cseSubCategories: SubCategory[] = [
     slug: "image-processing-projects-in-bangalore",
     branch: "cse",
     keyword: "Image Processing Projects in Bangalore",
-    metaTitle: "Image Processing Projects in Bangalore | WEBUILDPRO",
+    metaTitle: "Image Processing Projects in Bangalore",
     metaDescription: "Final year image processing projects in Bangalore for CSE. OpenCV & computer vision builds with source code. Online & offline delivery.",
     intro: "WEBUILDPRO builds image processing projects in Bangalore for CSE final year students — computer vision applications using OpenCV and modern techniques. Image processing projects are visual, impressive and interview-relevant. Every project below is delivered with source code, sample data, report material and a walkthrough. We deliver online pan-India and offline at our Bangalore lab.",
     projects: [
@@ -167,7 +167,7 @@ export const cseSubCategories: SubCategory[] = [
     slug: "cybersecurity-projects-in-bangalore",
     branch: "cse",
     keyword: "Cyber Security Projects in Bangalore",
-    metaTitle: "Cyber Security Projects in Bangalore | WEBUILDPRO",
+    metaTitle: "Cyber Security Projects in Bangalore",
     metaDescription: "Final year cyber security projects in Bangalore for CSE. Intrusion detection, encryption & security tools with code. Online & offline.",
     intro: "WEBUILDPRO builds cyber security projects in Bangalore for CSE final year students — practical security tools and detection systems that are highly relevant to today's job market. Every project below is a working build delivered with source code, report material and a walkthrough so you can explain the threat model and the defence. We deliver online pan-India and offline at our Bangalore lab.",
     projects: [

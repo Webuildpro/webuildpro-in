@@ -12,7 +12,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'HTML Sitemap — All Pages | WEBUILDPRO India Bangalore',
+  title: 'Sitemap — All Pages',
   description: 'Complete sitemap of WEBUILDPRO India — all pages, project titles and blog articles. Engineering projects, internships and industrial prototypes in Bangalore.',
   alternates: {
     canonical: `${BASE_URL}/sitemap`,

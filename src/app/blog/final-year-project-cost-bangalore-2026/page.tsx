@@ -12,7 +12,7 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-cost-bangalore-2026';
-const PAGE_TITLE = 'Final Year Project Cost in Bangalore (2026 Price Guide) | WEBUILDPRO';
+const PAGE_TITLE = 'Final Year Project Cost in Bangalore (2026 Price Guide)';
 const PAGE_DESCRIPTION =
   'What final year projects actually cost in Bangalore in 2026 — price ranges by branch and type, what affects cost, and how to avoid overpaying. Honest guide.';
 const PAGE_DATE = '2026-08-03';
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     authors: ['WEBUILDPRO India'],
     images: [
       {
-        url: '/assets/images/wbinlogo-1786121366410.jpeg',
+        url: '/assets/images/og-webuildpro.jpg',
         width: 1200,
         height: 630,
         alt: 'Final Year Project Cost in Bangalore 2026 — WEBUILDPRO Price Guide',

@@ -27,7 +27,7 @@ export const mechanicalSubCategories: SubCategory[] = [
     slug: "automobile-projects-in-bangalore",
     branch: "mechanical",
     keyword: "Automobile Projects in Bangalore",
-    metaTitle: "Automobile Projects in Bangalore | WEBUILDPRO",
+    metaTitle: "Automobile Projects in Bangalore",
     metaDescription: "Final year automobile projects in Bangalore for Mechanical. Fabricated working models with report & documentation. Online & offline delivery.",
     intro: "Looking for automobile projects in Bangalore for your final year? WEBUILDPRO fabricates working automobile engineering projects for Mechanical students in Bangalore — real, built-and-tested models, not just CAD renders. Automobile projects are a favourite because they combine mechanics, fabrication and often electronics, and they demonstrate well in vivas. Every project below is fabricated in our Bangalore workshop and delivered with fabrication drawings, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
@@ -47,7 +47,7 @@ export const mechanicalSubCategories: SubCategory[] = [
     slug: "hydraulics-pneumatics-projects-in-bangalore",
     branch: "mechanical",
     keyword: "Hydraulics & Pneumatics Projects in Bangalore",
-    metaTitle: "Hydraulics & Pneumatics Projects Bangalore | WEBUILDPRO",
+    metaTitle: "Hydraulics & Pneumatics Projects Bangalore",
     metaDescription: "Final year hydraulics and pneumatics projects in Bangalore for Mechanical. Working fabricated systems with documentation. Online & offline.",
     intro: "WEBUILDPRO fabricates hydraulics and pneumatics projects in Bangalore for Mechanical final year students — working fluid-power systems built and tested in our workshop. These projects clearly demonstrate fluid mechanics and actuation, which reads well in vivas. Every project below is delivered with fabrication drawings, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
@@ -67,7 +67,7 @@ export const mechanicalSubCategories: SubCategory[] = [
     slug: "robotics-mechatronics-projects-in-bangalore",
     branch: "mechanical",
     keyword: "Robotics & Mechatronics Projects in Bangalore",
-    metaTitle: "Robotics & Mechatronics Projects Bangalore | WEBUILDPRO",
+    metaTitle: "Robotics & Mechatronics Projects Bangalore",
     metaDescription: "Final year robotics and mechatronics projects in Bangalore for Mechanical. Fabricated working robots with documentation. Online & offline.",
     intro: "WEBUILDPRO builds robotics and mechatronics projects in Bangalore for Mechanical final year students — where mechanics meets electronics and control. These projects are visually impressive and demonstrate cross-disciplinary skill. Every project below is fabricated and tested in our Bangalore workshop and delivered with drawings, code, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
@@ -87,7 +87,7 @@ export const mechanicalSubCategories: SubCategory[] = [
     slug: "design-analysis-projects-in-bangalore",
     branch: "mechanical",
     keyword: "Design & Analysis Projects in Bangalore",
-    metaTitle: "Design & Analysis Projects in Bangalore | WEBUILDPRO",
+    metaTitle: "Design & Analysis Projects in Bangalore",
     metaDescription: "Final year design and analysis projects in Bangalore for Mechanical. CAD, FEA & CFD projects with reports. Online & offline delivery.",
     intro: "WEBUILDPRO delivers design and analysis projects in Bangalore for Mechanical final year students — CAD modelling, FEA and CFD projects with proper simulation and reporting. These suit students aiming for design and R&D roles. Every project below includes CAD files, analysis results, report material and a walkthrough. These are ideal for online delivery pan-India, with in-person support in Bangalore.",
     projects: [
@@ -107,7 +107,7 @@ export const mechanicalSubCategories: SubCategory[] = [
     slug: "agricultural-projects-in-bangalore",
     branch: "mechanical",
     keyword: "Agricultural Projects in Bangalore",
-    metaTitle: "Agricultural Projects in Bangalore for Mech | WEBUILDPRO",
+    metaTitle: "Agricultural Projects in Bangalore for Mech",
     metaDescription: "Final year agricultural mechanical projects in Bangalore. Fabricated farm machines and tools with documentation. Online & offline.",
     intro: "WEBUILDPRO fabricates agricultural projects in Bangalore for Mechanical final year students — practical farm machinery and tools that solve real problems. These projects demonstrate applied design and often win appreciation for social relevance. Every project below is fabricated in our Bangalore workshop and delivered with drawings, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
@@ -127,7 +127,7 @@ export const mechanicalSubCategories: SubCategory[] = [
     slug: "renewable-energy-projects-in-bangalore",
     branch: "mechanical",
     keyword: "Renewable Energy Projects in Bangalore",
-    metaTitle: "Renewable Energy Projects Bangalore for Mech | WEBUILDPRO",
+    metaTitle: "Renewable Energy Projects Bangalore for Mech",
     metaDescription: "Final year renewable energy mechanical projects in Bangalore. Solar, wind and energy-harvesting models with reports. Online & offline.",
     intro: "WEBUILDPRO builds renewable energy projects in Bangalore for Mechanical final year students — solar, wind and energy-harvesting models that are timely and impactful. Every project below is fabricated and tested in our Bangalore workshop and delivered with drawings, a bill of materials, report material and a walkthrough. We deliver in person across Bangalore and support students pan-India.",
     projects: [
