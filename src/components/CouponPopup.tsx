@@ -19,6 +19,7 @@ export default function CouponPopup() {
   const [errors, setErrors] = useState<Partial<CouponForm>>({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const firstInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -80,10 +81,15 @@ export default function CouponPopup() {
     const errs = validate();
     if (Object.keys(errs).length) { setErrors(errs); return; }
     setErrors({});
+    setSubmitError('');
     setLoading(true);
 
-    await submitLead('/api/coupon', { ...form, couponCode: 'WBP10', sourcePage: window.location.pathname });
+    const ok = await submitLead('/api/coupon', { ...form, couponCode: 'WBP10', sourcePage: window.location.pathname });
     setLoading(false);
+    if (!ok) {
+      setSubmitError('Something went wrong — please try again or reach us on WhatsApp.');
+      return;
+    }
     setSuccess(true);
     localStorage.setItem('wbp_coupon_seen', 'true');
     trackEvent('coupon_claim', { coupon: 'WBP10', page: window.location.pathname });
@@ -127,7 +133,7 @@ export default function CouponPopup() {
             </div>
             <h2 className="font-bold text-foreground text-lg mb-2">Coupon locked in.</h2>
             <p className="text-muted-foreground text-sm mb-4">
-              Code: <span className="font-mono font-bold text-primary text-base">WBP10</span> — mention it when you contact us.
+              Code: <span className="font-mono font-bold text-primary text-base">WBP10</span> â mention it when you contact us.
             </p>
             <a
               href={`https://wa.me/919538208573?text=Hi%20WEBUILDPRO%2C%20I%20have%20the%20coupon%20code%20WBP10%20and%20would%20like%20to%20enquire.`}
@@ -149,7 +155,7 @@ export default function CouponPopup() {
               UPTO 10% OFF ON YOUR FIRST PROJECT.
             </h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Drop your details and we&apos;ll lock the discount to your name — valid on your first service with WEBUILDPRO, whether it&apos;s an academic project, an internship seat or an industrial prototype.
+              Drop your details and we&apos;ll lock the discount to your name â valid on your first service with WEBUILDPRO, whether it&apos;s an academic project, an internship seat or an industrial prototype.
             </p>
 
             <form onSubmit={handleSubmit} noValidate>
@@ -192,13 +198,17 @@ export default function CouponPopup() {
                 </div>
               </div>
 
+              {submitError && (
+                <p className="text-xs text-primary mb-3 text-center">{submitError}</p>
+              )}
+
               <button
                 type="submit"
                 disabled={loading}
                 className="btn-primary w-full py-3.5 text-sm font-semibold flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed mb-3"
               >
                 {loading ? (
-                  <><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" aria-hidden="true" />Claiming…</>
+                  <><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" aria-hidden="true" />Claimingâ¦</>
                 ) : (
                   'Claim My 10% Off'
                 )}
