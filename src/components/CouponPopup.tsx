@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Icon from '@/components/ui/AppIcon';
 import { trackEvent } from '@/lib/analytics';
+import { submitLead } from '@/lib/submitLead';
 
 interface CouponForm {
   name: string;
@@ -81,29 +82,12 @@ export default function CouponPopup() {
     setErrors({});
     setLoading(true);
 
-    // Fire the fetch in the background — do not await it
-    try {
-      fetch('/api/coupon', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, couponCode: 'WBP10', sourcePage: window.location.pathname }),
-      }).catch(() => {
-        // Background fetch failed silently — submission was already shown as success
-      });
-    } catch {
-      // fetch() itself threw synchronously — device is offline
-      setLoading(false);
-      return;
-    }
-
-    // Brief spinner for click feel, then show success immediately
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-      localStorage.setItem('wbp_coupon_seen', 'true');
-      trackEvent('coupon_claim', { coupon: 'WBP10', page: window.location.pathname });
-      setTimeout(() => setVisible(false), 5000);
-    }, 300);
+    await submitLead('/api/coupon', { ...form, couponCode: 'WBP10', sourcePage: window.location.pathname });
+    setLoading(false);
+    setSuccess(true);
+    localStorage.setItem('wbp_coupon_seen', 'true');
+    trackEvent('coupon_claim', { coupon: 'WBP10', page: window.location.pathname });
+    setTimeout(() => setVisible(false), 5000);
   };
 
   if (!visible) return null;

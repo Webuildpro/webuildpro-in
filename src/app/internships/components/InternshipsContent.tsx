@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 import FaqSection from '@/app/components/FaqSection';
+import { submitLead, LEAD_ERROR } from '@/lib/submitLead';
 
 const tracks = [
   { title: 'Embedded Systems & IoT', icon: 'CpuChipIcon' as const, description: 'Microcontrollers, sensor integration, MQTT, cloud dashboards and real IoT deployments.' },
@@ -126,12 +127,7 @@ export default function InternshipsContent({ faqs }: InternshipsContentProps) {
     setServerError('');
     setLoading(true);
 
-    // Fire the fetch in the background — do not await it
-    try {
-      fetch('/api/internship', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+    const ok = await submitLead('/api/internship', {
           name: form.name,
           phone: form.phone,
           email: form.email,
@@ -145,22 +141,13 @@ export default function InternshipsContent({ faqs }: InternshipsContentProps) {
           motivation: form.motivation,
           source: '/internships',
           honeypot: form.website,
-        }),
-      }).catch(() => {
-        // Background fetch failed silently — submission was already shown as success
-      });
-    } catch {
-      // fetch() itself threw synchronously — device is offline
-      setLoading(false);
-      setServerError('No internet connection. Please check your connection and try again.');
+        });
+    setLoading(false);
+    if (!ok) {
+      setServerError(LEAD_ERROR);
       return;
     }
-
-    // Brief spinner for click feel, then show success immediately
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-    }, 300);
+    setSuccess(true);
   };
 
   return (

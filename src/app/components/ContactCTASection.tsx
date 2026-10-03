@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
+import { submitLead, LEAD_ERROR } from '@/lib/submitLead';
 
 interface FormData {
   name: string;
@@ -49,28 +50,14 @@ export default function ContactCTASection() {
     setServerError('');
     setLoading(true);
 
-    // Fire the fetch in the background — do not await it
-    const payload = JSON.stringify({ ...form, sourcePage: typeof window !== 'undefined' ? window.location.pathname : '/' });
-    try {
-      fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: payload,
-      }).catch(() => {
-        // Background fetch failed silently — submission was already shown as success
-      });
-    } catch {
-      // fetch() itself threw synchronously — device is offline
-      setLoading(false);
-      setServerError('No internet connection. Please check your connection and try again.');
+    const payload = { ...form, sourcePage: typeof window !== 'undefined' ? window.location.pathname : '/' };
+    const ok = await submitLead('/api/contact', payload);
+    setLoading(false);
+    if (!ok) {
+      setServerError(LEAD_ERROR);
       return;
     }
-
-    // Brief spinner for click feel, then show success immediately
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-    }, 300);
+    setSuccess(true);
   };
 
   const inputClass = (field: keyof FormData) =>

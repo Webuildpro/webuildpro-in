@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
 import { trackEvent } from '@/lib/analytics';
+import { submitLead, LEAD_ERROR } from '@/lib/submitLead';
 
 interface FormData {
   name: string; phone: string; email: string; userType: string;
@@ -37,29 +38,15 @@ export default function ContactPageContent() {
     setServerError('');
     setLoading(true);
 
-    // Fire the fetch in the background — do not await it
-    const payload = JSON.stringify({ ...form, sourcePage: '/contact' });
-    try {
-      fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: payload,
-      }).catch(() => {
-        // Background fetch failed silently — submission was already shown as success
-      });
-    } catch {
-      // fetch() itself threw synchronously — device is offline
-      setLoading(false);
-      setServerError('No internet connection. Please check your connection and try again.');
+    const payload = { ...form, sourcePage: '/contact' };
+    const ok = await submitLead('/api/contact', payload);
+    setLoading(false);
+    if (!ok) {
+      setServerError(LEAD_ERROR);
       return;
     }
-
-    // Brief spinner for click feel, then show success immediately
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-      trackEvent('contact_form_submit', { page: '/contact', branch: form.branch, userType: form.userType });
-    }, 300);
+    setSuccess(true);
+    trackEvent('contact_form_submit', { page: '/contact', branch: form.branch, userType: form.userType });
   };
 
   const ic = (field: keyof FormData) => `input-base w-full px-4 py-3 text-sm ${errors[field] ? 'border-primary' : ''}`;

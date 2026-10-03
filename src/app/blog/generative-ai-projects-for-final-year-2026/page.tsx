@@ -10,6 +10,7 @@ import CircuitDivider from '@/components/CircuitDivider';
 import { trackEvent } from '@/lib/analytics';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import { submitLead, LEAD_ERROR } from '@/lib/submitLead';
 
 const SLUG = 'generative-ai-projects-for-final-year-2026';
 const WA_LINK =
@@ -59,7 +60,7 @@ function InlineContactForm() {
     setServerError('');
     setLoading(true);
 
-    const payload = JSON.stringify({
+    const payload = {
       name: form.name,
       phone: form.phone,
       email: form.email,
@@ -67,25 +68,16 @@ function InlineContactForm() {
       userType: 'Student',
       branch: 'CSE',
       sourcePage: `/blog/${SLUG}`,
-    });
+    };
 
-    try {
-      fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: payload,
-      }).catch(() => {});
-    } catch {
-      setLoading(false);
-      setServerError('No internet connection. Please check your connection and try again.');
+    const ok = await submitLead('/api/contact', payload);
+    setLoading(false);
+    if (!ok) {
+      setServerError(LEAD_ERROR);
       return;
     }
-
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-      trackEvent('contact_form_submit', { page: `/blog/${SLUG}`, branch: 'CSE', userType: 'Student' });
-    }, 300);
+    setSuccess(true);
+    trackEvent('contact_form_submit', { page: `/blog/${SLUG}`, branch: 'CSE', userType: 'Student' });
   };
 
   const ic = (field: keyof FormData) =>
