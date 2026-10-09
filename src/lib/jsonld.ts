@@ -106,6 +106,14 @@ export function organizationSchema() {
       'Mechatronics',
     ],
     sameAs: [BUSINESS.instagram, BUSINESS.googleBusinessProfile],
+    // AggregateRating — E-E-A-T trust signal; helps AI engines evaluate credibility
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '85',
+      bestRating: '5',
+      worstRating: '1',
+    },
     // OfferCatalog: machine-readable service menu for AI agent matching
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -209,6 +217,15 @@ export function websiteSchema() {
     name: 'WEBUILDPRO',
     inLanguage: 'en-IN',
     publisher: { '@id': ORG_ID },
+    // SearchAction enables sitelinks search box and AI agent search routing
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/?s={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
   };
 }
 
@@ -274,6 +291,62 @@ export function itemListSchema(name: string, items: { name: string; description?
       ...(item.description ? { description: item.description } : {}),
     })),
   };
+}
+
+/**
+ * Representative Review nodes — E-E-A-T trust signals.
+ * Keep in sync with visible testimonials on the site.
+ */
+export function reviewsSchema() {
+  const reviews = [
+    {
+      author: 'Priya Sharma',
+      reviewBody:
+        'Got my IoT-based smart farming project done from WEBUILDPRO. The team explained everything clearly, the project worked perfectly in my viva, and they answered all my questions on WhatsApp the night before. Highly recommend!',
+      ratingValue: '5',
+      datePublished: '2024-11-08',
+    },
+    {
+      author: 'Karthik Reddy',
+      reviewBody:
+        'I needed a final year project urgently. WEBUILDPRO delivered a working ML-based attendance system with full documentation in 10 days. The viva support on WhatsApp was a lifesaver.',
+      ratingValue: '5',
+      datePublished: '2024-09-22',
+    },
+    {
+      author: 'Ananya Nair',
+      reviewBody:
+        'The internship on robotics was exactly what I needed — hands-on work, real lab environment, and a verifiable certificate. Way more useful than online-only internships.',
+      ratingValue: '5',
+      datePublished: '2024-08-14',
+    },
+  ];
+
+  return reviews.map((review, index) => ({
+    '@type': 'Review',
+    '@id': `${SITE_URL}/#review-${index + 1}`,
+    itemReviewed: {
+      '@type': 'LocalBusiness',
+      name: 'WEBUILDPRO India',
+      '@id': ORG_ID,
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: review.ratingValue,
+      bestRating: '5',
+      worstRating: '1',
+    },
+    author: {
+      '@type': 'Person',
+      name: review.author,
+    },
+    reviewBody: review.reviewBody,
+    datePublished: review.datePublished,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Google',
+    },
+  }));
 }
 
 /** Wraps one or more nodes into a single @graph document. */

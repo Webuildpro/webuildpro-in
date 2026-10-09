@@ -6,7 +6,7 @@ import LazyPageExtras from '@/components/LazyPageExtras';
 import Icon from '@/components/ui/AppIcon';
 import { homeFaqs } from '@/lib/data/faqs';
 import JsonLdScript from '@/components/JsonLdScript';
-import { faqSchema, ORG_ID, SITE_URL, WEBSITE_ID } from '@/lib/jsonld';
+import { faqSchema, reviewsSchema, ORG_ID, SITE_URL, WEBSITE_ID } from '@/lib/jsonld';
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
@@ -62,12 +62,16 @@ export default function HomePage() {
     isPartOf: { '@id': WEBSITE_ID },
     about: { '@id': ORG_ID },
     inLanguage: 'en-IN',
-    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '#faq'] }
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '#faq'] },
+    // mainEntity links the page to its primary subject — helps AI engines understand the page
+    mainEntity: { '@id': ORG_ID },
+    // dateModified signals content freshness to Google and AI crawlers
+    dateModified: new Date().toISOString().split('T')[0],
   };
 
   return (
     <>
-      <JsonLdScript nodes={[webPageSchema, faqSchema(homeFaqs)]} />
+      <JsonLdScript nodes={[webPageSchema, faqSchema(homeFaqs), ...reviewsSchema()]} />
       <Header />
       <main suppressHydrationWarning id="main-content">
         <HeroSection />
