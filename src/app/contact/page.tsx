@@ -15,7 +15,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Contact Project Centre in Bangalore',
+  title: 'Contact WEBUILDPRO | Engineering Project Centre Bangalore',
   description:
     'Contact WEBUILDPRO in Peenya, Bangalore. Call or WhatsApp +91 95382 08573 for a fixed project quote within 24 hours. Open Mon–Sat, 10 AM – 7 PM.',
   alternates: {

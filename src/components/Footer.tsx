@@ -165,10 +165,10 @@ export default function Footer() {
               <h3 className="micro-label mb-5">Contact</h3>
               <address className="not-italic space-y-3">
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  WEBUILDPRO INDIA<br />
-                  Peenya 2nd Stage<br />
-                  Bengaluru – 560058<br />
-                  Karnataka, India
+                  WEBUILDPRO<br />
+                  81, 4th Cross, Thigalarapalya Main Rd,<br />
+                  2nd Stage, Kalika Nagar, Peenya,<br />
+                  Bengaluru – 560058
                 </p>
                 <a
                   href="tel:+919538208573"

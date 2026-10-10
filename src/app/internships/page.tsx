@@ -14,14 +14,14 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Engineering Internship in Bangalore',
+  title: 'Engineering Internships for BTech Students Bangalore | WEBUILDPRO',
   description:
-    'Engineering internships in Bangalore for CSE, ECE, EEE & Mechanical students. Work on real builds and take home a project plus a verifiable certificate.',
+    'Engineering internships in Bangalore for BTech students in CSE, ECE, EEE & Mechanical. Work on real hardware builds, take home a project and verifiable certificate. Call +91 95382 08573.',
   alternates: {
     canonical: `${BASE_URL}/internships`,
   },
   openGraph: {
-    title: 'Engineering Internship in Bangalore',
+    title: 'Engineering Internships for BTech Students Bangalore | WEBUILDPRO',
     description:
       'An internship where you actually touch the hardware. Real components, real deadlines, verifiable certificate.',
     images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO engineering internship in Bangalore' }],

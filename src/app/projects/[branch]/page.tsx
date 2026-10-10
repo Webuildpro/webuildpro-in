@@ -16,7 +16,7 @@ const branchKeywords: Record<string, { primary: string; secondary: string[]; h1:
   cse: {
     primary: 'CSE projects in Bangalore',
     h1: 'CSE / ISE / AI-ML / BCA / MCA Projects in Bangalore — Final Year Projects',
-    title: 'CSE, AI-ML & ISE Final Year Projects in Bangalore',
+    title: 'CSE & AI-ML Final Year Projects Bangalore',
     secondary: [
       'computer science projects in Bangalore',
       'CSE projects Bangalore',

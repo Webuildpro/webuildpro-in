@@ -16,7 +16,7 @@ export const BUSINESS = {
   googleBusinessProfile: 'https://g.co/kgs/zgjqv4M',
   instagram: 'https://www.instagram.com/webuildpro/',
   address: {
-    streetAddress: 'Peenya 2nd Stage',
+    streetAddress: '81, 4th Cross, Thigalarapalya Main Rd, 2nd Stage, Kalika Nagar, Peenya',
     addressLocality: 'Bengaluru',
     addressRegion: 'Karnataka',
     postalCode: '560058',
@@ -29,7 +29,7 @@ const abs = (path: string) => (path.startsWith('http') ? path : `${SITE_URL}${pa
 
 export function organizationSchema() {
   return {
-    '@type': ['LocalBusiness', 'EducationalOrganization'],
+    '@type': ['LocalBusiness', 'EducationalOrganization', 'TrainingCenter'],
     '@id': ORG_ID,
     name: BUSINESS.name,
     alternateName: BUSINESS.alternateNames,
@@ -52,6 +52,16 @@ export function organizationSchema() {
     },
     areaServed: [
       { '@type': 'City', name: 'Bengaluru' },
+      { '@type': 'City', name: 'Bangalore' },
+      { '@type': 'Place', name: 'Peenya' },
+      { '@type': 'Place', name: 'Vijayanagar' },
+      { '@type': 'Place', name: 'Jayanagar' },
+      { '@type': 'Place', name: 'BTM Layout' },
+      { '@type': 'Place', name: 'Yelahanka' },
+      { '@type': 'Place', name: 'Whitefield' },
+      { '@type': 'Place', name: 'Electronic City' },
+      { '@type': 'Place', name: 'Marathahalli' },
+      { '@type': 'Place', name: 'HSR Layout' },
       { '@type': 'State', name: 'Karnataka' },
       { '@type': 'Country', name: 'India' },
     ],

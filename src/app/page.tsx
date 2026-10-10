@@ -31,15 +31,15 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: { absolute: 'Engineering Projects & Internships in Bangalore | WEBUILDPRO' },
+  title: { absolute: 'Final Year Engineering Projects in Bangalore | WEBUILDPRO' },
   description:
-  'Engineering projects, internships & prototypes in Bangalore for CSE, ECE, EEE, Mechanical & Civil. 300+ built and tested in our Peenya lab. Online & offline.',
+  'WEBUILDPRO offers final year engineering projects, mini projects, and internships for BTech students in Bangalore. ECE, EEE, CSE, AI-ML, Mechanical & Civil. Online delivery across India. Call +91 95382 08573.',
   alternates: {
     canonical: BASE_URL
   },
   openGraph: {
     url: BASE_URL,
-    title: 'Engineering Projects & Internships in Bangalore | WEBUILDPRO',
+    title: 'Final Year Engineering Projects in Bangalore | WEBUILDPRO',
     description:
     'Final year engineering projects, internships and industrial prototypes built and tested in our Bangalore lab. 300+ delivered, 100% on time. All branches covered.',
     images: [
@@ -102,6 +102,19 @@ export default function HomePage() {
               Browse Mini Projects
               <Icon name="ArrowRightIcon" size={14} />
             </Link>
+          </div>
+        </section>
+
+        {/* Pan-India online delivery callout */}
+        <section className="py-8 bg-primary/5 border-y border-primary/20" aria-label="Pan-India online delivery">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <span className="micro-label block mb-2">// ONLINE DELIVERY ACROSS INDIA</span>
+            <p className="text-foreground font-semibold text-base sm:text-lg">
+              Online project delivery available across India — receive your project kit via courier with full video call guidance.
+            </p>
+            <p className="text-muted-foreground text-sm mt-2">
+              Can&apos;t visit Peenya in person? We ship fully assembled projects to any city in India. WhatsApp us to confirm your order.
+            </p>
           </div>
         </section>
 

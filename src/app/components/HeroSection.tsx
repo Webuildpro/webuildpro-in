@@ -101,18 +101,18 @@ export default function HeroSection() {
             className="text-hero-xl text-foreground mb-6 leading-none"
             style={{ fontSize: 'clamp(1.25rem, 4.2vw, 3.75rem)' }}>
             <span className="block whitespace-nowrap">
-              ENGINEERING PROJECTS &amp; WORKS
+              FINAL YEAR ENGINEERING
             </span>
             <span
               className="block whitespace-nowrap text-gradient-orange"
               style={{ fontSize: 'clamp(1.25rem, 3.4vw, 3.1rem)' }}>
-              BUILT &amp; TESTED IN BANGALORE
+              PROJECT CENTRE IN BANGALORE
             </span>
           </h1>
 
           {/* Sub */}
           <p className="text-base sm:text-lg text-white leading-relaxed mb-8 max-w-2xl">
-            Engineering project consultancy, Internships, Industrial prototypes — designed, fabricated, tested / taught in our Bangalore lab. 300+ delivered. 100% on time with 100% success rate. Shipping pan-India!
+            WEBUILDPRO is Bangalore&apos;s leading engineering project centre, helping BTech students across ECE, EEE, CSE/ISE, AI-ML, Mechanical, and Civil branches complete their final year and mini projects. Based in Peenya, Bengaluru — we also deliver projects online across India via courier and video call support.
           </p>
 
           {/* CTAs */}
