@@ -409,6 +409,14 @@ export default function AgenticAIBlogPage() {
                 Agentic AI Projects for Final Year Students (2026)
               </h1>
               <p className="text-sm text-muted-foreground mb-6">Last updated: September 2026</p>
+            {/* Quick Answer — answers the search intent in the first 100 words */}
+            <div className="bg-card border-l-4 border-primary rounded-lg p-5 mb-8">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">Quick Answer</p>
+              <p className="text-sm text-foreground leading-relaxed">
+                Agentic AI projects are the best choice for final year 2026 — they use LLMs, tools and planning loops to complete tasks autonomously, making them highly impressive for placements. WEBUILDPRO builds agentic AI projects in Bangalore with source code and documentation, starting from &#8377;8,000. WhatsApp +91 95382 08573 to get started.
+              </p>
+            </div>
+
 
               {/* Intro */}
               <p className="text-base text-muted-foreground leading-relaxed mb-6">

@@ -122,7 +122,15 @@ export default function AIProjectIdeasPage() {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
             {/* Article content */}
             <article className="lg:col-span-3">
-              {/* Intro */}
+              
+              {/* Quick Answer — answers the search intent in the first 100 words */}
+              <div className="bg-card border-l-4 border-primary rounded-lg p-5 mb-8">
+                <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">Quick Answer</p>
+                <p className="text-sm text-foreground leading-relaxed">
+                  The best AI projects for final year 2026 are in computer vision, machine learning, NLP and generative AI — all high-demand skills for placements. WEBUILDPRO builds 30+ of these AI-based final year projects in Bangalore with trained models, source code and documentation. WhatsApp +91 95382 08573 to get yours built.
+                </p>
+              </div>
+{/* Intro */}
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                 Looking for the{' '}
                 <strong className="text-foreground">best AI projects</strong>,{' '}

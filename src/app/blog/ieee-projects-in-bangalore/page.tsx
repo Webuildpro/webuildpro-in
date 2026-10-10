@@ -121,7 +121,15 @@ export default function IeeeProjectsBangalorePage() {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
             {/* Article content */}
             <article className="lg:col-span-3 prose-custom">
-              {/* Intro */}
+              
+              {/* Quick Answer — answers the search intent in the first 100 words */}
+              <div className="bg-card border-l-4 border-primary rounded-lg p-5 mb-8">
+                <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">Quick Answer</p>
+                <p className="text-sm text-foreground leading-relaxed">
+                  IEEE projects in Bangalore are built and delivered by WEBUILDPRO — final year projects for CSE, ECE, EEE, Mechanical and Civil students, based on 2026 IEEE papers, with working hardware, full source code and documentation. Prices start from &#8377;8,000. WhatsApp +91 95382 08573 for your project.
+                </p>
+              </div>
+{/* Intro */}
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                 If you&rsquo;re searching for <strong className="text-foreground">IEEE projects in Bangalore</strong>,{' '}
                 <strong className="text-foreground">IEEE project makers</strong>, or the{' '}
