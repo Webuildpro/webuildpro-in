@@ -115,6 +115,18 @@ export const blogArticles: BlogArticle[] = [
     content: `30+ innovative final year project ideas for EEE students in 2026 — power electronics, EV, solar, PLC automation and IoT. Built and tested in Bangalore by WEBUILDPRO with working hardware, source code and full documentation.`,
   },
   {
+    slug: 'ieee-project-makers-bangalore-2026',
+    title: 'IEEE Project Makers in Bangalore (2026): Who Actually Builds Working Projects?',
+    seoTitle: 'IEEE Project Makers in Bangalore 2026 — WEBUILDPRO',
+    description:
+      'Find the best IEEE project maker in Bangalore for your 2026 final year. WEBUILDPRO Peenya builds IEEE projects for ECE, CSE, EEE, AI-ML, Mechanical & Civil — source code, docs & viva prep. Call +91 95382 08573.',
+    datePublished: '2026-10-10',
+    dateModified: '2026-10-10',
+    readTime: '12 min read',
+    tags: ['IEEE Projects', 'Project Makers', 'Bangalore', 'Final Year Projects', 'Peenya'],
+    content: `Complete guide to finding the best IEEE project maker in Bangalore — what to look for, red flags to avoid, branch-wise coverage, pricing for 2026, and how WEBUILDPRO in Peenya builds and delivers IEEE projects for ECE, CSE, EEE, AI-ML, Mechanical and Civil students across India.`,
+  },
+  {
     slug: 'ieee-projects-in-bangalore',
     title: 'IEEE Projects in Bangalore (2026): The Complete Guide to Choosing the Best IEEE Project Makers',
     seoTitle: 'IEEE Projects in Bangalore (2026) — Best Makers',
