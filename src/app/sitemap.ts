@@ -11,7 +11,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 // Bump when page content changes. Search engines only trust lastmod that reflects real edits,
 // so this is a manual date rather than the build time.
-const SITE_UPDATED = new Date('2026-10-03');
+const SITE_UPDATED = new Date('2026-10-11');
 
 type Entry = MetadataRoute.Sitemap[number];
 const page = (

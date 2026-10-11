@@ -37,6 +37,18 @@ export const blogArticles: BlogArticle[] = [
     content: `20+ agentic AI project ideas for final year students with descriptions and how-to steps. AI agents, LLM and RAG projects built and tested in Bangalore by WEBUILDPRO — with source code, documentation and viva walkthrough.`,
   },
   {
+    slug: 'iot-projects-in-bangalore-2026',
+    title: 'IoT Projects in Bangalore (2025–2026): 50+ Ideas, Cost & Project Centre | WEBUILDPRO',
+    seoTitle: 'IoT Projects in Bangalore (2025–2026): 50+ Ideas, Cost & Project Centre',
+    description:
+      '50+ IoT final-year project ideas in Bangalore with components, descriptions & cost. WEBUILDPRO, Peenya, delivers fully-built IoT projects for ECE students. WhatsApp +91 95382 08573.',
+    datePublished: '2026-10-11',
+    dateModified: '2026-10-11',
+    readTime: '18 min read',
+    tags: ['IoT Projects', 'IoT Projects in Bangalore', 'ECE Projects', 'ESP32', 'Arduino', 'Final Year Projects', 'Bangalore'],
+    content: `50+ IoT project ideas for ECE final year students in Bangalore. Covers smart home, agriculture, healthcare, industrial IoT and more — with components, cost, and step-by-step build guide. WEBUILDPRO, Peenya, delivers fully built IoT projects with hardware, source code, dashboard and documentation.`,
+  },
+  {
     slug: 'iot-based-mini-projects',
     title: 'IoT Based Mini Projects (2026) — Ideas, Steps & Kits',
     description:
