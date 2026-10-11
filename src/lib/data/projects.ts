@@ -601,7 +601,128 @@ export const branchData: Record<string, BranchData> = {
       deliverables: DELIVERABLES_ACADEMIC,
       difficulty: 'Advanced',
       timeline: '3–4 weeks'
-    }]
+    },
+    {
+      id: 'ece-33',
+      title: 'IoT Home Automation with Voice Control',
+      overview: 'Control home lights, fans and appliances remotely via a mobile app and voice commands. Uses ESP32, relay modules and integration with Google Assistant or Alexa for hands-free home control.',
+      technologies: ['ESP32', 'Relay Module', 'Google Assistant / Alexa', 'Blynk / Firebase', 'Wi-Fi', 'Android App'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Beginner',
+      timeline: '2–3 weeks',
+      isIEEE: false
+    },
+    {
+      id: 'ece-34',
+      title: 'IoT Gas Leakage Detection & Alert System',
+      overview: 'Detects LPG and combustible gas leaks using MQ-2 sensors and sends instant alerts to the owner's phone over IoT, while triggering a buzzer and exhaust fan to prevent accidents.',
+      technologies: ['MQ-2 Gas Sensor', 'ESP32', 'Buzzer', 'Relay', 'Blynk / Telegram Bot', 'Wi-Fi'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Beginner',
+      timeline: '1–2 weeks',
+      isIEEE: false
+    },
+    {
+      id: 'ece-35',
+      title: 'IoT Smart Street Light System',
+      overview: 'Street lights that turn on automatically at dusk using LDR sensors and dim when no pedestrians are present, with centralized IoT monitoring of all lamp status and power consumption.',
+      technologies: ['LDR Sensor', 'ESP32', 'PIR Sensor', 'Relay Module', 'IoT Dashboard', 'Power Monitor'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Intermediate',
+      timeline: '2–3 weeks',
+      isIEEE: true
+    },
+    {
+      id: 'ece-36',
+      title: 'IoT Vehicle Tracking System with GPS',
+      overview: 'Real-time GPS vehicle tracking that streams location to a Google Maps dashboard. Includes geofencing alerts when the vehicle leaves a defined boundary, useful for fleet management and anti-theft.',
+      technologies: ['GPS NEO-6M', 'ESP32 / SIM800L', 'Google Maps API', 'Firebase / MQTT', 'Android App', 'Geofence Logic'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Intermediate',
+      timeline: '2–3 weeks',
+      isIEEE: false
+    },
+    {
+      id: 'ece-37',
+      title: 'IoT Garbage Level Monitoring System',
+      overview: 'Ultrasonic sensors inside dustbins report fill levels to a municipal IoT dashboard, alerting collection teams only when bins are 80% full — reducing unnecessary trips and improving city sanitation efficiency.',
+      technologies: ['Ultrasonic Sensor', 'ESP32', 'IoT Dashboard', 'Alert SMS / App', 'Wi-Fi', 'Municipal Data Logging'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Beginner',
+      timeline: '2 weeks',
+      isIEEE: false
+    },
+    {
+      id: 'ece-38',
+      title: 'IoT Smart Parking System',
+      overview: 'IR/ultrasonic sensors detect occupied and free parking slots, displaying real-time availability on a web dashboard and LED indicators. Reduces parking search time in malls and offices.',
+      technologies: ['IR Sensor', 'ESP32', 'LED Matrix', 'IoT Web Dashboard', 'MQTT', 'Node.js Backend'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Beginner',
+      timeline: '2 weeks',
+      isIEEE: false
+    },
+    {
+      id: 'ece-39',
+      title: 'IoT Weather Station',
+      overview: 'A portable weather monitoring station that measures temperature, humidity, pressure, rain and UV index, streaming all data to ThingSpeak or a custom dashboard with historical graphs.',
+      technologies: ['DHT22', 'BMP280', 'Rain Sensor', 'UV Sensor', 'ESP32', 'ThingSpeak / Custom Dashboard'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Beginner',
+      timeline: '2 weeks',
+      isIEEE: false
+    },
+    {
+      id: 'ece-40',
+      title: 'IoT RFID Attendance System',
+      overview: 'Students or employees tap their RFID card to a reader; the system logs the entry to a Google Sheet or database in real time and sends a notification to parents/HR via IoT.',
+      technologies: ['RFID RC522', 'ESP32', 'Google Sheets API', 'Telegram Bot', 'LCD Display', 'Wi-Fi'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Beginner',
+      timeline: '1–2 weeks',
+      isIEEE: false
+    },
+    {
+      id: 'ece-41',
+      title: 'IoT Air Quality Monitoring System',
+      overview: 'Monitors PM2.5, CO2, CO, NO2 and VOC levels in real time using MQ series and PMS5003 sensors. Displays AQI on a local OLED screen and streams to a cloud dashboard with threshold alerts.',
+      technologies: ['PMS5003', 'MQ-135', 'MQ-7', 'ESP32', 'OLED Display', 'AQI Dashboard / ThingSpeak'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Intermediate',
+      timeline: '2–3 weeks',
+      isIEEE: true
+    },
+    {
+      id: 'ece-42',
+      title: 'IoT Smart Fire Detection & Suppression System',
+      overview: 'Combines flame sensor and smoke detection (MQ-2) with an IoT alert and automatic water sprinkler relay. Sends push notifications to fire safety officers with location data.',
+      technologies: ['Flame Sensor', 'MQ-2 Smoke Sensor', 'ESP32', 'Relay + Solenoid', 'Blynk / Telegram', 'Wi-Fi Alert'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Intermediate',
+      timeline: '2–3 weeks',
+      isIEEE: false
+    },
+    {
+      id: 'ece-43',
+      title: 'IoT Wearable Pulse Oximeter & Health Band',
+      overview: 'A wrist-worn device that reads SpO2, heart rate and body temperature continuously, syncing data wirelessly to a phone app and alerting when readings go outside safe limits.',
+      technologies: ['MAX30102', 'MLX90614', 'MPU6050', 'ESP32 / nRF52', 'BLE / Wi-Fi', 'Mobile Health App'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Intermediate',
+      timeline: '2–3 weeks',
+      isIEEE: true
+    },
+    {
+      id: 'ece-44',
+      title: 'IoT Miner Safety Helmet',
+      overview: 'A smart helmet for underground mines that monitors gas concentration, temperature and head impact, transmitting live data over LoRa or GSM to a surface control room with emergency SOS alerting.',
+      technologies: ['MQ Gas Sensors', 'DHT22', 'MPU6050 Accelerometer', 'LoRa / GSM', 'ESP32', 'Control Room Dashboard'],
+      deliverables: DELIVERABLES_ACADEMIC,
+      difficulty: 'Advanced',
+      timeline: '3 weeks',
+      isIEEE: true
+    }
+    ]
 
   },
 

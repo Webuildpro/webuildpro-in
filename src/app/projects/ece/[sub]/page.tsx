@@ -37,9 +37,9 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'iot-projects-in-bangalore',
     h1: 'IoT Projects in Bangalore',
-    metaTitle: 'IoT Projects in Bangalore',
+    metaTitle: 'IoT Projects in Bangalore (2025–2026) | WEBUILDPRO ECE',
     metaDescription:
-      'Get a fully-built IoT final-year project in Bangalore. WEBUILDPRO delivers working hardware + source code for ECE students. Call +91 95382 08573.',
+      'Get a fully-built IoT final-year project in Bangalore. WEBUILDPRO, Peenya, delivers working ESP32 hardware + cloud dashboard + source code for ECE students. WhatsApp +91 95382 08573.',
     intro:
       'IoT projects in Bangalore are among the most sought-after ECE final-year builds — and for good reason. At WEBUILDPRO, every IoT project we deliver is a fully assembled, tested unit: real sensors, real cloud dashboards, real data. Whether you need a smart agriculture system, a patient health monitor, or an industrial IIoT setup, our Peenya lab builds it end-to-end. We handle PCB design, firmware, cloud integration and documentation so you walk in with a requirement and walk out with a working project. Our IoT builds use ESP32, MQTT, and live dashboards — not simulated screenshots. Delivery in 2–4 weeks. Fixed price. No hidden charges. Hundreds of ECE students from Bangalore colleges have submitted IoT projects built here. WhatsApp us today to get a quote for your specific title.',
     faq: [
@@ -55,8 +55,28 @@ const ECE_SUBS: SubConfig[] = [
         q: 'Do IoT projects include a working mobile/web dashboard?',
         a: 'Yes. Every IoT project includes a live dashboard — either a mobile app (Blynk/MIT App Inventor) or a web interface — so you can demonstrate real-time data during your viva.',
       },
+      {
+        q: 'How much does an IoT final-year project cost in Bangalore?',
+        a: 'IoT projects at WEBUILDPRO are priced between ₹4,000 and ₹15,000 depending on components, cloud integration, and complexity. Basic sensor-based builds start at ₹4,000; multi-node IIoT systems with custom dashboards go up to ₹12,000–15,000. WhatsApp us for an exact quote on your title.',
+      },
+      {
+        q: 'Which colleges in Bangalore do you serve for IoT projects?',
+        a: 'We serve students from all major Bangalore colleges including RVCE, MSRIT, BMS, PESIT, Dayananda Sagar, Nitte Meenakshi, BMSCE, CMRIT, SIT Tumkur, KLE Tech, Jain University, VIT Bangalore, and all VTU-affiliated institutions. Peenya is central to most college zones.',
+      },
+      {
+        q: 'How long does it take to build an IoT project?',
+        a: 'Standard IoT projects are delivered in 2–4 weeks after order confirmation. Complex builds with custom PCBs, multi-node networks, or AI inference on edge take 4–5 weeks. We provide a fixed delivery date in your quote — not an estimate.',
+      },
+      {
+        q: 'Can you build an IEEE paper-based IoT project?',
+        a: 'Yes. Share the DOI or paper PDF and we will scope it against your timeline and budget. We have built 100+ IEEE-reference IoT projects for Bangalore students. Delivery in 3–5 weeks for most IEEE papers.',
+      },
+      {
+        q: 'What do I receive when I order an IoT project from WEBUILDPRO?',
+        a: 'You receive: (1) fully assembled and tested hardware, (2) complete source code (firmware + dashboard), (3) circuit diagrams and component list, (4) project report material, (5) demo video, and (6) a 30-minute viva walkthrough session. Everything needed to submit and present your project.',
+      },
     ],
-    projectIds: ['ece-05', 'ece-07', 'ece-09', 'ece-11', 'ece-12', 'ece-13', 'ece-27', 'ece-28', 'ece-30', 'ece-32'],
+    projectIds: ['ece-05', 'ece-07', 'ece-09', 'ece-11', 'ece-12', 'ece-13', 'ece-14', 'ece-18', 'ece-27', 'ece-28', 'ece-30', 'ece-32', 'ece-33', 'ece-34', 'ece-35', 'ece-36', 'ece-37', 'ece-38', 'ece-39', 'ece-40', 'ece-41', 'ece-42', 'ece-43', 'ece-44'],
   },
   {
     slug: 'embedded-systems-projects-in-bangalore',
