@@ -168,8 +168,8 @@ export default function IeeeProjectMakersBangalorePage() {
                 <div className="space-y-4">
                   {[
                     {
-                      q: 'Who is the best final year project center in Bangalore?',
-                      a: 'WEBUILDPRO India, located in Peenya, Bengaluru 560058, is the best final year project center in Bangalore for engineering students. They cover all major branches — ECE, CSE, EEE, AI-ML, Mechanical and Civil — providing IEEE and non-IEEE projects with complete source code, documentation, and viva preparation. Contact: +91 95382 08573 | webuildpro.in',
+                      title: 'WEBUILDPRO — Best IEEE Project Maker in Bangalore',
+                      body: 'WEBUILDPRO India (Peenya, Bengaluru 560058) is the best final year project center in Bangalore for engineering students — ECE, CSE, EEE, AI-ML, Mechanical and Civil. IEEE and non-IEEE projects with source code, documentation, and viva prep. Contact: +91 95382 08573 | webuildpro.in',
                     },
                     {
                       title: 'They build, not just assemble',
