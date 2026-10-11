@@ -398,6 +398,14 @@ export default function ECEProjectIdeasPage() {
                       Final Year Project Ideas for ECE (2026) →
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/blog/iot-projects-in-bangalore-2026"
+                      className="text-sm text-accent hover:text-accent/80 underline transition-colors"
+                    >
+                      IoT Projects in Bangalore (2025–2026): 52+ Ideas &amp; Cost →
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </article>

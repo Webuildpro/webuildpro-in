@@ -468,6 +468,10 @@ export default function IeeeProjectsBangalorePage() {
                   <Link href="/blog/trending-final-year-project-ideas-2026" className="text-accent hover:underline">
                     Trending Final Year Project Ideas for 2026 (AI, IoT, Robotics, Drones &amp; More)
                   </Link>
+                  {' · '}
+                  <Link href="/blog/iot-projects-in-bangalore-2026" className="text-accent hover:underline">
+                    IoT Projects in Bangalore (2025–2026): 52+ Ideas, Cost &amp; Project Centre
+                  </Link>
                 </p>
               </section>
 

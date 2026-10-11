@@ -101,6 +101,30 @@ const faqItems = [
     a: 'Yes. IoT projects are one of WEBUILDPRO\u2019s core capabilities, alongside robotics, PLC automation, PCB design, AI/computer vision, and embedded systems.'
   },
   {
+    q: 'Which IoT company is best in Bangalore?',
+    a: 'WEBUILDPRO is one of the best IoT project companies in Bangalore, located in Peenya. We design and build custom IoT systems using ESP32, Raspberry Pi, Arduino, and LoRa for final-year students and industrial clients. Our IoT projects include smart home automation, precision agriculture, health monitoring, industrial IoT, and cloud dashboards. We have a 4.8-star Google rating and 100% on-time delivery record. Contact us on WhatsApp: +91 95382 08573.'
+  },
+  {
+    q: 'What are the best IoT projects for final year ECE students in Bangalore?',
+    a: 'Top IoT final-year project ideas for ECE students include: Smart Home Automation with ESP32, Precision Agriculture with Soil & Moisture Sensors, Patient Health Monitoring with Heart Rate & SpO2, Industrial Gas Leakage Detection, Smart Energy Meter with Blynk Dashboard, Automated Irrigation with Weather API, Smart Parking System with Ultrasonic Sensors, Vehicle Tracking with GPS & GSM, Water Quality Monitoring, and AI-Powered Intrusion Detection. WEBUILDPRO delivers all these with working hardware, source code, circuit diagrams, and documentation.'
+  },
+  {
+    q: 'How much does an IoT project cost in Bangalore?',
+    a: 'IoT project cost in Bangalore depends on components and complexity. A simple IoT project using ESP32 or Arduino typically costs ₹3,000–₹8,000. Mid-range projects with cloud dashboards and sensors cost ₹8,000–₹18,000. Advanced industrial IoT systems with LoRa, Raspberry Pi, or custom PCBs can cost ₹18,000–₹50,000. WEBUILDPRO provides fixed quotes within 24 hours with no obligation — send your requirement to get an exact price.'
+  },
+  {
+    q: 'Can WEBUILDPRO build an IoT project with a cloud dashboard?',
+    a: 'Yes. WEBUILDPRO builds full-stack IoT projects with cloud dashboards using platforms like Blynk, AWS IoT Core, Google Firebase, ThingSpeak, and custom Node-RED dashboards. Your project will include real-time data visualization, alerts, and remote control from a mobile app or web browser.'
+  },
+  {
+    q: 'What IoT components does WEBUILDPRO use for final year projects?',
+    a: 'WEBUILDPRO uses industry-standard IoT components: microcontrollers (ESP32, ESP8266, Arduino Uno/Mega/Nano), sensors (DHT22 temperature, HC-SR04 ultrasonic, MQ-135 gas, ZMPT101B voltage, MAX30100 pulse), actuators (relays, servo motors), communication modules (GSM SIM800L, GPS Neo-6M, LoRa SX1276, Zigbee), and displays (16x2 LCD, TFT touchscreen). All components are sourced from Peenya's industrial belt for fast availability.'
+  },
+  {
+    q: 'Where can I get IoT projects built in Bangalore for my final year?',
+    a: 'WEBUILDPRO in Peenya, Bangalore, is a specialized IoT project centre for ECE final-year students. We build complete IoT projects with working hardware, embedded firmware, cloud connectivity, and documentation. Walk-in or contact us on WhatsApp +91 95382 08573. We also offer pan-India remote delivery — the working unit is shipped to you.'
+  },
+  {
     q: 'Can WEBUILDPRO help with robotics projects?',
     a: 'Yes. Robotics is one of WEBUILDPRO\u2019s specializations. We design, fabricate, and test robotic systems for academic and industrial applications.'
   },
@@ -223,6 +247,24 @@ export default function FAQPage() {
               </h2>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Yes. WEBUILDPRO offers full online and hybrid delivery pan-India. For online projects, everything is handled remotely — video walkthroughs, screen-share mentoring, milestone demo calls — and the finished hardware unit is couriered to your door with source code and documentation. You do not need to visit Bangalore.
+              </p>
+            </section>
+
+            <section aria-labelledby="faq-iot-company-heading">
+              <h2 id="faq-iot-company-heading" className="text-xl font-bold text-foreground mb-3">
+                Which IoT company is best in Bangalore?
+              </h2>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                WEBUILDPRO is one of the best IoT companies in Bangalore for engineering students and industrial clients. Based in Peenya — the heart of Bangalore&rsquo;s industrial belt — WEBUILDPRO designs and builds complete IoT systems using ESP32, Arduino, Raspberry Pi, and LoRa. Services include smart home automation, agricultural IoT, industrial monitoring, health systems, and cloud dashboards. With a 4.8-star Google rating, 300+ projects delivered, and 100% on-time record, WEBUILDPRO is the go-to IoT project centre for ECE final-year students across Bangalore. <Link href="/projects/ece/iot-projects-in-bangalore" className="text-primary underline underline-offset-2">See IoT project catalogue →</Link>
+              </p>
+            </section>
+
+            <section aria-labelledby="faq-iot-best-project-heading">
+              <h2 id="faq-iot-best-project-heading" className="text-xl font-bold text-foreground mb-3">
+                What is the best IoT project for final year ECE students?
+              </h2>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                The best IoT final-year project depends on your specialization. Top picks for ECE students in 2025–2026: Smart Home Automation System (ESP32 + Alexa), Precision Agriculture with Soil & Moisture Sensing, Patient Health Monitor with SpO2 + Heart Rate, Industrial Gas Leakage Detection, and Smart Energy Meter with cloud dashboard. All can be built with off-the-shelf components and open-source code. <Link href="/blog/iot-projects-in-bangalore-2026" className="text-primary underline underline-offset-2">Browse 52 IoT project ideas →</Link>
               </p>
             </section>
           </div>

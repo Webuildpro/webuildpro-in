@@ -744,6 +744,15 @@ export default function IoTMiniProjectsPage() {
                       Innovative Final Year Project Ideas for ECE Students (2026)
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/blog/iot-projects-in-bangalore-2026"
+                      className="text-accent hover:text-accent/80 transition-colors flex items-center gap-1.5"
+                    >
+                      <Icon name="ArrowRightIcon" size={12} />
+                      IoT Projects in Bangalore (2025–2026): 52+ Ideas, Cost &amp; Project Centre
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </article>
