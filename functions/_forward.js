@@ -18,7 +18,7 @@ const json = (message, status) =>
  * @param {(data: Record<string, string>) => object} opts.toRow  Maps the body to the sheet row
  */
 export function makeHandler({ envKey, required, toRow }) {
-  return async ({ request, env, ctx }) => {
+  return async ({ request, env, waitUntil }) => {
     let body;
     try {
       body = await request.json();
@@ -46,7 +46,7 @@ export function makeHandler({ envKey, required, toRow }) {
     // Fire-and-forget: respond to visitor immediately, write to Sheets in background.
     // ctx.waitUntil keeps the Cloudflare Worker alive until the fetch completes so
     // the row is still written even after the response has been sent.
-    ctx.waitUntil(
+    waitUntil(
       fetch(sheetsUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
