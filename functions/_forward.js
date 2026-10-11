@@ -18,7 +18,7 @@ const json = (message, status) =>
  * @param {(data: Record<string, string>) => object} opts.toRow  Maps the body to the sheet row
  */
 export function makeHandler({ envKey, required, toRow }) {
-  return async ({ request, env }) => {
+  return async ({ request, env, ctx }) => {
     let body;
     try {
       body = await request.json();
@@ -42,23 +42,30 @@ export function makeHandler({ envKey, required, toRow }) {
 
     const clip = (v, n = 2000) => String(v ?? '').slice(0, n);
     const row = { timestamp: new Date().toISOString(), ...toRow(body, clip) };
-    try {
-      // Awaited so the visitor only sees success once Google has accepted the row.
-      const res = await fetch(sheetsUrl, {
+
+    // Fire-and-forget: respond to visitor immediately, write to Sheets in background.
+    // ctx.waitUntil keeps the Cloudflare Worker alive until the fetch completes so
+    // the row is still written even after the response has been sent.
+    ctx.waitUntil(
+      fetch(sheetsUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(row),
         redirect: 'manual',
-      });
-      if (!isAppsScriptSuccess(res)) {
-        console.error(`${envKey} rejected the row: HTTP ${res.status} ${res.headers.get('location') || ''}`);
-        return json('Could not save submission', 502);
-      }
-    } catch (err) {
-      console.error(`${envKey} forwarding failed:`, err);
-      return json('Could not save submission', 502);
-    }
+      })
+        .then((res) => {
+          if (!isAppsScriptSuccess(res)) {
+            console.error(
+              `${envKey} rejected the row: HTTP ${res.status} ${res.headers.get('location') || ''}`
+            );
+          }
+        })
+        .catch((err) => {
+          console.error(`${envKey} forwarding failed:`, err);
+        })
+    );
 
+    // Return success before waiting for Sheets — visitor sees "Thank you" in < 1 second.
     return json('ok', 200);
   };
 }
