@@ -210,15 +210,6 @@ export default function Footer() {
                 >
                   WEBUILDPRO Global
                 </a>
-                {' '}·{' '}Featured client:{' '}
-                <a
-                  href="https://prodraincleaning.ca"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-accent transition-colors"
-                >
-                  Pro Drain Cleaning Winnipeg
-                </a>
               </p>
             </div>
             <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-end">
