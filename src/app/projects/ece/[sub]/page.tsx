@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import LazyPageExtras from '@/components/LazyPageExtras';
 
 import { branchData } from '@/lib/data/projects';
-import EceSubPageContent from '@/app/projects/ece/[sub]/components/EceSubPageContent';
 import JsonLdScript from '@/components/JsonLdScript';
 import { breadcrumbSchema, faqSchema, itemListSchema, serviceSchema } from '@/lib/jsonld';
 
