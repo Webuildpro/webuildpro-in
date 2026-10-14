@@ -118,7 +118,7 @@ const faqItems = [
   },
   {
     q: 'What IoT components does WEBUILDPRO use for final year projects?',
-    a: 'WEBUILDPRO uses industry-standard IoT components: microcontrollers (ESP32, ESP8266, Arduino Uno/Mega/Nano), sensors (DHT22 temperature, HC-SR04 ultrasonic, MQ-135 gas, ZMPT101B voltage, MAX30100 pulse), actuators (relays, servo motors), communication modules (GSM SIM800L, GPS Neo-6M, LoRa SX1276, Zigbee), and displays (16x2 LCD, TFT touchscreen). All components are sourced from Peenya's industrial belt for fast availability.'
+    a: "WEBUILDPRO uses industry-standard IoT components: microcontrollers (ESP32, ESP8266, Arduino Uno/Mega/Nano), sensors (DHT22 temperature, HC-SR04 ultrasonic, MQ-135 gas, ZMPT101B voltage, MAX30100 pulse), actuators (relays, servo motors), communication modules (GSM SIM800L, GPS Neo-6M, LoRa SX1276, Zigbee), and displays (16x2 LCD, TFT touchscreen). All components are sourced from Peenya's industrial belt for fast availability."
   },
   {
     q: 'Where can I get IoT projects built in Bangalore for my final year?',

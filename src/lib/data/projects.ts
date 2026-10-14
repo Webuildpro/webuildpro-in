@@ -615,7 +615,7 @@ export const branchData: Record<string, BranchData> = {
     {
       id: 'ece-34',
       title: 'IoT Gas Leakage Detection & Alert System',
-      overview: 'Detects LPG and combustible gas leaks using MQ-2 sensors and sends instant alerts to the owner's phone over IoT, while triggering a buzzer and exhaust fan to prevent accidents.',
+      overview: "Detects LPG and combustible gas leaks using MQ-2 sensors and sends instant alerts to the owner's phone over IoT, while triggering a buzzer and exhaust fan to prevent accidents.",
       technologies: ['MQ-2 Gas Sensor', 'ESP32', 'Buzzer', 'Relay', 'Blynk / Telegram Bot', 'Wi-Fi'],
       deliverables: DELIVERABLES_ACADEMIC,
       difficulty: 'Beginner',

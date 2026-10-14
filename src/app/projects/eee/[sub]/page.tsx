@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import nextDynamic from 'next/dynamic';
 import Header from '@/components/Header';
 import LazyPageExtras from '@/components/LazyPageExtras';
-import EeeSubPageContent from '@/app/projects/eee/[sub]/components/EeeSubPageContent';
 import JsonLdScript from '@/components/JsonLdScript';
 import { breadcrumbSchema, faqSchema, itemListSchema, serviceSchema } from '@/lib/jsonld';
 
