@@ -174,7 +174,7 @@ export default function CSEFinalYearProjectsPage() {
             {/* Bottom CTA — CTA #2 */}
             <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 mb-10">
               <h3 className="text-lg font-bold text-foreground mb-2">Ready to Build Your CSE Final Year Project?</h3>
-              <p className="text-sm text-muted-foreground mb-4">WeBuildPro's CSE team has delivered 200+ final year projects with IEEE paper publications, working demos, and complete documentation. We handle the entire journey — ideation to viva.</p>
+              <p className="text-sm text-muted-foreground mb-4">WeBuildPro&apos;s CSE team has delivered 200+ final year projects with IEEE paper publications, working demos, and complete documentation. We handle the entire journey — ideation to viva.</p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/projects" className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-primary/90 transition-colors">
                   <Icon name="FolderOpen" size={14} /> View Projects
@@ -218,7 +218,7 @@ export default function CSEFinalYearProjectsPage() {
               {/* Sidebar CTA — CTA #3 */}
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
                 <p className="text-sm font-bold text-foreground mb-1">🎓 Final Year Project Help</p>
-                <p className="text-xs text-muted-foreground mb-3">IEEE paper + working demo + full documentation. Bangalore's most trusted project centre.</p>
+                <p className="text-xs text-muted-foreground mb-3">IEEE paper + working demo + full documentation. Bangalore&apos;s most trusted project centre.</p>
                 <div className="space-y-2">
                   <Link href="/pricing" className="flex items-center justify-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-primary/90 transition-colors w-full">
                     <Icon name="IndianRupee" size={12} /> View Pricing

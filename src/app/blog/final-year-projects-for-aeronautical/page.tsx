@@ -198,7 +198,7 @@ export default function AeronauticalFinalYearProjectsPage() {
               </nav>
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
                 <p className="text-sm font-bold text-foreground mb-1">✈️ Aero Project Support</p>
-                <p className="text-xs text-muted-foreground mb-3">CFD + composite fabrication + UAV + AIAA paper. Bangalore's trusted Aero project centre.</p>
+                <p className="text-xs text-muted-foreground mb-3">CFD + composite fabrication + UAV + AIAA paper. Bangalore&apos;s trusted Aero project centre.</p>
                 <div className="space-y-2">
                   <Link href="/pricing" className="flex items-center justify-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-primary/90 transition-colors w-full">
                     <Icon name="IndianRupee" size={12} /> View Pricing

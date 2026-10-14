@@ -145,7 +145,7 @@ export default function AIMLFinalYearProjectsPage() {
 
             <section id="rl" className="mb-10">
               <h2 className="text-xl font-bold text-foreground mb-4">Reinforcement Learning Projects</h2>
-              <FinalYearProjectCard title="Multi-Agent Reinforcement Learning for Smart Grid Energy Management" description="A MARL system (QMIX algorithm) where each distributed energy resource (solar PV, battery, EV charger, flexible load) is an agent coordinating to minimise grid peak load and electricity cost. Simulated in a custom OpenAI Gym environment mirroring Bangalore's smart grid parameters. 28% peak load reduction vs rule-based baseline." techStack="Python, Ray RLlib, QMIX, OpenAI Gym (custom), PyTorch, Plotly, NumPy" difficulty="Advanced" />
+              <FinalYearProjectCard title="Multi-Agent Reinforcement Learning for Smart Grid Energy Management" description="A MARL system (QMIX algorithm) where each distributed energy resource (solar PV, battery, EV charger, flexible load) is an agent coordinating to minimise grid peak load and electricity cost. Simulated in a custom OpenAI Gym environment mirroring Bangalore&apos;s smart grid parameters. 28% peak load reduction vs rule-based baseline." techStack="Python, Ray RLlib, QMIX, OpenAI Gym (custom), PyTorch, Plotly, NumPy" difficulty="Advanced" />
               <FinalYearProjectCard title="RL-Based Autonomous Drone Navigation in Complex Environments" description="PPO-trained quadrotor navigation policy in NVIDIA Isaac Gym (100× real-time simulation). Sim-to-real transfer with domain randomisation (noise, wind, latency). Deployed on a Crazyflie 2.1 drone navigating obstacle courses. Success rate 88% in unseen maze layouts. Obstacle avoidance latency < 15 ms." techStack="NVIDIA Isaac Gym, Ray RLlib, PPO, PyTorch, Crazyflie 2.1, Python, OpenCV" difficulty="Advanced" />
               <FinalYearProjectCard title="Offline RL for Clinical Treatment Policy Learning from EHR Data" description="An offline reinforcement learning system (Conservative Q-Learning / IQL) that learns sepsis treatment policies from MIMIC-IV clinical data without online exploration. Counterfactual policy evaluation using Doubly Robust OPE. Policy achieves 14% lower 30-day mortality vs physician baseline in retrospective evaluation." techStack="Python, PyTorch, d3rlpy (offline RL), MIMIC-IV, scikit-learn, Jupyter, SHAP" difficulty="Advanced" />
             </section>
@@ -161,7 +161,7 @@ export default function AIMLFinalYearProjectsPage() {
             {/* Bottom CTA — CTA #2 */}
             <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 mb-10">
               <h3 className="text-lg font-bold text-foreground mb-2">Ready to Build Your AIML Final Year Project?</h3>
-              <p className="text-sm text-muted-foreground mb-4">WeBuildPro's AIML team has delivered 150+ AI final year projects, including IEEE and ACL workshop paper submissions. We provide cloud GPU access, complete code, and deployment support.</p>
+              <p className="text-sm text-muted-foreground mb-4">WeBuildPro&apos;s AIML team has delivered 150+ AI final year projects, including IEEE and ACL workshop paper submissions. We provide cloud GPU access, complete code, and deployment support.</p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/projects" className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-primary/90 transition-colors">
                   <Icon name="FolderOpen" size={14} /> View Projects
@@ -201,7 +201,7 @@ export default function AIMLFinalYearProjectsPage() {
               </nav>
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
                 <p className="text-sm font-bold text-foreground mb-1">🤖 AIML Project Support</p>
-                <p className="text-xs text-muted-foreground mb-3">LLMs, CV, MLOps + IEEE/ACL paper + GPU access. Bangalore's AI project specialists.</p>
+                <p className="text-xs text-muted-foreground mb-3">LLMs, CV, MLOps + IEEE/ACL paper + GPU access. Bangalore&apos;s AI project specialists.</p>
                 <div className="space-y-2">
                   <Link href="/pricing" className="flex items-center justify-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-primary/90 transition-colors w-full">
                     <Icon name="IndianRupee" size={12} /> View Pricing
