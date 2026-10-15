@@ -248,6 +248,14 @@ export default function ContactCTASection() {
                 <Icon name="MapPinIcon" size={14} />
                 Get Directions on Google Maps
               </a>
+              <a
+                href="https://share.google/pUslROxdL7UUv8VVK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors font-medium"
+              >
+                ⭐ Google Reviews
+              </a>
             </div>
           </div>
         </div>

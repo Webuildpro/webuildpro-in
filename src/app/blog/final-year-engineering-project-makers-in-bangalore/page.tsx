@@ -398,6 +398,14 @@ export default function FinalYearProjectMakersBangalorePage() {
                     <Icon name="PhoneIcon" size={14} />
                     Call +91 95382 08573
                   </a>
+                  <a
+                    href="https://share.google/pUslROxdL7UUv8VVK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 border border-border text-foreground hover:bg-card font-semibold text-sm px-6 py-3 rounded transition-colors w-full sm:w-auto"
+                  >
+                    ⭐ Google Reviews
+                  </a>
                 </div>
               </div>
 

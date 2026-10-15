@@ -337,6 +337,14 @@ export default function FinalYearProjectsBangalorePage() {
                 <Icon name="EnvelopeIcon" size={16} />
                 Send a Written Enquiry
               </Link>
+              <a
+                href="https://share.google/pUslROxdL7UUv8VVK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium"
+              >
+                ⭐ Google Reviews
+              </a>
             </div>
           </section>
         </div>

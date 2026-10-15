@@ -430,6 +430,14 @@ export default function MiniProjectIdeasECEPage() {
                     <Icon name="DocumentTextIcon" size={16} />
                     Get Quote
                   </Link>
+                  <a
+                    href="https://share.google/pUslROxdL7UUv8VVK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 border border-border text-foreground px-5 py-2.5 rounded text-sm font-semibold hover:bg-card transition-colors"
+                  >
+                    ⭐ Google Reviews
+                  </a>
                 </div>
               </div>
 

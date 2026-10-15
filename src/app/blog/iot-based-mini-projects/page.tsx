@@ -690,6 +690,14 @@ export default function IoTMiniProjectsPage() {
                     <Icon name="PhoneIcon" size={16} />
                     Call +91 95382 08573
                   </a>
+                  <a
+                    href="https://share.google/pUslROxdL7UUv8VVK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 border border-border text-foreground text-sm font-semibold px-5 py-2.5 rounded hover:bg-card transition-colors"
+                  >
+                    ⭐ Google Reviews
+                  </a>
                 </div>
               </div>
 
