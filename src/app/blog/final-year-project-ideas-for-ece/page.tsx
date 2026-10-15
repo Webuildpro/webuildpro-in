@@ -11,8 +11,8 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
-const SLUG = 'final-year-projects-for-ece';
-const PAGE_TITLE = 'Final Year Projects for ECE | Top B.Tech Electronics & Communication Projects 2026 – WeBuildPro';
+const SLUG = 'final-year-project-ideas-for-ece';
+const PAGE_TITLE = 'Final Year Project Ideas for ECE | Top B.Tech Electronics & Communication Projects 2026 – WeBuildPro';
 const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for ECE students in Bangalore. IoT systems, VLSI design, 5G signal processing, embedded AI, RF & wireless projects with complete hardware, PCB, and IEEE paper support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
@@ -72,7 +72,7 @@ export default function ECEFinalYearProjectsPage() {
       <BreadcrumbJsonLd items={[
         { name: 'Home', url: BASE_URL },
         { name: 'Blog', url: `${BASE_URL}/blog` },
-        { name: 'Final Year Projects for ECE', url: `${BASE_URL}/blog/${SLUG}` },
+        { name: 'Final Year Project Ideas for ECE', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
         title={PAGE_TITLE} description={PAGE_DESCRIPTION}
@@ -101,7 +101,7 @@ export default function ECEFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for ECE Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for ECE Students (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">ECE final year projects in 2026 demand a convergence of hardware design, embedded firmware, wireless protocols, and cloud connectivity. This guide presents 30+ project ideas spanning IoT with AI at the edge, VLSI design on FPGA, 5G signal processing, biomedical instrumentation, and smart power systems — all structured for IEEE paper publication and VTU/university evaluation.</p>
             </header>
 
@@ -179,6 +179,10 @@ export default function ECEFinalYearProjectsPage() {
                   className="inline-flex items-center gap-1.5 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-500 transition-colors">
                   <Icon name="MessageCircle" size={14} /> WhatsApp Us
                 </a>
+                <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
+                  <Icon name="MapPin" size={14} /> Google Profile
+                </a>
                 <a href={waQuote} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
                   <Icon name="FileText" size={14} /> Get Free Quote
@@ -190,8 +194,8 @@ export default function ECEFinalYearProjectsPage() {
               <p className="text-sm font-semibold text-foreground mb-3">Related Reading</p>
               <ul className="space-y-1.5">
                 <li><Link href="/blog/mini-projects-for-ece" className="text-sm text-primary hover:underline">Mini Project Ideas for ECE Students →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-eee" className="text-sm text-primary hover:underline">Final Year Projects for EEE Students →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-cse" className="text-sm text-primary hover:underline">Final Year Projects for CSE Students →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-eee" className="text-sm text-primary hover:underline">Final Year Projects for EEE Students →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-cse" className="text-sm text-primary hover:underline">Final Year Projects for CSE Students →</Link></li>
               </ul>
             </div>
           </article>
@@ -210,7 +214,7 @@ export default function ECEFinalYearProjectsPage() {
               </nav>
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
                 <p className="text-sm font-bold text-foreground mb-1">⚡ ECE Project Support</p>
-                <p className="text-xs text-muted-foreground mb-3">PCB fab, firmware, cloud dashboard + IEEE paper. Bangalore&apos;s #1 ECE project centre.</p>
+                <p className="text-xs text-muted-foreground mb-3">PCB fab, firmware, cloud dashboard + IEEE paper. Bangalore's #1 ECE project centre.</p>
                 <div className="space-y-2">
                   <Link href="/pricing" className="flex items-center justify-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-primary/90 transition-colors w-full">
                     <Icon name="IndianRupee" size={12} /> View Pricing
@@ -218,6 +222,10 @@ export default function ECEFinalYearProjectsPage() {
                   <a href={waGeneral} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-semibold px-3 py-2 rounded hover:bg-green-500 transition-colors w-full">
                     <Icon name="MessageCircle" size={12} /> WhatsApp Us
+                  </a>
+                  <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border border-border text-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-card transition-colors w-full">
+                    <Icon name="MapPin" size={12} /> Find Us on Google
                   </a>
                 </div>
               </div>

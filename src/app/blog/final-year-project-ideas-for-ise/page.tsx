@@ -11,11 +11,11 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
-const SLUG = 'final-year-projects-for-ise';
+const SLUG = 'final-year-project-ideas-for-ise';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
 
-const PAGE_TITLE = 'Top 60+ Final Year Projects for ISE Students (2025–26) | WeBuildPro';
+const PAGE_TITLE = 'Top 60+ Final Year Project Ideas for ISE Students (2025–26) | WeBuildPro';
 const PAGE_DESCRIPTION =
   'Explore 60+ innovative final year project ideas for Information Science & Engineering students — full-stack systems, distributed computing, cybersecurity, DevSecOps, software architecture, and open-source platform engineering with expert mentorship.';
 
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         url: `${BASE_URL}/og/final-year-projects-ise.jpg`,
         width: 1200,
         height: 630,
-        alt: 'Final Year Projects for ISE Students — WeBuildPro',
+        alt: 'Final Year Project Ideas for ISE Students — WeBuildPro',
       },
     ],
   },
@@ -124,7 +124,7 @@ export default function ISEFinalYearProjectsPage() {
         items={[
           { name: 'Home', url: `${BASE_URL}/` },
           { name: 'Blog', url: `${BASE_URL}/blog` },
-          { name: 'Final Year Projects for ISE', url: `${BASE_URL}/blog/${SLUG}` },
+          { name: 'Final Year Project Ideas for ISE', url: `${BASE_URL}/blog/${SLUG}` },
         ]}
       />
       <BlogPostingJsonLd
@@ -182,7 +182,7 @@ export default function ISEFinalYearProjectsPage() {
           <article className="lg:col-span-3">
 
             <h1 className="text-3xl font-bold text-foreground mb-3">
-              Top 60+ Final Year Projects for ISE Students (2025–26)
+              Top 60+ Final Year Project Ideas for ISE Students (2025–26)
             </h1>
             <p className="text-muted-foreground mb-6 text-sm">
               By <span className="font-medium text-foreground">WeBuildPro</span> &nbsp;·&nbsp; Updated October 2026 &nbsp;·&nbsp; 14 min read
@@ -576,9 +576,9 @@ export default function ISEFinalYearProjectsPage() {
               <ul className="space-y-2">
                 {[
                   { href: '/blog/mini-projects-for-ise', label: 'Mini Projects for ISE Students' },
-                  { href: '/blog/final-year-projects-for-cse', label: 'Final Year Projects for CSE Students' },
-                  { href: '/blog/final-year-projects-for-ece', label: 'Final Year Projects for ECE Students' },
-                  { href: '/blog/final-year-projects-for-aiml', label: 'Final Year Projects for AIML Students' },
+                  { href: '/blog/final-year-project-ideas-for-cse', label: 'Final Year Projects for CSE Students' },
+                  { href: '/blog/final-year-project-ideas-for-ece', label: 'Final Year Projects for ECE Students' },
+                  { href: '/blog/final-year-project-ideas-for-aiml', label: 'Final Year Projects for AIML Students' },
                 ].map((link) => (
                   <li key={link.href}>
                     <Link

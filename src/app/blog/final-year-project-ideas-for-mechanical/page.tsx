@@ -11,8 +11,8 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
-const SLUG = 'final-year-projects-for-mechanical';
-const PAGE_TITLE = 'Final Year Projects for Mechanical Engineering | Top B.Tech ME Projects 2026 – WeBuildPro';
+const SLUG = 'final-year-project-ideas-for-mechanical';
+const PAGE_TITLE = 'Final Year Project Ideas for Mechanical Engineering | Top B.Tech ME Projects 2026 – WeBuildPro';
 const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for Mechanical Engineering students in Bangalore. CFD simulations, FEA analysis, robotics, renewable energy systems, and manufacturing automation projects with complete CAD, simulation, and report support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
@@ -72,7 +72,7 @@ export default function MechanicalFinalYearProjectsPage() {
       <BreadcrumbJsonLd items={[
         { name: 'Home', url: BASE_URL },
         { name: 'Blog', url: `${BASE_URL}/blog` },
-        { name: 'Final Year Projects for Mechanical', url: `${BASE_URL}/blog/${SLUG}` },
+        { name: 'Final Year Project Ideas for Mechanical', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
         title={PAGE_TITLE} description={PAGE_DESCRIPTION}
@@ -101,7 +101,7 @@ export default function MechanicalFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for Mechanical Engineering Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for Mechanical Engineering Students (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Mechanical Engineering final year projects in 2026 must go beyond textbook theory — they should integrate CAD modelling, simulation (CFD/FEA), physical prototyping, and data analysis. This guide presents 30+ project ideas that are genuinely challenging, publishable in IEEE/ASME journals, and aligned with what Tata, L&T, ISRO, Bosch, and other top recruiters look for in fresh ME graduates.</p>
             </header>
 
@@ -119,7 +119,7 @@ export default function MechanicalFinalYearProjectsPage() {
               <p className="text-muted-foreground text-sm mb-5">Computational Fluid Dynamics projects validated against experimental data — a combination that reviewers and examiners love.</p>
               <FinalYearProjectCard title="CFD Optimisation of Heat Exchanger with Nanofluids" description="A 3D CFD study of a shell-and-tube heat exchanger using Al₂O₃-water nanofluid at varying volume fractions (0.5%–3%). Simulated in ANSYS Fluent using RNG k-ε turbulence model. Parametric study on baffle spacing, tube arrangement, and nanoparticle concentration. Results compared against Wilson plot experimental data." techStack="ANSYS Fluent, SolidWorks, ANSYS Meshing, Python (post-processing), MATLAB" difficulty="Advanced" />
               <FinalYearProjectCard title="Aerodynamic Drag Reduction Study for Road Vehicles using CFD" description="Full-scale external aerodynamics CFD of a sedan baseline model with four body modifications (tapered tail, underbody diffuser, rear spoiler, vortex generators). Reynolds-Averaged Navier-Stokes (RANS) with SST k-ω model. Drag coefficient reduced by 18%. Wind tunnel validation with 1:10 scale model." techStack="ANSYS Fluent, Autodesk CFD, SolidWorks, MATLAB, Wind Tunnel (1:10 scale model)" difficulty="Advanced" />
-              <FinalYearProjectCard title="Phase Change Material (PCM) based Thermal Energy Storage for Solar Building" description="Design and CFD simulation of a PCM (RT42 paraffin wax) integrated wall panel for passive solar building thermal management. Enthalpy-porosity method in ANSYS Fluent models melting/solidification. Energy savings analysis over Bangalore&apos;s climate profile (TMY data) using EnergyPlus." techStack="ANSYS Fluent, EnergyPlus, SolidWorks, MATLAB, Python" difficulty="Advanced" />
+              <FinalYearProjectCard title="Phase Change Material (PCM) based Thermal Energy Storage for Solar Building" description="Design and CFD simulation of a PCM (RT42 paraffin wax) integrated wall panel for passive solar building thermal management. Enthalpy-porosity method in ANSYS Fluent models melting/solidification. Energy savings analysis over Bangalore's climate profile (TMY data) using EnergyPlus." techStack="ANSYS Fluent, EnergyPlus, SolidWorks, MATLAB, Python" difficulty="Advanced" />
               <FinalYearProjectCard title="Film Cooling Effectiveness Analysis for Gas Turbine Blades" description="A parametric CFD study of cylindrical and shaped hole film cooling on a flat plate representing a turbine blade. ANSYS Fluent with conjugate heat transfer, temperature-dependent properties, and blowing ratios (M = 0.5–2.0). Compares adiabatic film cooling effectiveness against published benchmark data." techStack="ANSYS Fluent, ICEM CFD, MATLAB, SolidWorks" difficulty="Intermediate" />
             </section>
             <CircuitDivider />
@@ -147,7 +147,7 @@ export default function MechanicalFinalYearProjectsPage() {
               <h2 className="text-xl font-bold text-foreground mb-4">Renewable Energy & Sustainable Systems Projects</h2>
               <FinalYearProjectCard title="Thermoelectric Generator (TEG) Waste Heat Recovery for IC Engine" description="A multi-stage TEG array mounted on the exhaust pipe of a 4-stroke engine. TEG module (Bi₂Te₃) placement optimised with thermal resistance network model and ANSYS thermal FEA. Experimental validation on engine test rig. Net power output 45 W from exhaust at 350°C, integrated with DC-DC boost converter." techStack="ANSYS Thermal, SolidWorks, MATLAB/Simulink, TEG modules, Altium, Engine test rig" difficulty="Advanced" />
               <FinalYearProjectCard title="Vertical Axis Wind Turbine (VAWT) Blade Optimisation using CFD + Genetic Algorithm" description="H-Darrieus VAWT blade profile (NACA 0015, 0018, 0021) optimised using a MATLAB genetic algorithm coupled with ANSYS Fluent CFD in a batch loop. Power coefficient (Cp) vs TSR curves generated for each blade configuration. Optimal blade manufactured and tested in open-jet wind tunnel." techStack="ANSYS Fluent, MATLAB (GA Toolbox), SolidWorks, Wind Tunnel, Python" difficulty="Advanced" />
-              <FinalYearProjectCard title="Solar-Powered Atmospheric Water Generator for Rural India" description="Design, fabrication, and thermodynamic analysis of a desiccant-based atmospheric water harvesting system regenerated by solar thermal collectors. Condensation cycle produces 8 L/day in Bangalore&apos;s climate. MATLAB model predicts daily yield vs humidity and solar irradiance. Cost analysis for village-scale deployment." techStack="MATLAB, SolidWorks, solar flat-plate collector, silica gel desiccant, data loggers" difficulty="Intermediate" />
+              <FinalYearProjectCard title="Solar-Powered Atmospheric Water Generator for Rural India" description="Design, fabrication, and thermodynamic analysis of a desiccant-based atmospheric water harvesting system regenerated by solar thermal collectors. Condensation cycle produces 8 L/day in Bangalore's climate. MATLAB model predicts daily yield vs humidity and solar irradiance. Cost analysis for village-scale deployment." techStack="MATLAB, SolidWorks, solar flat-plate collector, silica gel desiccant, data loggers" difficulty="Intermediate" />
             </section>
             <CircuitDivider />
 
@@ -167,7 +167,7 @@ export default function MechanicalFinalYearProjectsPage() {
             {/* Bottom CTA — CTA #2 */}
             <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 mb-10">
               <h3 className="text-lg font-bold text-foreground mb-2">Need Help with Your Mechanical Final Year Project?</h3>
-              <p className="text-sm text-muted-foreground mb-4">WeBuildPro provides end-to-end Mechanical project support — ANSYS/SolidWorks simulation, fabrication, technical report writing, and IEEE paper guidance. Bangalore&apos;s trusted project centre since 2019.</p>
+              <p className="text-sm text-muted-foreground mb-4">WeBuildPro provides end-to-end Mechanical project support — ANSYS/SolidWorks simulation, fabrication, technical report writing, and IEEE paper guidance. Bangalore's trusted project centre since 2019.</p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/projects" className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-primary/90 transition-colors">
                   <Icon name="FolderOpen" size={14} /> View Projects
@@ -175,6 +175,10 @@ export default function MechanicalFinalYearProjectsPage() {
                 <a href={waGeneral} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-500 transition-colors">
                   <Icon name="MessageCircle" size={14} /> WhatsApp Us
+                </a>
+                <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
+                  <Icon name="MapPin" size={14} /> Google Profile
                 </a>
                 <a href={waQuote} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
@@ -187,8 +191,8 @@ export default function MechanicalFinalYearProjectsPage() {
               <p className="text-sm font-semibold text-foreground mb-3">Related Reading</p>
               <ul className="space-y-1.5">
                 <li><Link href="/blog/mini-projects-for-mechanical" className="text-sm text-primary hover:underline">Mini Project Ideas for Mechanical Students →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-civil" className="text-sm text-primary hover:underline">Final Year Projects for Civil Engineering →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-aeronautical" className="text-sm text-primary hover:underline">Final Year Projects for Aeronautical Engineering →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-civil" className="text-sm text-primary hover:underline">Final Year Projects for Civil Engineering →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-aeronautical" className="text-sm text-primary hover:underline">Final Year Projects for Aeronautical Engineering →</Link></li>
               </ul>
             </div>
           </article>
@@ -215,6 +219,10 @@ export default function MechanicalFinalYearProjectsPage() {
                   <a href={waGeneral} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-semibold px-3 py-2 rounded hover:bg-green-500 transition-colors w-full">
                     <Icon name="MessageCircle" size={12} /> WhatsApp Us
+                  </a>
+                  <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border border-border text-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-card transition-colors w-full">
+                    <Icon name="MapPin" size={12} /> Find Us on Google
                   </a>
                 </div>
               </div>

@@ -11,8 +11,8 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
-const SLUG = 'final-year-projects-for-civil';
-const PAGE_TITLE = 'Final Year Projects for Civil Engineering | Top B.Tech CE Projects 2026 – WeBuildPro';
+const SLUG = 'final-year-project-ideas-for-civil';
+const PAGE_TITLE = 'Final Year Project Ideas for Civil Engineering | Top B.Tech CE Projects 2026 – WeBuildPro';
 const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for Civil Engineering students in Bangalore. Structural analysis with STAAD.Pro/ETABS, geotechnical experiments, environmental engineering, smart city, and sustainable construction projects with full report and software support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
@@ -72,7 +72,7 @@ export default function CivilFinalYearProjectsPage() {
       <BreadcrumbJsonLd items={[
         { name: 'Home', url: BASE_URL },
         { name: 'Blog', url: `${BASE_URL}/blog` },
-        { name: 'Final Year Projects for Civil Engineering', url: `${BASE_URL}/blog/${SLUG}` },
+        { name: 'Final Year Project Ideas for Civil Engineering', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
         title={PAGE_TITLE} description={PAGE_DESCRIPTION}
@@ -101,7 +101,7 @@ export default function CivilFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for Civil Engineering Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for Civil Engineering Students (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Civil Engineering final year projects must combine rigorous analysis with real-world relevance — earthquake-resistant design, sustainable materials, smart city infrastructure, and climate-resilient water systems are the themes that resonate with both academic evaluators and industry recruiters. This guide presents 30+ high-quality project ideas suited for VTU and autonomous college evaluation, with IEEE publication potential.</p>
             </header>
 
@@ -126,7 +126,7 @@ export default function CivilFinalYearProjectsPage() {
 
             <section id="geotechnical" className="mb-10">
               <h2 className="text-xl font-bold text-foreground mb-4">Geotechnical Engineering Projects</h2>
-              <p className="text-muted-foreground text-sm mb-5">Lab and field-based geotechnical studies relevant to Bangalore&apos;s expansive clay and hard rock terrain.</p>
+              <p className="text-muted-foreground text-sm mb-5">Lab and field-based geotechnical studies relevant to Bangalore's expansive clay and hard rock terrain.</p>
               <FinalYearProjectCard title="Ground Improvement using Stone Columns in Expansive Clay — Field Study and Numerical Analysis" description="Plate load tests on untreated and stone-column-treated expansive black cotton soil from North Bangalore site. Settlement reduction and bearing capacity improvement quantified. Numerical validation using PLAXIS 2D with Mohr-Coulomb model. Parametric study on column spacing, length, and diameter ratio." techStack="PLAXIS 2D, MATLAB, laboratory equipment (triaxial, plate load test), AutoCAD" difficulty="Advanced" />
               <FinalYearProjectCard title="Slope Stability Analysis of Road Embankment in Rainfall-Triggered Failure Conditions" description="Bishop's Simplified and Spencer methods in GeoStudio SLOPE/W for a critical road embankment in Western Ghats. Rainfall infiltration modelled using SEEP/W. Factor of Safety mapped for 100-year return period rainfall event. Stabilisation alternatives (geogrid reinforcement, drainage berms, vegetative cover) assessed." techStack="GeoStudio SLOPE/W, SEEP/W, AutoCAD, Python, IS:7894" difficulty="Advanced" />
               <FinalYearProjectCard title="Performance of Geopolymer-Stabilised Soil for Sub-base Application" description="Laboratory investigation of red soil treated with fly ash-based geopolymer (NaOH + Na₂SiO₃ activator) at 0%, 8%, 12%, 16% binder content. Tests: Atterberg limits, MDD, CBR, UCS, durability (wetting-drying cycles). Optimal binder content recommended for road sub-base in Karnataka climate." techStack="Geotechnical lab equipment, MATLAB, MS Excel, IS:2720 series" difficulty="Intermediate" />
@@ -135,9 +135,9 @@ export default function CivilFinalYearProjectsPage() {
 
             <section id="environmental" className="mb-10">
               <h2 className="text-xl font-bold text-foreground mb-4">Environmental Engineering Projects</h2>
-              <p className="text-muted-foreground text-sm mb-5">Water treatment, solid waste, and air quality projects directly applicable to Bangalore&apos;s urban environment challenges.</p>
+              <p className="text-muted-foreground text-sm mb-5">Water treatment, solid waste, and air quality projects directly applicable to Bangalore's urban environment challenges.</p>
               <FinalYearProjectCard title="Advanced Treatment of Textile Wastewater using Electrocoagulation-Fenton System" description="A bench-scale combined electrocoagulation (EC) + Fenton oxidation system for treating reactive dye wastewater from Peenya Industrial Area. Batch experiments optimise current density, pH, Fe²⁺/H₂O₂ ratio. COD removal 94%, colour removal 99%. Techno-economic analysis and sludge characterisation included." techStack="Lab electrocoagulation setup, UV-Vis spectrophotometer, pH/COD meters, MATLAB, Python" difficulty="Advanced" />
-              <FinalYearProjectCard title="Life Cycle Assessment (LCA) of Bangalore&apos;s Mixed Solid Waste Management Scenarios" description="A comparative LCA of four MSW management scenarios for Bangalore (landfill-only, composting, biomethanation, WTE incineration) using SimaPro software and Ecoinvent 3.9 database. Global Warming Potential, eutrophication, and human toxicity impacts quantified. Policy recommendations for BBMP." techStack="SimaPro, Ecoinvent database, MATLAB, Python, MS Excel, ISO 14040/14044" difficulty="Advanced" />
+              <FinalYearProjectCard title="Life Cycle Assessment (LCA) of Bangalore's Mixed Solid Waste Management Scenarios" description="A comparative LCA of four MSW management scenarios for Bangalore (landfill-only, composting, biomethanation, WTE incineration) using SimaPro software and Ecoinvent 3.9 database. Global Warming Potential, eutrophication, and human toxicity impacts quantified. Policy recommendations for BBMP." techStack="SimaPro, Ecoinvent database, MATLAB, Python, MS Excel, ISO 14040/14044" difficulty="Advanced" />
               <FinalYearProjectCard title="IoT-Based Real-Time Water Quality Monitoring Network for Lakes in Bangalore" description="A network of 5 floating IoT sensor buoys (pH, DO, turbidity, conductivity, temperature) on Bellandur Lake. ESP32 nodes transmit via 4G to an InfluxDB time-series database. A Grafana dashboard visualises pollution trends; ML anomaly detection sends BWSSB alerts via email/SMS." techStack="ESP32, Atlas Scientific sensors, 4G LTE, InfluxDB, Grafana, Python, scikit-learn" difficulty="Intermediate" />
             </section>
             <CircuitDivider />
@@ -175,6 +175,10 @@ export default function CivilFinalYearProjectsPage() {
                   className="inline-flex items-center gap-1.5 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-500 transition-colors">
                   <Icon name="MessageCircle" size={14} /> WhatsApp Us
                 </a>
+                <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
+                  <Icon name="MapPin" size={14} /> Google Profile
+                </a>
                 <a href={waQuote} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
                   <Icon name="FileText" size={14} /> Get Free Quote
@@ -186,8 +190,8 @@ export default function CivilFinalYearProjectsPage() {
               <p className="text-sm font-semibold text-foreground mb-3">Related Reading</p>
               <ul className="space-y-1.5">
                 <li><Link href="/blog/mini-projects-for-civil" className="text-sm text-primary hover:underline">Mini Project Ideas for Civil Engineering →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-mechanical" className="text-sm text-primary hover:underline">Final Year Projects for Mechanical Engineering →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-eee" className="text-sm text-primary hover:underline">Final Year Projects for EEE Students →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-mechanical" className="text-sm text-primary hover:underline">Final Year Projects for Mechanical Engineering →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-eee" className="text-sm text-primary hover:underline">Final Year Projects for EEE Students →</Link></li>
               </ul>
             </div>
           </article>
@@ -206,7 +210,7 @@ export default function CivilFinalYearProjectsPage() {
               </nav>
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
                 <p className="text-sm font-bold text-foreground mb-1">🏗️ Civil Project Support</p>
-                <p className="text-xs text-muted-foreground mb-3">STAAD.Pro, ETABS, PLAXIS + full report + IEEE paper. Bangalore&apos;s trusted civil project centre.</p>
+                <p className="text-xs text-muted-foreground mb-3">STAAD.Pro, ETABS, PLAXIS + full report + IEEE paper. Bangalore's trusted civil project centre.</p>
                 <div className="space-y-2">
                   <Link href="/pricing" className="flex items-center justify-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-primary/90 transition-colors w-full">
                     <Icon name="IndianRupee" size={12} /> View Pricing
@@ -214,6 +218,10 @@ export default function CivilFinalYearProjectsPage() {
                   <a href={waGeneral} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-semibold px-3 py-2 rounded hover:bg-green-500 transition-colors w-full">
                     <Icon name="MessageCircle" size={12} /> WhatsApp Us
+                  </a>
+                  <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border border-border text-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-card transition-colors w-full">
+                    <Icon name="MapPin" size={12} /> Find Us on Google
                   </a>
                 </div>
               </div>

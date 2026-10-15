@@ -11,8 +11,8 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
-const SLUG = 'final-year-projects-for-eee';
-const PAGE_TITLE = 'Final Year Projects for EEE | Top B.Tech Electrical Engineering Projects 2026 – WeBuildPro';
+const SLUG = 'final-year-project-ideas-for-eee';
+const PAGE_TITLE = 'Final Year Project Ideas for EEE | Top B.Tech Electrical Engineering Projects 2026 – WeBuildPro';
 const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for EEE students in Bangalore. Renewable energy systems, smart grid, EV charging, power electronics, industrial automation, and IoT-based electrical projects with complete hardware, simulation, and IEEE paper support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
@@ -72,7 +72,7 @@ export default function EEEFinalYearProjectsPage() {
       <BreadcrumbJsonLd items={[
         { name: 'Home', url: BASE_URL },
         { name: 'Blog', url: `${BASE_URL}/blog` },
-        { name: 'Final Year Projects for EEE', url: `${BASE_URL}/blog/${SLUG}` },
+        { name: 'Final Year Project Ideas for EEE', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
         title={PAGE_TITLE} description={PAGE_DESCRIPTION}
@@ -101,7 +101,7 @@ export default function EEEFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for EEE Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for EEE Students (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Electrical and Electronics Engineering final year projects must combine power system theory, power electronics hardware, and digital control — ideally with renewable energy integration or EV charging as the application. This guide presents 30+ project ideas across renewable energy, smart grid, EV technology, industrial automation, and advanced machine drives — each designed for IEEE publication and impressing BESCOM, Siemens, ABB, and BHEL interviewers.</p>
             </header>
 
@@ -117,7 +117,7 @@ export default function EEEFinalYearProjectsPage() {
             <section id="renewable" className="mb-10">
               <h2 className="text-xl font-bold text-foreground mb-4">Renewable Energy Systems Projects</h2>
               <FinalYearProjectCard title="Grid-Tied Solar PV Inverter with Dual-Stage MPPT and Reactive Power Compensation" description="A 5 kW grid-tied PV inverter with boost converter stage (P&O MPPT) + full-bridge inverter stage (SPWM). DSP (TMS320F28335) implements both stages plus Q-compensation for unity PF. THD < 5% at rated load, anti-islanding via ROCOF detection. MATLAB/Simulink model validated against hardware results." techStack="TMS320F28335, MATLAB/Simulink, Altium Designer, IGBTs, LEM sensors, Power quality analyser" difficulty="Advanced" />
-              <FinalYearProjectCard title="Hybrid Wind-Solar Microgrid with Battery Energy Storage System (BESS)" description="A 2 kW hybrid microgrid combining a PMSG wind emulator, PV array, 48V LiFePO₄ battery bank, and bidirectional DC-DC converter. Energy management controller (Arduino + Raspberry Pi) optimises source dispatch based on SoC and load demand. MATLAB/Simulink model predicts 24-hour dispatch for Bangalore&apos;s solar-wind profile." techStack="MATLAB/Simulink, Arduino, Raspberry Pi, PMSG, LiFePO₄ BMS, Altium PCB" difficulty="Advanced" />
+              <FinalYearProjectCard title="Hybrid Wind-Solar Microgrid with Battery Energy Storage System (BESS)" description="A 2 kW hybrid microgrid combining a PMSG wind emulator, PV array, 48V LiFePO₄ battery bank, and bidirectional DC-DC converter. Energy management controller (Arduino + Raspberry Pi) optimises source dispatch based on SoC and load demand. MATLAB/Simulink model predicts 24-hour dispatch for Bangalore's solar-wind profile." techStack="MATLAB/Simulink, Arduino, Raspberry Pi, PMSG, LiFePO₄ BMS, Altium PCB" difficulty="Advanced" />
               <FinalYearProjectCard title="Variable Speed Pumping System for Solar-Powered Agricultural Irrigation" description="A solar PV-driven variable frequency drive (VFD) system for a 2 HP centrifugal pump without battery storage. MPPT via perturb-and-observe ensures pump runs at optimal speed under varying irradiance. Controller reduces water wastage by 40% compared to on-off control. Field trial at Kolar district farm." techStack="MATLAB/Simulink, STM32, MOSFET H-bridge, solar panels, flowmeter, Python" difficulty="Intermediate" />
               <FinalYearProjectCard title="Offshore Wind Turbine PMSG Full Power Converter with Grid Fault Ride-Through" description="MATLAB/Simulink simulation of a 5 MW PMSG offshore wind turbine with full power back-to-back converter. Machine-side converter implements FOC; grid-side implements PR controller. Low Voltage Ride-Through (LVRT) per IEC 61400-21 implemented with reactive current injection during grid faults. Harmonic analysis at PCC." techStack="MATLAB/Simulink, Simscape Electrical, Power Systems Toolbox, Python (post-processing)" difficulty="Advanced" />
             </section>
@@ -171,6 +171,10 @@ export default function EEEFinalYearProjectsPage() {
                   className="inline-flex items-center gap-1.5 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-500 transition-colors">
                   <Icon name="MessageCircle" size={14} /> WhatsApp Us
                 </a>
+                <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
+                  <Icon name="MapPin" size={14} /> Google Profile
+                </a>
                 <a href={waQuote} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
                   <Icon name="FileText" size={14} /> Get Free Quote
@@ -182,8 +186,8 @@ export default function EEEFinalYearProjectsPage() {
               <p className="text-sm font-semibold text-foreground mb-3">Related Reading</p>
               <ul className="space-y-1.5">
                 <li><Link href="/blog/mini-projects-for-eee" className="text-sm text-primary hover:underline">Mini Project Ideas for EEE Students →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-ece" className="text-sm text-primary hover:underline">Final Year Projects for ECE Students →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-mechanical" className="text-sm text-primary hover:underline">Final Year Projects for Mechanical Engineering →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-ece" className="text-sm text-primary hover:underline">Final Year Projects for ECE Students →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-mechanical" className="text-sm text-primary hover:underline">Final Year Projects for Mechanical Engineering →</Link></li>
               </ul>
             </div>
           </article>
@@ -202,7 +206,7 @@ export default function EEEFinalYearProjectsPage() {
               </nav>
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
                 <p className="text-sm font-bold text-foreground mb-1">⚡ EEE Project Support</p>
-                <p className="text-xs text-muted-foreground mb-3">Hardware + MATLAB/Simulink + PCB + IEEE paper. Bangalore&apos;s #1 EEE project centre.</p>
+                <p className="text-xs text-muted-foreground mb-3">Hardware + MATLAB/Simulink + PCB + IEEE paper. Bangalore's #1 EEE project centre.</p>
                 <div className="space-y-2">
                   <Link href="/pricing" className="flex items-center justify-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-primary/90 transition-colors w-full">
                     <Icon name="IndianRupee" size={12} /> View Pricing
@@ -210,6 +214,10 @@ export default function EEEFinalYearProjectsPage() {
                   <a href={waGeneral} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-semibold px-3 py-2 rounded hover:bg-green-500 transition-colors w-full">
                     <Icon name="MessageCircle" size={12} /> WhatsApp Us
+                  </a>
+                  <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border border-border text-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-card transition-colors w-full">
+                    <Icon name="MapPin" size={12} /> Find Us on Google
                   </a>
                 </div>
               </div>

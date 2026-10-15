@@ -11,8 +11,8 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
-const SLUG = 'final-year-projects-for-cse';
-const PAGE_TITLE = 'Final Year Projects for CSE | Top B.Tech Computer Science Projects 2026 – WeBuildPro';
+const SLUG = 'final-year-project-ideas-for-cse';
+const PAGE_TITLE = 'Final Year Project Ideas for CSE | Top B.Tech Computer Science Projects 2026 – WeBuildPro';
 const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for CSE students in Bangalore. Full-stack web apps, AI/ML systems, cybersecurity tools, cloud-native apps, and blockchain projects with complete source code and IEEE paper support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
@@ -72,7 +72,7 @@ export default function CSEFinalYearProjectsPage() {
       <BreadcrumbJsonLd items={[
         { name: 'Home', url: BASE_URL },
         { name: 'Blog', url: `${BASE_URL}/blog` },
-        { name: 'Final Year Projects for CSE', url: `${BASE_URL}/blog/${SLUG}` },
+        { name: 'Final Year Project Ideas for CSE', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
         title={PAGE_TITLE} description={PAGE_DESCRIPTION}
@@ -101,7 +101,7 @@ export default function CSEFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for CSE Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for CSE Students (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Your final year project is the capstone of your B.Tech journey — it must demonstrate real-world problem-solving, technical depth, and innovation. This guide covers 30+ industry-relevant final year project ideas for Computer Science Engineering students, ranging from full-stack platforms to AI-powered systems, each crafted to meet VTU/university standards and support IEEE paper publication.</p>
             </header>
 
@@ -174,7 +174,7 @@ export default function CSEFinalYearProjectsPage() {
             {/* Bottom CTA — CTA #2 */}
             <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 mb-10">
               <h3 className="text-lg font-bold text-foreground mb-2">Ready to Build Your CSE Final Year Project?</h3>
-              <p className="text-sm text-muted-foreground mb-4">WeBuildPro&apos;s CSE team has delivered 200+ final year projects with IEEE paper publications, working demos, and complete documentation. We handle the entire journey — ideation to viva.</p>
+              <p className="text-sm text-muted-foreground mb-4">WeBuildPro's CSE team has delivered 200+ final year projects with IEEE paper publications, working demos, and complete documentation. We handle the entire journey — ideation to viva.</p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/projects" className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-primary/90 transition-colors">
                   <Icon name="FolderOpen" size={14} /> View Projects
@@ -182,6 +182,10 @@ export default function CSEFinalYearProjectsPage() {
                 <a href={waGeneral} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-500 transition-colors">
                   <Icon name="MessageCircle" size={14} /> WhatsApp Us
+                </a>
+                <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
+                  <Icon name="MapPin" size={14} /> Google Profile
                 </a>
                 <a href={waQuote} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
@@ -195,8 +199,8 @@ export default function CSEFinalYearProjectsPage() {
               <p className="text-sm font-semibold text-foreground mb-3">Related Reading</p>
               <ul className="space-y-1.5">
                 <li><Link href="/blog/mini-projects-for-cse" className="text-sm text-primary hover:underline">Mini Project Ideas for CSE Students →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-aiml" className="text-sm text-primary hover:underline">Final Year Projects for AIML Students →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-ise" className="text-sm text-primary hover:underline">Final Year Projects for ISE Students →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-aiml" className="text-sm text-primary hover:underline">Final Year Projects for AIML Students →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-ise" className="text-sm text-primary hover:underline">Final Year Projects for ISE Students →</Link></li>
               </ul>
             </div>
           </article>
@@ -218,7 +222,7 @@ export default function CSEFinalYearProjectsPage() {
               {/* Sidebar CTA — CTA #3 */}
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
                 <p className="text-sm font-bold text-foreground mb-1">🎓 Final Year Project Help</p>
-                <p className="text-xs text-muted-foreground mb-3">IEEE paper + working demo + full documentation. Bangalore&apos;s most trusted project centre.</p>
+                <p className="text-xs text-muted-foreground mb-3">IEEE paper + working demo + full documentation. Bangalore's most trusted project centre.</p>
                 <div className="space-y-2">
                   <Link href="/pricing" className="flex items-center justify-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-primary/90 transition-colors w-full">
                     <Icon name="IndianRupee" size={12} /> View Pricing
@@ -226,6 +230,10 @@ export default function CSEFinalYearProjectsPage() {
                   <a href={waGeneral} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-semibold px-3 py-2 rounded hover:bg-green-500 transition-colors w-full">
                     <Icon name="MessageCircle" size={12} /> WhatsApp Us
+                  </a>
+                  <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border border-border text-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-card transition-colors w-full">
+                    <Icon name="MapPin" size={12} /> Find Us on Google
                   </a>
                 </div>
               </div>

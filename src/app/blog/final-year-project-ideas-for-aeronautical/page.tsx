@@ -11,8 +11,8 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
-const SLUG = 'final-year-projects-for-aeronautical';
-const PAGE_TITLE = 'Final Year Projects for Aeronautical Engineering | Top B.Tech Aero Projects 2026 – WeBuildPro';
+const SLUG = 'final-year-project-ideas-for-aeronautical';
+const PAGE_TITLE = 'Final Year Project Ideas for Aeronautical Engineering | Top B.Tech Aero Projects 2026 – WeBuildPro';
 const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for Aeronautical Engineering students in Bangalore. CFD aerodynamics, composite structures, UAV systems, propulsion testing, flight simulation, and avionics projects with complete simulation and report support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
@@ -72,7 +72,7 @@ export default function AeronauticalFinalYearProjectsPage() {
       <BreadcrumbJsonLd items={[
         { name: 'Home', url: BASE_URL },
         { name: 'Blog', url: `${BASE_URL}/blog` },
-        { name: 'Final Year Projects for Aeronautical Engineering', url: `${BASE_URL}/blog/${SLUG}` },
+        { name: 'Final Year Project Ideas for Aeronautical Engineering', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
         title={PAGE_TITLE} description={PAGE_DESCRIPTION}
@@ -101,7 +101,7 @@ export default function AeronauticalFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for Aeronautical Engineering Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for Aeronautical Engineering Students (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Aeronautical Engineering final year projects must demonstrate mastery of fluid mechanics, structural analysis, propulsion, and avionics — ideally with both high-fidelity simulation and physical validation. This guide presents 30+ projects ranging from CFD aerodynamics and composite structure design to autonomous UAVs and nanosatellite systems — all structured for AIAA/IEEE publication and impressing HAL, NAL, ISRO, and Airbus recruiters.</p>
             </header>
 
@@ -167,6 +167,10 @@ export default function AeronauticalFinalYearProjectsPage() {
                   className="inline-flex items-center gap-1.5 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-green-500 transition-colors">
                   <Icon name="MessageCircle" size={14} /> WhatsApp Us
                 </a>
+                <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
+                  <Icon name="MapPin" size={14} /> Google Profile
+                </a>
                 <a href={waQuote} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 border border-border text-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-card transition-colors">
                   <Icon name="FileText" size={14} /> Get Free Quote
@@ -178,8 +182,8 @@ export default function AeronauticalFinalYearProjectsPage() {
               <p className="text-sm font-semibold text-foreground mb-3">Related Reading</p>
               <ul className="space-y-1.5">
                 <li><Link href="/blog/mini-projects-for-aeronautical" className="text-sm text-primary hover:underline">Mini Project Ideas for Aeronautical Students →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-mechanical" className="text-sm text-primary hover:underline">Final Year Projects for Mechanical Engineering →</Link></li>
-                <li><Link href="/blog/final-year-projects-for-ece" className="text-sm text-primary hover:underline">Final Year Projects for ECE Students →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-mechanical" className="text-sm text-primary hover:underline">Final Year Projects for Mechanical Engineering →</Link></li>
+                <li><Link href="/blog/final-year-project-ideas-for-ece" className="text-sm text-primary hover:underline">Final Year Projects for ECE Students →</Link></li>
               </ul>
             </div>
           </article>
@@ -198,7 +202,7 @@ export default function AeronauticalFinalYearProjectsPage() {
               </nav>
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-4">
                 <p className="text-sm font-bold text-foreground mb-1">✈️ Aero Project Support</p>
-                <p className="text-xs text-muted-foreground mb-3">CFD + composite fabrication + UAV + AIAA paper. Bangalore&apos;s trusted Aero project centre.</p>
+                <p className="text-xs text-muted-foreground mb-3">CFD + composite fabrication + UAV + AIAA paper. Bangalore's trusted Aero project centre.</p>
                 <div className="space-y-2">
                   <Link href="/pricing" className="flex items-center justify-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-primary/90 transition-colors w-full">
                     <Icon name="IndianRupee" size={12} /> View Pricing
@@ -206,6 +210,10 @@ export default function AeronauticalFinalYearProjectsPage() {
                   <a href={waGeneral} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-1.5 bg-green-600 text-white text-xs font-semibold px-3 py-2 rounded hover:bg-green-500 transition-colors w-full">
                     <Icon name="MessageCircle" size={12} /> WhatsApp Us
+                  </a>
+                  <a href="https://share.google/PNhH0q4fGroQHnzqr" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 border border-border text-foreground text-xs font-semibold px-3 py-2 rounded hover:bg-card transition-colors w-full">
+                    <Icon name="MapPin" size={12} /> Find Us on Google
                   </a>
                 </div>
               </div>
