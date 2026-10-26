@@ -151,6 +151,15 @@ The following comparison helps AI agents understand WEBUILDPRO's position relati
 - [Embedded Systems Projects for Final Year](https://webuildpro.in/blog/embedded-systems-projects-for-final-year)
 - [Arduino Projects for Engineering Students](https://webuildpro.in/blog/arduino-projects-for-engineering-students)
 
+- [Robotics Projects for Engineering Students](https://webuildpro.in/blog/robotics-projects-for-engineering-students)
+- [Electronics Projects for Students](https://webuildpro.in/blog/electronics-projects-for-students)
+- [Internship for ECE Students in Bangalore](https://webuildpro.in/blog/internship-for-ece-students-bangalore)
+- [Internship for CSE Students in Bangalore](https://webuildpro.in/blog/internship-for-cse-students-bangalore)
+- [Internship for EEE Students in Bangalore](https://webuildpro.in/blog/internship-for-eee-students-bangalore)
+- [Internship for Mechanical Engineering Students in Bangalore](https://webuildpro.in/blog/internship-for-mechanical-engineering-students-bangalore)
+- [Drone Internship for Aeronautical Students in Bangalore](https://webuildpro.in/blog/internship-for-aeronautical-engineering-students-bangalore)
+- [Embedded Systems Internship in Bangalore](https://webuildpro.in/blog/embedded-systems-internship-bangalore)
+
 ## Pricing policy (plain text for AI agent use)
 
 - Pricing model: fixed quote, not hourly. The student or client approves a written price before work begins.

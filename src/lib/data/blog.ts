@@ -1,4 +1,5 @@
 import { folderArticles, topicArticles } from './topic-pages';
+import { internshipArticles } from './internship-pages';
 
 export interface BlogArticle {
   slug: string;
@@ -1705,7 +1706,7 @@ A project that works, that you can defend, and that comes with full documentatio
   },
 ];
 
-blogArticles.push(...topicArticles, ...folderArticles);
+blogArticles.push(...topicArticles, ...internshipArticles, ...folderArticles);
 
 export function getBlogArticle(slug: string): BlogArticle | undefined {
   return blogArticles.find((a) => a.slug === slug);

@@ -240,6 +240,25 @@ export default function InternshipBangalorePage() {
             </div>
           </section>
 
+          {/* Branch-wise internship pages (keyword map: internship for <branch> students) */}
+          <section className="mb-14" aria-labelledby="by-branch-heading">
+            <h2 id="by-branch-heading" className="text-section-xl font-bold text-foreground mb-4">Internships by branch</h2>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                { href: '/blog/internship-for-ece-students-bangalore', label: 'Internship for ECE students in Bangalore' },
+                { href: '/blog/internship-for-cse-students-bangalore', label: 'Internship for CSE, ISE & AIML students' },
+                { href: '/blog/internship-for-eee-students-bangalore', label: 'Internship for EEE / electrical students' },
+                { href: '/blog/internship-for-mechanical-engineering-students-bangalore', label: 'Internship for mechanical engineering students' },
+                { href: '/blog/internship-for-aeronautical-engineering-students-bangalore', label: 'Drone internship for aeronautical students' },
+                { href: '/blog/embedded-systems-internship-bangalore', label: 'Embedded systems internship in Bangalore' },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} className="bg-card border border-border rounded p-4 text-sm font-medium text-foreground hover:border-primary/50 transition-colors">
+                  {l.label} →
+                </Link>
+              ))}
+            </div>
+          </section>
+
           {/* FAQ */}
           <section className="mb-14" aria-labelledby="faq-heading">
             <h2 id="faq-heading" className="text-section-xl font-bold text-foreground mb-6">
