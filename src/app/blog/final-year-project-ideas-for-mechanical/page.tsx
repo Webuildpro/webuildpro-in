@@ -15,7 +15,7 @@ const SLUG = 'final-year-project-ideas-for-mechanical';
 const PAGE_TITLE = 'Final Year Projects for Mechanical Engineering: 18 Ideas (2026)';
 const PAGE_DESCRIPTION = 'Explore 18 final year project ideas for Mechanical Engineering students in Bangalore. CFD simulations, FEA analysis, robotics, renewable energy systems, and manufacturing automation projects with complete CAD, simulation, and report support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
-const WA_BASE = 'https://wa.me/919591570099?text=';
+const WA_BASE = 'https://wa.me/919538208573?text=';
 
 function FinalYearProjectCard({ title, description, techStack, difficulty }: { title: string; description: string; techStack: string; difficulty: 'Intermediate' | 'Advanced' }) {
   const difficultyColor = difficulty === 'Advanced'

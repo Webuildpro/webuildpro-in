@@ -15,7 +15,7 @@ const SLUG = 'final-year-project-ideas-for-civil';
 const PAGE_TITLE = 'Final Year Projects for Civil Engineering: 17 Ideas (2026)';
 const PAGE_DESCRIPTION = 'Explore 17 final year project ideas for Civil Engineering students in Bangalore. Structural analysis with STAAD.Pro/ETABS, geotechnical experiments, environmental engineering, smart city, and sustainable construction projects with full report and software support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
-const WA_BASE = 'https://wa.me/919591570099?text=';
+const WA_BASE = 'https://wa.me/919538208573?text=';
 
 function FinalYearProjectCard({ title, description, techStack, difficulty }: { title: string; description: string; techStack: string; difficulty: 'Intermediate' | 'Advanced' }) {
   const difficultyColor = difficulty === 'Advanced'

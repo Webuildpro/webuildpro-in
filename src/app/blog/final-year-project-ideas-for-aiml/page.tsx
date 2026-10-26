@@ -15,7 +15,7 @@ const SLUG = 'final-year-project-ideas-for-aiml';
 const PAGE_TITLE = 'Final Year Projects for AIML: 17 AI & ML Project Ideas (2026)';
 const PAGE_DESCRIPTION = 'Explore 17 final year project ideas for AIML students in Bangalore. Large language models, computer vision systems, autonomous agents, reinforcement learning, generative AI, and production ML platforms with complete code, paper, and deployment support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
-const WA_BASE = 'https://wa.me/919591570099?text=';
+const WA_BASE = 'https://wa.me/919538208573?text=';
 
 function FinalYearProjectCard({ title, description, techStack, difficulty }: { title: string; description: string; techStack: string; difficulty: 'Intermediate' | 'Advanced' }) {
   const difficultyColor = difficulty === 'Advanced'

@@ -82,7 +82,7 @@ function ProjectCard({ title, description, difficulty, timeline }: ProjectCardPr
       </div>
       <p className="text-sm text-muted-foreground leading-relaxed mb-3">{description}</p>
       <a
-        href={`https://wa.me/919591570099?text=${whatsappMsg}`}
+        href={`https://wa.me/919538208573?text=${whatsappMsg}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 text-xs text-accent hover:text-accent/80 transition-colors font-medium"
@@ -544,7 +544,7 @@ export default function ECEProjectIdeasPage() {
                     Get a Free Quote
                   </Link>
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20ECE%20final%20year%20project"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20ECE%20final%20year%20project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-ghost inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium"

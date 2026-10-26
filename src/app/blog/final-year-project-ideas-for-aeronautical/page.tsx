@@ -15,7 +15,7 @@ const SLUG = 'final-year-project-ideas-for-aeronautical';
 const PAGE_TITLE = 'Final Year Projects for Aeronautical Engineering (2026): 17 Ideas';
 const PAGE_DESCRIPTION = 'Explore 17 final year project ideas for Aeronautical Engineering students in Bangalore. CFD aerodynamics, composite structures, UAV systems, propulsion testing, flight simulation, and avionics projects with complete simulation and report support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
-const WA_BASE = 'https://wa.me/919591570099?text=';
+const WA_BASE = 'https://wa.me/919538208573?text=';
 
 function FinalYearProjectCard({ title, description, techStack, difficulty }: { title: string; description: string; techStack: string; difficulty: 'Intermediate' | 'Advanced' }) {
   const difficultyColor = difficulty === 'Advanced'

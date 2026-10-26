@@ -76,7 +76,7 @@ function MiniProjectCard({ title, description, difficulty }: MiniProjectCardProp
       </div>
       <p className="text-sm text-muted-foreground leading-relaxed mb-3">{description}</p>
       <a
-        href={`https://wa.me/919591570099?text=${whatsappMsg}`}
+        href={`https://wa.me/919538208573?text=${whatsappMsg}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 text-xs text-accent hover:text-accent/80 transition-colors font-medium"
@@ -415,7 +415,7 @@ export default function MiniProjectIdeasECEPage() {
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20ECE%20mini%20project"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20ECE%20mini%20project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-5 py-2.5 rounded transition-colors"
@@ -509,7 +509,7 @@ export default function MiniProjectIdeasECEPage() {
                   <div className="mt-6 pt-4 border-t border-border">
                     <p className="text-xs text-muted-foreground mb-3">Need it built?</p>
                     <a
-                      href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20ECE%20mini%20project"
+                      href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20ECE%20mini%20project"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full text-center bg-green-600 hover:bg-green-700 text-white text-xs font-semibold px-3 py-2 rounded transition-colors"
@@ -554,7 +554,7 @@ export default function MiniProjectIdeasECEPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20ECE%20mini%20project"
+              href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20ECE%20mini%20project"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-6 py-3 rounded transition-colors"

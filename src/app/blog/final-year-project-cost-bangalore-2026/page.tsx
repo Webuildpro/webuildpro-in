@@ -381,7 +381,7 @@ export default function FinalYearProjectCostBangalorePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20want%20a%20quote%20for%20my%20final%20year%20project"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20want%20a%20quote%20for%20my%20final%20year%20project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-5 py-3 rounded transition-colors"
@@ -466,7 +466,7 @@ export default function FinalYearProjectCostBangalorePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20want%20a%20quote%20for%20my%20final%20year%20project"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20want%20a%20quote%20for%20my%20final%20year%20project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-5 py-3 rounded transition-colors"
@@ -522,7 +522,7 @@ export default function FinalYearProjectCostBangalorePage() {
                     Fixed, itemised quote within 24 hours — no visit required.
                   </p>
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20want%20a%20quote%20for%20my%20final%20year%20project"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20want%20a%20quote%20for%20my%20final%20year%20project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center bg-green-600 hover:bg-green-700 text-white text-xs font-semibold px-3 py-2 rounded transition-colors mb-2"

@@ -15,7 +15,7 @@ const SLUG = 'final-year-project-ideas-for-eee';
 const PAGE_TITLE = 'Final Year Projects for EEE: 16 Electrical Project Ideas (2026)';
 const PAGE_DESCRIPTION = 'Explore 16 final year project ideas for EEE students in Bangalore. Renewable energy systems, smart grid, EV charging, power electronics, industrial automation, and IoT-based electrical projects with complete hardware, simulation, and IEEE paper support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
-const WA_BASE = 'https://wa.me/919591570099?text=';
+const WA_BASE = 'https://wa.me/919538208573?text=';
 
 function FinalYearProjectCard({ title, description, techStack, difficulty }: { title: string; description: string; techStack: string; difficulty: 'Intermediate' | 'Advanced' }) {
   const difficultyColor = difficulty === 'Advanced'

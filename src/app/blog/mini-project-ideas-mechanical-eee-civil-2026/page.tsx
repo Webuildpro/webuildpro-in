@@ -81,7 +81,7 @@ function MiniProjectCard({ title, description, difficulty, branch }: MiniProject
       </div>
       <p className="text-sm text-muted-foreground leading-relaxed mb-3">{description}</p>
       <a
-        href={`https://wa.me/919591570099?text=${whatsappMsg}`}
+        href={`https://wa.me/919538208573?text=${whatsappMsg}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 text-xs text-accent hover:text-accent/80 transition-colors font-medium"
@@ -469,7 +469,7 @@ export default function MiniProjectIdeasMechanicalEEECivilPage() {
                     View Mini Projects &amp; Pricing
                   </Link>
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20mini%20project%20(Mechanical%2FEEE%2FCivil)"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20mini%20project%20(Mechanical%2FEEE%2FCivil)"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-700 transition-colors"
@@ -558,7 +558,7 @@ export default function MiniProjectIdeasMechanicalEEECivilPage() {
                     View Pricing
                   </Link>
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20mini%20project%20(Mechanical%2FEEE%2FCivil)"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20mini%20project%20(Mechanical%2FEEE%2FCivil)"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center bg-green-600 text-white px-3 py-2 rounded text-xs font-semibold hover:bg-green-700 transition-colors"

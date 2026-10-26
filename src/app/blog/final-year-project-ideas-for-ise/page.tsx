@@ -13,7 +13,7 @@ import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-ise';
 const PAGE_DATE = '2026-10-01';
-const WA_BASE = 'https://wa.me/919591570099?text=';
+const WA_BASE = 'https://wa.me/919538208573?text=';
 
 const PAGE_TITLE = 'Final Year Projects for ISE: 36 Project Ideas (2026)';
 const PAGE_DESCRIPTION =

@@ -15,7 +15,7 @@ const SLUG = 'final-year-project-ideas-for-cse';
 const PAGE_TITLE = 'Final Year Projects for CSE: 21 Ideas with Source Code (2026)';
 const PAGE_DESCRIPTION = 'Explore 21 final year project ideas for CSE students — major project topics for computer science final year. Full-stack web apps, AI/ML systems, cybersecurity tools, cloud-native apps, and blockchain projects with complete source code and IEEE paper support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
-const WA_BASE = 'https://wa.me/919591570099?text=';
+const WA_BASE = 'https://wa.me/919538208573?text=';
 
 function FinalYearProjectCard({ title, description, techStack, difficulty }: { title: string; description: string; techStack: string; difficulty: 'Intermediate' | 'Advanced' }) {
   const difficultyColor = difficulty === 'Advanced'

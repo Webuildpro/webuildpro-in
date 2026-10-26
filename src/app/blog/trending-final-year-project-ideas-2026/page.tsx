@@ -82,7 +82,7 @@ function ProjectCard({ number, title, description, difficulty }: ProjectCardProp
       </div>
       <p className="text-sm text-muted-foreground leading-relaxed mb-3">{description}</p>
       <a
-        href={`https://wa.me/919591570099?text=${whatsappMsg}`}
+        href={`https://wa.me/919538208573?text=${whatsappMsg}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 text-xs text-accent hover:text-accent/80 transition-colors font-medium"
@@ -559,7 +559,7 @@ export default function TrendingFinalYearProjectIdeas2026Page() {
                       Get a Free Quote
                     </Link>
                     <a
-                      href="https://wa.me/919591570099?text=Hi%2C%20I%20saw%20the%20trending%20final%20year%20project%20ideas%202026%20list%20and%20need%20help%20with%20my%20project"
+                      href="https://wa.me/919538208573?text=Hi%2C%20I%20saw%20the%20trending%20final%20year%20project%20ideas%202026%20list%20and%20need%20help%20with%20my%20project"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-green-600 text-white font-semibold text-sm rounded hover:bg-green-700 transition-colors"
@@ -667,7 +667,7 @@ export default function TrendingFinalYearProjectIdeas2026Page() {
                     Need this project built &amp; tested in Bangalore?
                   </p>
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20trending%20final%20year%20project%202026"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20trending%20final%20year%20project%202026"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full px-3 py-2 bg-green-600 text-white text-xs font-semibold rounded hover:bg-green-700 transition-colors"

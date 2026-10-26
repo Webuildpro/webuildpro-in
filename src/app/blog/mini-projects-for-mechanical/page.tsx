@@ -61,7 +61,7 @@ function MiniProjectCard({ title, description, difficulty }: MiniProjectCardProp
       </div>
       <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{description}</p>
       <a
-        href={`https://wa.me/919591570099?text=${whatsappMsg}`}
+        href={`https://wa.me/919538208573?text=${whatsappMsg}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1.5 text-xs font-medium text-green-400 hover:text-green-300 transition-colors"
@@ -138,7 +138,7 @@ export default function MechMiniProjectsPage() {
                 View Mechanical Projects
               </Link>
               <a
-                href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20Mechanical%20mini%20project"
+                href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20Mechanical%20mini%20project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 bg-green-600 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-green-500 transition-colors"
@@ -353,7 +353,7 @@ export default function MechMiniProjectsPage() {
                     View Mechanical Projects
                   </Link>
                   <a
-                    href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20Mechanical%20mini%20project"
+                    href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20Mechanical%20mini%20project"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white text-sm font-semibold px-5 py-2.5 rounded hover:bg-green-500 transition-colors"
@@ -427,7 +427,7 @@ export default function MechMiniProjectsPage() {
                       View Pricing
                     </Link>
                     <a
-                      href="https://wa.me/919591570099?text=Hi%2C%20I%20need%20help%20with%20my%20Mechanical%20mini%20project"
+                      href="https://wa.me/919538208573?text=Hi%2C%20I%20need%20help%20with%20my%20Mechanical%20mini%20project"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-center bg-green-600 text-white text-xs font-semibold px-3 py-2 rounded hover:bg-green-500 transition-colors"
