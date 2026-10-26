@@ -872,7 +872,7 @@ export default function IoTProjectsBangalorePage() {
               { href: '/projects/ece/embedded-systems-projects-in-bangalore', label: 'Embedded Systems Projects in Bangalore', icon: 'CpuChipIcon' },
               { href: '/projects/ece', label: 'All ECE Final-Year Projects', icon: 'AcademicCapIcon' },
               { href: '/blog/iot-based-mini-projects', label: 'IoT Mini Projects (2026) — Ideas & Kits', icon: 'LightBulbIcon' },
-              { href: '/blog/innovative-final-year-project-ideas-ece-2026', label: 'Innovative ECE Project Ideas 2026', icon: 'SparklesIcon' },
+              { href: '/blog/final-year-project-ideas-for-ece', label: 'Innovative ECE Project Ideas 2026', icon: 'SparklesIcon' },
               { href: '/blog/ieee-projects-in-bangalore', label: 'IEEE Projects in Bangalore', icon: 'DocumentTextIcon' },
             ].map(link => (
               <Link key={link.href} href={link.href}

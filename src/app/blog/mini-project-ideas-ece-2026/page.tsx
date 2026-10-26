@@ -12,7 +12,7 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'mini-project-ideas-ece-2026';
-const PAGE_TITLE = 'Mini Project Ideas for ECE Students (2026)';
+const PAGE_TITLE = '30 Mini Project Ideas for ECE Students (2026)';
 const PAGE_DESCRIPTION =
   '30+ simple, working mini project ideas for ECE students in Bangalore. Arduino, IoT, sensors & communication — with source code & guidance. 1st–6th sem.';
 const PAGE_DATE = '2026-08-03';
@@ -456,7 +456,7 @@ export default function MiniProjectIdeasECEPage() {
                   </li>
                   <li>
                     <Link
-                      href="/blog/final-year-project-ideas-ece-2026"
+                      href="/blog/final-year-project-ideas-for-ece"
                       className="text-accent hover:text-accent/80 transition-colors flex items-center gap-1.5"
                     >
                       <Icon name="ArrowRightIcon" size={12} />

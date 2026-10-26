@@ -12,8 +12,8 @@ import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-mechanical';
-const PAGE_TITLE = 'Final Year Project Ideas for Mechanical Engineering | Top B.Tech ME Projects 2026 – WeBuildPro';
-const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for Mechanical Engineering students in Bangalore. CFD simulations, FEA analysis, robotics, renewable energy systems, and manufacturing automation projects with complete CAD, simulation, and report support. WeBuildPro guides you end-to-end.';
+const PAGE_TITLE = 'Final Year Projects for Mechanical Engineering: 18 Ideas (2026)';
+const PAGE_DESCRIPTION = 'Explore 18 final year project ideas for Mechanical Engineering students in Bangalore. CFD simulations, FEA analysis, robotics, renewable energy systems, and manufacturing automation projects with complete CAD, simulation, and report support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
 
@@ -101,7 +101,7 @@ export default function MechanicalFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for Mechanical Engineering Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for Mechanical Engineering Students: 18 Ideas (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Mechanical Engineering final year projects in 2026 must go beyond textbook theory — they should integrate CAD modelling, simulation (CFD/FEA), physical prototyping, and data analysis. This guide presents 30+ project ideas that are genuinely challenging, publishable in IEEE/ASME journals, and aligned with what Tata, L&T, ISRO, Bosch, and other top recruiters look for in fresh ME graduates.</p>
             </header>
 

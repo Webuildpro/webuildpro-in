@@ -12,8 +12,8 @@ import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-aiml';
-const PAGE_TITLE = 'Final Year Project Ideas for AIML | Top B.Tech AI & Machine Learning Projects 2026 – WeBuildPro';
-const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for AIML students in Bangalore. Large language models, computer vision systems, autonomous agents, reinforcement learning, generative AI, and production ML platforms with complete code, paper, and deployment support. WeBuildPro guides you end-to-end.';
+const PAGE_TITLE = 'Final Year Projects for AIML: 17 AI & ML Project Ideas (2026)';
+const PAGE_DESCRIPTION = 'Explore 17 final year project ideas for AIML students in Bangalore. Large language models, computer vision systems, autonomous agents, reinforcement learning, generative AI, and production ML platforms with complete code, paper, and deployment support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
 
@@ -101,7 +101,7 @@ export default function AIMLFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for AIML Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for AIML Students: 17 AI & ML Ideas (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">AIML final year projects in 2026 must go beyond sklearn models on Kaggle datasets. The projects that impress Google, Amazon, Microsoft, and AI research labs involve fine-tuned foundation models, production-grade MLOps, novel architectures, or real-world autonomous systems. This guide presents 30+ advanced AIML project ideas that are original enough for IEEE/ACL/NeurIPS workshop papers and impactful enough to stand out in campus placements.</p>
             </header>
 
@@ -161,7 +161,7 @@ export default function AIMLFinalYearProjectsPage() {
             {/* Bottom CTA — CTA #2 */}
             <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 mb-10">
               <h3 className="text-lg font-bold text-foreground mb-2">Ready to Build Your AIML Final Year Project?</h3>
-              <p className="text-sm text-muted-foreground mb-4">WeBuildPro's AIML team has delivered 150+ AI final year projects, including IEEE and ACL workshop paper submissions. We provide cloud GPU access, complete code, and deployment support.</p>
+              <p className="text-sm text-muted-foreground mb-4">WeBuildPro has delivered 300+ projects across all branches since 2021, including IEEE and ACL workshop paper submissions. We provide cloud GPU access, complete code, and deployment support.</p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/projects" className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground text-sm font-semibold px-4 py-2 rounded hover:bg-primary/90 transition-colors">
                   <Icon name="FolderOpen" size={14} /> View Projects

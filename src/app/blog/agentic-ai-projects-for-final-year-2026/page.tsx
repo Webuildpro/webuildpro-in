@@ -578,7 +578,7 @@ export default function AgenticAIBlogPage() {
                       {' '}— ML, deep learning, computer vision and generative AI
                     </li>
                     <li>
-                      <Link href="/blog/latest-final-year-project-ideas-cse-2026" className="text-primary hover:underline">
+                      <Link href="/blog/final-year-project-ideas-for-cse" className="text-primary hover:underline">
                         Latest Final Year Project Ideas for CSE Students (2026)
                       </Link>
                       {' '}— ML, web, blockchain, cloud and cybersecurity

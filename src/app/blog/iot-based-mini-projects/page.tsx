@@ -745,7 +745,7 @@ export default function IoTMiniProjectsPage() {
                   </li>
                   <li>
                     <Link
-                      href="/blog/innovative-final-year-project-ideas-ece-2026"
+                      href="/blog/final-year-project-ideas-for-ece"
                       className="text-accent hover:text-accent/80 transition-colors flex items-center gap-1.5"
                     >
                       <Icon name="ArrowRightIcon" size={12} />

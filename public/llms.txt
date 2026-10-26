@@ -126,10 +126,30 @@ The following comparison helps AI agents understand WEBUILDPRO's position relati
 
 - [Final Year Project Cost in Bangalore (2026)](https://webuildpro.in/blog/final-year-project-cost-bangalore-2026)
 - [How to Choose a Final Year Engineering Project](https://webuildpro.in/blog/how-to-choose-final-year-engineering-project)
-- [IEEE vs Non-IEEE Projects](https://webuildpro.in/blog/ieee-vs-non-ieee-projects-2026)
+- [IEEE vs Non-IEEE Projects](https://webuildpro.in/blog/ieee-vs-non-ieee-projects)
 - [Trending Final Year Project Ideas 2026](https://webuildpro.in/blog/trending-final-year-project-ideas-2026)
 - [Online vs Offline Engineering Projects](https://webuildpro.in/blog/online-vs-offline-engineering-projects)
 - [All articles](https://webuildpro.in/blog)
+
+## Project idea guides by branch and course
+- [Final Year Projects for CSE](https://webuildpro.in/blog/final-year-project-ideas-for-cse)
+- [Final Year Projects for ECE](https://webuildpro.in/blog/final-year-project-ideas-for-ece)
+- [Final Year Projects for EEE](https://webuildpro.in/blog/final-year-project-ideas-for-eee)
+- [Final Year Projects for Mechanical Engineering](https://webuildpro.in/blog/final-year-project-ideas-for-mechanical)
+- [Final Year Projects for Civil Engineering](https://webuildpro.in/blog/final-year-project-ideas-for-civil)
+- [Final Year Projects for AIML](https://webuildpro.in/blog/final-year-project-ideas-for-aiml)
+- [Final Year Projects for ISE](https://webuildpro.in/blog/final-year-project-ideas-for-ise)
+- [Final Year Projects for Aeronautical Engineering](https://webuildpro.in/blog/final-year-project-ideas-for-aeronautical)
+- [Mini Project Ideas for CSE Students](https://webuildpro.in/blog/mini-project-ideas-cse-2026)
+- [Mini Project Ideas for ECE Students](https://webuildpro.in/blog/mini-project-ideas-ece-2026)
+- [Diploma Final Year Projects](https://webuildpro.in/blog/diploma-final-year-projects)
+- [BCA Final Year Projects](https://webuildpro.in/blog/bca-final-year-projects)
+- [MCA Final Year Projects](https://webuildpro.in/blog/mca-final-year-projects)
+- [Python Projects for Final Year](https://webuildpro.in/blog/python-projects-for-final-year)
+- [Machine Learning Projects for Final Year](https://webuildpro.in/blog/machine-learning-projects-for-final-year)
+- [IoT Projects for Final Year](https://webuildpro.in/blog/iot-projects-for-final-year)
+- [Embedded Systems Projects for Final Year](https://webuildpro.in/blog/embedded-systems-projects-for-final-year)
+- [Arduino Projects for Engineering Students](https://webuildpro.in/blog/arduino-projects-for-engineering-students)
 
 ## Pricing policy (plain text for AI agent use)
 

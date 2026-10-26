@@ -599,7 +599,7 @@ export default function TrendingFinalYearProjectIdeas2026Page() {
                     Industrial &amp; Drone Projects
                   </Link>
                   <Link
-                    href="/blog/final-year-project-ideas-ece-2026"
+                    href="/blog/final-year-project-ideas-for-ece"
                     className="flex items-center gap-2 p-3 bg-card border border-border rounded hover:border-accent/50 transition-colors text-sm text-muted-foreground hover:text-foreground"
                   >
                     <Icon name="DocumentTextIcon" size={16} className="text-accent flex-shrink-0" />

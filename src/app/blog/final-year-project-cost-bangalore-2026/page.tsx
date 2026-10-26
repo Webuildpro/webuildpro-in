@@ -427,7 +427,7 @@ export default function FinalYearProjectCostBangalorePage() {
                       desc: '50+ ideas across AI, IoT, robotics and more',
                     },
                     {
-                      href: '/blog/final-year-project-ideas-ece-2026',
+                      href: '/blog/final-year-project-ideas-for-ece',
                       label: 'Final Year Project Ideas for ECE (2026)',
                       desc: '40+ ECE project topics with details',
                     },

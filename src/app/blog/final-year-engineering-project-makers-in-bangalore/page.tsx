@@ -448,7 +448,7 @@ export default function FinalYearProjectMakersBangalorePage() {
                       desc: 'Complete guide to IEEE project centres and how to choose the best one.',
                     },
                     {
-                      href: '/blog/latest-final-year-project-ideas-cse-2026',
+                      href: '/blog/final-year-project-ideas-for-cse',
                       title: 'Latest Final Year Project Ideas for CSE (2026)',
                       desc: '30+ trending CSE project ideas — ML, web, app, blockchain and more.',
                     },

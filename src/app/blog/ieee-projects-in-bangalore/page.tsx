@@ -387,7 +387,7 @@ export default function IeeeProjectsBangalorePage() {
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Read our full comparison:{' '}
-                  <Link href="/blog/ieee-vs-non-ieee-projects-2026" className="text-accent hover:underline">
+                  <Link href="/blog/ieee-vs-non-ieee-projects" className="text-accent hover:underline">
                     IEEE vs Non-IEEE Projects: Which Should You Choose? (2026)
                   </Link>
                 </p>

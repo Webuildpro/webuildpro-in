@@ -1,3 +1,5 @@
+import { folderArticles, topicArticles } from './topic-pages';
+
 export interface BlogArticle {
   slug: string;
   title: string;
@@ -11,6 +13,8 @@ export interface BlogArticle {
   readTime: string;
   tags: string[];
   content: string; // HTML-safe markdown-like content
+  /** Rendered as an FAQ section + FAQPage JSON-LD on CMS-rendered posts. */
+  faqs?: { q: string; a: string }[];
 }
 
 export const blogArticles: BlogArticle[] = [
@@ -71,29 +75,6 @@ export const blogArticles: BlogArticle[] = [
     content: `Trusted final year engineering project makers in Bangalore for BE, BTech, ME, MTech & Diploma — CSE, ECE, EEE, Mechanical, Civil. WEBUILDPRO builds every project in-house, tests before delivery, and provides source code, documentation and a viva walkthrough.`,
   },
   {
-    slug: 'innovative-final-year-project-ideas-aeronautical-2026',
-    title: 'Innovative Final Year Project Ideas for Aeronautical Students (2026)',
-    seoTitle: 'Aeronautical Final Year Project Ideas (2026)',
-    description:
-      '30+ innovative final year project ideas for Aeronautical & Aerospace students in Bangalore — drones/UAV, aerodynamics, propulsion, CFD. Built by WEBUILDPRO. WhatsApp 9538208573.',
-    datePublished: '2026-08-07',
-    dateModified: '2026-08-07',
-    readTime: '12 min read',
-    tags: ['Aeronautical Projects', 'Final Year Projects', 'Drone Projects', 'UAV Projects', 'Bangalore'],
-    content: `30+ innovative final year project ideas for Aeronautical & Aerospace students in 2026 — drones and UAVs, aerodynamics, propulsion, aircraft structures and CFD analysis. WEBUILDPRO builds and flies drones in Bangalore with working hardware, flight controllers, testing and full documentation.`,
-  },
-  {
-    slug: 'innovative-final-year-project-ideas-ece-2026',
-    title: 'Innovative Final Year Project Ideas for ECE Students (2026)',
-    description:
-      '40+ innovative & latest final year project ideas for ECE students in Bangalore — IoT, embedded, VLSI, robotics, drones & biomedical. Built by WEBUILDPRO. WhatsApp 9538208573.',
-    datePublished: '2026-08-07',
-    dateModified: '2026-08-07',
-    readTime: '14 min read',
-    tags: ['ECE Projects', 'Final Year Projects', 'IoT Projects', 'Embedded Systems', 'Bangalore'],
-    content: `40+ innovative final year project ideas for ECE students in 2026 — IoT, embedded systems, VLSI, robotics, drones, biomedical and wireless communication. Built in Bangalore by WEBUILDPRO with working hardware, source code, circuit diagrams, firmware and full documentation.`,
-  },
-  {
     slug: 'best-ai-based-final-year-project-ideas-2026',
     title: 'Best AI-Based Final Year Project Ideas (2026)',
     description:
@@ -103,28 +84,6 @@ export const blogArticles: BlogArticle[] = [
     readTime: '12 min read',
     tags: ['AI Projects', 'Final Year Projects', 'Machine Learning', 'Deep Learning', 'Bangalore'],
     content: `30+ best AI-based final year project ideas for 2026 — computer vision, machine learning, NLP, generative AI and AI+IoT. Built in Bangalore by WEBUILDPRO with trained models, datasets, source code and documentation.`,
-  },
-  {
-    slug: 'latest-final-year-project-ideas-cse-2026',
-    title: 'Latest Final Year Project Ideas for CSE Students (2026)',
-    description:
-      '30+ latest & innovative final year project ideas for CSE students in Bangalore — ML, web, app, blockchain, cloud & cybersecurity. Built by WEBUILDPRO. WhatsApp 9538208573.',
-    datePublished: '2026-08-07',
-    dateModified: '2026-08-07',
-    readTime: '12 min read',
-    tags: ['CSE Projects', 'Final Year Projects', 'Machine Learning', 'Web Development', 'Bangalore'],
-    content: `30+ latest final year project ideas for CSE students in 2026 — machine learning, web development, app development, blockchain, cloud and cybersecurity. Built in Bangalore by WEBUILDPRO with clean source code, datasets, documentation and a viva walkthrough.`,
-  },
-  {
-    slug: 'innovative-final-year-project-ideas-eee-2026',
-    title: 'Innovative Final Year Project Ideas for EEE Students (2026)',
-    description:
-      '30+ innovative & latest final year project ideas for EEE students in Bangalore — power electronics, EV, solar, PLC & IoT. Built & tested by WEBUILDPRO. WhatsApp 9538208573.',
-    datePublished: '2026-08-07',
-    dateModified: '2026-08-07',
-    readTime: '12 min read',
-    tags: ['EEE Projects', 'Final Year Projects', 'Power Electronics', 'IoT Projects', 'Bangalore'],
-    content: `30+ innovative final year project ideas for EEE students in 2026 — power electronics, EV, solar, PLC automation and IoT. Built and tested in Bangalore by WEBUILDPRO with working hardware, source code and full documentation.`,
   },
   {
     slug: 'ieee-project-makers-bangalore-2026',
@@ -149,17 +108,6 @@ export const blogArticles: BlogArticle[] = [
     readTime: '14 min read',
     tags: ['IEEE Projects', 'Final Year Projects', 'Bangalore', 'CSE Projects', 'ECE Projects'],
     content: `Complete guide to IEEE projects in Bangalore for 2026 — CSE, ECE, EEE, Mechanical and Civil. WEBUILDPRO designs, builds, tests and delivers IEEE final year projects with working hardware, source code and documentation.`,
-  },
-  {
-    slug: 'ieee-vs-non-ieee-projects-2026',
-    title: 'IEEE vs Non-IEEE Projects: Which Should You Choose? (2026)',
-    description:
-      'IEEE vs non-IEEE final year projects explained — the real difference, pros and cons, and which one to choose for your college and career in 2026.',
-    datePublished: '2026-08-03',
-    dateModified: '2026-08-03',
-    readTime: '7 min read',
-    tags: ['IEEE Projects', 'Final Year Projects', 'Bangalore'],
-    content: `IEEE vs non-IEEE final year projects compared — what each means, pros and cons, and how to choose the right one for your college requirement and career goals. WEBUILDPRO builds both in Bangalore.`,
   },
   {
     slug: 'trending-final-year-project-ideas-2026',
@@ -208,7 +156,7 @@ export const blogArticles: BlogArticle[] = [
     content: `Mini project ideas for ECE students covering IoT, Arduino, communication, robotics and power projects for 1st–6th semester. Built and delivered in Bangalore by WEBUILDPRO.`,
   },
   {
-    slug: 'final-year-project-ideas-ece-2026',
+    slug: 'final-year-project-ideas-for-ece',
     title: 'Final Year Project Ideas for ECE Students (2026) — 40+ Topics with Details',
     seoTitle: '40+ Final Year Project Ideas for ECE (2026)',
     description: 'Explore 40+ final year project ideas for ECE students in 2026 — grouped by domain (IoT, Embedded, Robotics, VLSI, Biomedical & more) with descriptions, tech stack and difficulty. WEBUILDPRO builds these in Bangalore.',
@@ -570,7 +518,6 @@ At WEBUILDPRO India in Bangalore, we give you a fixed, itemised quote within 24 
   },
   {
     slug: 'ieee-vs-non-ieee-projects',
-    canonicalSlug: 'ieee-vs-non-ieee-projects-2026',
     title: 'IEEE vs Non-IEEE Projects: Which One Should You Pick?',
     description: 'A clear-headed comparison of IEEE and non-IEEE final year engineering projects — what the difference actually means, which universities require which, and how to choose based on your goals.',
     datePublished: '2026-03-05',
@@ -1757,6 +1704,8 @@ A project that works, that you can defend, and that comes with full documentatio
     `.trim(),
   },
 ];
+
+blogArticles.push(...topicArticles, ...folderArticles);
 
 export function getBlogArticle(slug: string): BlogArticle | undefined {
   return blogArticles.find((a) => a.slug === slug);

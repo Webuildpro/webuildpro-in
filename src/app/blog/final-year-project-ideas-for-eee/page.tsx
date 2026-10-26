@@ -12,8 +12,8 @@ import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-eee';
-const PAGE_TITLE = 'Final Year Project Ideas for EEE | Top B.Tech Electrical Engineering Projects 2026 – WeBuildPro';
-const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for EEE students in Bangalore. Renewable energy systems, smart grid, EV charging, power electronics, industrial automation, and IoT-based electrical projects with complete hardware, simulation, and IEEE paper support. WeBuildPro guides you end-to-end.';
+const PAGE_TITLE = 'Final Year Projects for EEE: 16 Electrical Project Ideas (2026)';
+const PAGE_DESCRIPTION = 'Explore 16 final year project ideas for EEE students in Bangalore. Renewable energy systems, smart grid, EV charging, power electronics, industrial automation, and IoT-based electrical projects with complete hardware, simulation, and IEEE paper support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
 
@@ -101,7 +101,7 @@ export default function EEEFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for EEE Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for EEE Students: 16 Electrical Project Ideas (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Electrical and Electronics Engineering final year projects must combine power system theory, power electronics hardware, and digital control — ideally with renewable energy integration or EV charging as the application. This guide presents 30+ project ideas across renewable energy, smart grid, EV technology, industrial automation, and advanced machine drives — each designed for IEEE publication and impressing BESCOM, Siemens, ABB, and BHEL interviewers.</p>
             </header>
 

@@ -13,6 +13,8 @@ import path from 'node:path';
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import JsonLdScript from '@/components/JsonLdScript';
+import { faqSchema } from '@/lib/jsonld';
 
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
@@ -62,7 +64,7 @@ function renderContent(content: string) {
 
     if (line.startsWith('## ')) {
       elements.push(
-        <h2 key={i} className="text-xl font-bold text-foreground mt-10 mb-4 leading-snug">
+        <h2 key={i} id={line.slice(3).toLowerCase().replace(/[^a-z0-9]+/g, '-')} className="text-xl font-bold text-foreground mt-10 mb-4 leading-snug scroll-mt-24">
           {line.slice(3)}
         </h2>
       );
@@ -171,6 +173,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
         description={article.description}
         slug={slug}
       />
+      {article.faqs && article.faqs.length > 0 && <JsonLdScript nodes={[faqSchema(article.faqs)]} />}
       <Header />
       <main id="main-content" className="min-h-screen bg-background pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -214,6 +217,19 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
                 </p>
               </div>
               {renderContent(article.content)}
+              {article.faqs && article.faqs.length > 0 && (
+                <section aria-labelledby="faq-heading" className="mt-12">
+                  <h2 id="faq-heading" className="text-xl font-bold text-foreground mb-6 leading-snug">Frequently Asked Questions</h2>
+                  <div className="space-y-3">
+                    {article.faqs.map((f) => (
+                      <details key={f.q} className="bg-card border border-border rounded p-4 group">
+                        <summary className="font-semibold text-foreground text-sm cursor-pointer">{f.q}</summary>
+                        <p className="text-sm text-muted-foreground leading-relaxed mt-3">{f.a}</p>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              )}
             </article>
 
             {/* Table of contents */}

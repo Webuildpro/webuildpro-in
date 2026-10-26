@@ -15,9 +15,9 @@ const SLUG = 'final-year-project-ideas-for-ise';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
 
-const PAGE_TITLE = 'Top 60+ Final Year Project Ideas for ISE Students (2025–26) | WeBuildPro';
+const PAGE_TITLE = 'Final Year Projects for ISE: 36 Project Ideas (2026)';
 const PAGE_DESCRIPTION =
-  'Explore 60+ innovative final year project ideas for Information Science & Engineering students — full-stack systems, distributed computing, cybersecurity, DevSecOps, software architecture, and open-source platform engineering with expert mentorship.';
+  'Explore 36 innovative final year project ideas for Information Science & Engineering students — full-stack systems, distributed computing, cybersecurity, DevSecOps, software architecture, and open-source platform engineering with expert mentorship.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -182,7 +182,7 @@ export default function ISEFinalYearProjectsPage() {
           <article className="lg:col-span-3">
 
             <h1 className="text-3xl font-bold text-foreground mb-3">
-              Top 60+ Final Year Project Ideas for ISE Students (2025–26)
+              Final Year Projects for ISE Students: 36 Project Ideas (2026)
             </h1>
             <p className="text-muted-foreground mb-6 text-sm">
               By <span className="font-medium text-foreground">WeBuildPro</span> &nbsp;·&nbsp; Updated October 2026 &nbsp;·&nbsp; 14 min read
@@ -534,7 +534,7 @@ export default function ISEFinalYearProjectsPage() {
                 Ready to Build Your ISE Final Year Project?
               </h2>
               <p className="text-sm text-muted-foreground mb-5">
-                WeBuildPro's engineering team has helped 500+ ISE students across VTU and
+                WeBuildPro's engineering team has helped ISE students across VTU and
                 autonomous colleges deliver projects that earn distinction grades and land
                 top-tier placements. We handle architecture, implementation, documentation,
                 and presentation prep — you learn by building.
@@ -622,7 +622,7 @@ export default function ISEFinalYearProjectsPage() {
               <div className="bg-card border border-primary/30 rounded-lg p-4">
                 <p className="text-sm font-semibold text-foreground mb-1">Need Project Help?</p>
                 <p className="text-xs text-muted-foreground mb-4">
-                  Expert mentorship from topic selection to viva. Trusted by 500+ students.
+                  Expert mentorship from topic selection to viva. 300+ projects delivered since 2021.
                 </p>
                 <div className="space-y-2">
                   <Link

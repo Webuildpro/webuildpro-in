@@ -12,8 +12,8 @@ import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-civil';
-const PAGE_TITLE = 'Final Year Project Ideas for Civil Engineering | Top B.Tech CE Projects 2026 – WeBuildPro';
-const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for Civil Engineering students in Bangalore. Structural analysis with STAAD.Pro/ETABS, geotechnical experiments, environmental engineering, smart city, and sustainable construction projects with full report and software support. WeBuildPro guides you end-to-end.';
+const PAGE_TITLE = 'Final Year Projects for Civil Engineering: 17 Ideas (2026)';
+const PAGE_DESCRIPTION = 'Explore 17 final year project ideas for Civil Engineering students in Bangalore. Structural analysis with STAAD.Pro/ETABS, geotechnical experiments, environmental engineering, smart city, and sustainable construction projects with full report and software support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
 
@@ -101,7 +101,7 @@ export default function CivilFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for Civil Engineering Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for Civil Engineering Students: 17 Ideas (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Civil Engineering final year projects must combine rigorous analysis with real-world relevance — earthquake-resistant design, sustainable materials, smart city infrastructure, and climate-resilient water systems are the themes that resonate with both academic evaluators and industry recruiters. This guide presents 30+ high-quality project ideas suited for VTU and autonomous college evaluation, with IEEE publication potential.</p>
             </header>
 

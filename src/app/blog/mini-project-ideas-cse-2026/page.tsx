@@ -12,7 +12,7 @@ import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'mini-project-ideas-cse-2026';
-const PAGE_TITLE = 'Mini Project Ideas for CSE Students (2026)';
+const PAGE_TITLE = '30 Simple Mini Project Ideas for CSE Students (2026)';
 const PAGE_DESCRIPTION =
   '30+ simple mini project ideas for CSE/ISE/BCA/MCA students in Bangalore. Web, Python, AI & app projects with source code. Perfect for 1st–6th semester students.';
 const PAGE_DATE = '2026-08-03';

@@ -12,8 +12,8 @@ import CircuitDivider from '@/components/CircuitDivider';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-aeronautical';
-const PAGE_TITLE = 'Final Year Project Ideas for Aeronautical Engineering | Top B.Tech Aero Projects 2026 – WeBuildPro';
-const PAGE_DESCRIPTION = 'Explore 30+ final year project ideas for Aeronautical Engineering students in Bangalore. CFD aerodynamics, composite structures, UAV systems, propulsion testing, flight simulation, and avionics projects with complete simulation and report support. WeBuildPro guides you end-to-end.';
+const PAGE_TITLE = 'Final Year Projects for Aeronautical Engineering (2026): 17 Ideas';
+const PAGE_DESCRIPTION = 'Explore 17 final year project ideas for Aeronautical Engineering students in Bangalore. CFD aerodynamics, composite structures, UAV systems, propulsion testing, flight simulation, and avionics projects with complete simulation and report support. WeBuildPro guides you end-to-end.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919591570099?text=';
 
@@ -101,7 +101,7 @@ export default function AeronauticalFinalYearProjectsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <article className="lg:col-span-3">
             <header className="mb-8">
-              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Project Ideas for Aeronautical Engineering Students (2026)</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-3">Final Year Projects for Aeronautical Engineering Students: 17 Ideas (2026)</h1>
               <p className="text-muted-foreground text-base leading-relaxed">Aeronautical Engineering final year projects must demonstrate mastery of fluid mechanics, structural analysis, propulsion, and avionics — ideally with both high-fidelity simulation and physical validation. This guide presents 30+ projects ranging from CFD aerodynamics and composite structure design to autonomous UAVs and nanosatellite systems — all structured for AIAA/IEEE publication and impressing HAL, NAL, ISRO, and Airbus recruiters.</p>
             </header>
 

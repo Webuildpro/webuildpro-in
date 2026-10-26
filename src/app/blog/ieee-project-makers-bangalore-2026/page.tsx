@@ -524,8 +524,8 @@ export default function IeeeProjectMakersBangalorePage() {
                 <div className="flex flex-wrap gap-3">
                   {[
                     { label: 'IEEE Projects in Bangalore — Complete Guide', href: '/blog/ieee-projects-in-bangalore' },
-                    { label: 'IEEE vs Non-IEEE Projects: Which One to Choose?', href: '/blog/ieee-vs-non-ieee-projects-2026' },
-                    { label: 'Final Year Project Ideas for ECE 2026', href: '/blog/final-year-project-ideas-ece-2026' },
+                    { label: 'IEEE vs Non-IEEE Projects: Which One to Choose?', href: '/blog/ieee-vs-non-ieee-projects' },
+                    { label: 'Final Year Project Ideas for ECE 2026', href: '/blog/final-year-project-ideas-for-ece' },
                     { label: 'Best AI-Based Final Year Project Ideas 2026', href: '/blog/best-ai-based-final-year-project-ideas-2026' },
                     { label: 'How Much Does a Final Year Project Cost in Bangalore?', href: '/blog/final-year-project-cost-bangalore-2026' },
                   ].map(({ label, href }) => (

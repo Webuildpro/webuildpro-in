@@ -342,7 +342,7 @@ export default function AIProjectIdeasPage() {
                   </li>
                   <li>
                     <Link
-                      href="/blog/latest-final-year-project-ideas-cse-2026"
+                      href="/blog/final-year-project-ideas-for-cse"
                       className="text-accent hover:text-accent/80 underline transition-colors"
                     >
                       Latest Final Year Project Ideas for CSE (2026)
