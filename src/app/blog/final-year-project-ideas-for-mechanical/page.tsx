@@ -7,8 +7,17 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
+
+const FAQS = [
+  { q: "What are the best final year projects for mechanical engineering?", a: "Good mechanical final year projects combine design, analysis and a working model — for example a pneumatic sheet metal cutter, regenerative braking system, solar-powered vehicle, robotic arm, or CFD/FEA-validated design improvements." },
+  { q: "What are some easy mechanical engineering final year projects?", a: "Easier but solid options include a pedal-operated washing machine, automatic side stand retrieval, mini hydraulic press, solar grass cutter and a pneumatic punching machine." },
+  { q: "Do mechanical projects include CAD and analysis?", a: "Yes. Projects can include SolidWorks/CATIA models, ANSYS FEA or CFD analysis, and a fabricated working model, along with the report." },
+  { q: "Can mechanical students do robotics or automation projects?", a: "Yes — robotic arms, conveyor automation and drone frames are increasingly popular mechanical projects and match mechatronics job roles." },
+  { q: "How much does a mechanical final year project cost?", a: "Final year projects at WEBUILDPRO typically cost ₹12,000–₹20,000 including hardware (where needed), report, PPT and viva walkthrough; advanced or research-heavy projects can go higher. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-mechanical';
@@ -195,6 +204,7 @@ export default function MechanicalFinalYearProjectsPage() {
                 <li><Link href="/blog/final-year-project-ideas-for-aeronautical" className="text-sm text-primary hover:underline">Final Year Projects for Aeronautical Engineering →</Link></li>
               </ul>
             </div>
+            <FaqSection faqs={FAQS} />
           </article>
 
           <aside className="hidden lg:block lg:col-span-1">

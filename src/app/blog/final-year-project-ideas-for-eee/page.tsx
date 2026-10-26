@@ -7,8 +7,17 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
+
+const FAQS = [
+  { q: "What are the best final year projects for EEE students?", a: "Strong EEE final year projects include solar MPPT charge controllers, EV battery management systems, wireless EV charging demos, smart grid load monitoring, and PLC-based industrial automation." },
+  { q: "What are good electrical engineering final year project topics in 2026?", a: "Renewable energy integration, EV charging and battery management, power electronics converters, smart energy metering with IoT, and protection systems for transformers and motors are the most relevant electrical topics in 2026." },
+  { q: "Do EEE projects include simulation and hardware?", a: "Most do. We typically pair a MATLAB/Simulink simulation with a working hardware prototype, so you can show both theory and a live demo." },
+  { q: "Are IEEE projects available for EEE?", a: "Yes. We can implement IEEE base papers for EEE or build an original project, depending on your college guidelines." },
+  { q: "How much does an EEE final year project cost?", a: "Final year projects at WEBUILDPRO typically cost ₹12,000–₹20,000 including hardware (where needed), report, PPT and viva walkthrough; advanced or research-heavy projects can go higher. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-eee';
@@ -190,6 +199,7 @@ export default function EEEFinalYearProjectsPage() {
                 <li><Link href="/blog/final-year-project-ideas-for-mechanical" className="text-sm text-primary hover:underline">Final Year Projects for Mechanical Engineering →</Link></li>
               </ul>
             </div>
+            <FaqSection faqs={FAQS} />
           </article>
 
           <aside className="hidden lg:block lg:col-span-1">

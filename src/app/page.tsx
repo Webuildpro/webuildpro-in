@@ -169,6 +169,57 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Project idea guides — homepage links to every keyword-map owner page */}
+        <section className="py-12 bg-background border-b border-border" aria-labelledby="guides-heading">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <span className="micro-label block mb-3">// PROJECT IDEAS &amp; GUIDES</span>
+            <h2 id="guides-heading" className="text-section-xl font-bold text-foreground mb-2">
+              Final year projects, mini projects &amp; internships — by branch
+            </h2>
+            <p className="text-muted-foreground text-sm">
+              Free guides with real project titles, components, difficulty and cost — written by the engineers who build them in our Peenya lab.
+            </p>
+            <h3 className="text-sm font-bold text-foreground mt-6 mb-3">Final year projects by branch</h3>
+            <div className="flex flex-wrap gap-2">
+                <Link href="/blog/final-year-project-ideas-for-cse" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Final year projects for CSE</Link>
+                <Link href="/blog/final-year-project-ideas-for-ece" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Final year projects for ECE</Link>
+                <Link href="/blog/final-year-project-ideas-for-eee" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Final year projects for EEE</Link>
+                <Link href="/blog/final-year-project-ideas-for-mechanical" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Mechanical engineering projects</Link>
+                <Link href="/blog/final-year-project-ideas-for-civil" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Civil engineering final year projects</Link>
+                <Link href="/blog/final-year-project-ideas-for-aiml" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">AIML final year projects</Link>
+                <Link href="/blog/diploma-final-year-projects" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Diploma final year projects</Link>
+                <Link href="/blog/bca-final-year-projects" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">BCA final year projects</Link>
+                <Link href="/blog/mca-final-year-projects" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">MCA final year projects</Link>
+            </div>
+            <h3 className="text-sm font-bold text-foreground mt-6 mb-3">Mini project ideas</h3>
+            <div className="flex flex-wrap gap-2">
+                <Link href="/blog/mini-project-ideas-cse-2026" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Mini project ideas for CSE students</Link>
+                <Link href="/blog/mini-project-ideas-ece-2026" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Mini project ideas for ECE students</Link>
+                <Link href="/blog/mini-projects-for-eee" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">EEE mini projects</Link>
+                <Link href="/blog/mini-projects-for-mechanical" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Mechanical mini projects</Link>
+                <Link href="/blog/python-projects-for-final-year" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Python mini & major projects</Link>
+                <Link href="/blog/iot-based-mini-projects" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">IoT based mini projects</Link>
+            </div>
+            <h3 className="text-sm font-bold text-foreground mt-6 mb-3">Projects by technology</h3>
+            <div className="flex flex-wrap gap-2">
+                <Link href="/blog/iot-projects-for-final-year" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">IoT projects for final year</Link>
+                <Link href="/blog/embedded-systems-projects-for-final-year" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Embedded systems projects</Link>
+                <Link href="/blog/robotics-projects-for-engineering-students" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Robotics projects</Link>
+                <Link href="/blog/arduino-projects-for-engineering-students" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Arduino projects for engineering students</Link>
+                <Link href="/blog/electronics-projects-for-students" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Electronics projects for students</Link>
+                <Link href="/blog/machine-learning-projects-for-final-year" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Machine learning projects</Link>
+            </div>
+            <h3 className="text-sm font-bold text-foreground mt-6 mb-3">Internships in Bangalore</h3>
+            <div className="flex flex-wrap gap-2">
+                <Link href="/blog/internship-for-ece-students-bangalore" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Internship for ECE students</Link>
+                <Link href="/blog/internship-for-cse-students-bangalore" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Internship for CSE students</Link>
+                <Link href="/blog/internship-for-eee-students-bangalore" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Internship for EEE students</Link>
+                <Link href="/blog/internship-for-mechanical-engineering-students-bangalore" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Mechanical engineering internship</Link>
+                <Link href="/blog/embedded-systems-internship-bangalore" className="bg-card border border-border rounded px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors">Embedded systems internship</Link>
+            </div>
+          </div>
+        </section>
+
         <FaqSection faqs={homeFaqs} />
         <ContactCTASection />
       </main>

@@ -7,8 +7,16 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
+
+const FAQS = [
+  { q: "What are good final year projects for aeronautical engineering?", a: "Strong aeronautical projects include UAV design and fabrication, CFD analysis of airfoils or wings, composite material testing, propulsion test rigs and flight simulation studies." },
+  { q: "Can aeronautical students do a drone project?", a: "Yes. A custom drone with a defined mission (surveying, payload delivery, obstacle avoidance) is one of the best aeronautical final year projects because it combines aerodynamics, structures and avionics." },
+  { q: "Do aeronautical projects need simulation?", a: "Most do. Pair a CFD or structural simulation (ANSYS, XFLR5) with a physical prototype or experiment wherever possible." },
+  { q: "How much does an aeronautical final year project cost?", a: "Final year projects at WEBUILDPRO typically cost ₹12,000–₹20,000 including hardware (where needed), report, PPT and viva walkthrough; advanced or research-heavy projects can go higher. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-aeronautical';
@@ -186,6 +194,7 @@ export default function AeronauticalFinalYearProjectsPage() {
                 <li><Link href="/blog/final-year-project-ideas-for-ece" className="text-sm text-primary hover:underline">Final Year Projects for ECE Students →</Link></li>
               </ul>
             </div>
+            <FaqSection faqs={FAQS} />
           </article>
 
           <aside className="hidden lg:block lg:col-span-1">

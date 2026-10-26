@@ -7,8 +7,17 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
+
+const FAQS = [
+  { q: "What is the best final year project for CSE students?", a: "Projects that solve a real problem and run live in the demo score best — for example a RAG chatbot over college documents, crop disease detection with deep learning, a phishing URL detector, or a full-stack platform with real users. Pick one you can explain end to end." },
+  { q: "What are good major project ideas for CSE final year?", a: "Strong major projects for CSE final year combine a full-stack app with an AI or security component: fake news detection with a web dashboard, face recognition attendance, a microservices e-commerce backend, or an intrusion detection system." },
+  { q: "Do these CSE final year projects come with source code?", a: "Yes. WEBUILDPRO delivers full source code, sets it up on your laptop, and walks you through every module so you can defend it in viva." },
+  { q: "Should a CSE final year project be IEEE based?", a: "Only if your college requires an IEEE base paper. Otherwise an original, well-built project is just as strong. We can build either — see our guide on IEEE vs non-IEEE projects." },
+  { q: "How much does a CSE final year project cost?", a: "Final year projects at WEBUILDPRO typically cost ₹12,000–₹20,000 including hardware (where needed), report, PPT and viva walkthrough; advanced or research-heavy projects can go higher. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-cse';
@@ -203,6 +212,7 @@ export default function CSEFinalYearProjectsPage() {
                 <li><Link href="/blog/final-year-project-ideas-for-ise" className="text-sm text-primary hover:underline">Final Year Projects for ISE Students →</Link></li>
               </ul>
             </div>
+            <FaqSection faqs={FAQS} />
           </article>
 
           {/* Sidebar */}

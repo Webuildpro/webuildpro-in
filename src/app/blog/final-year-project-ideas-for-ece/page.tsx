@@ -7,11 +7,20 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 
 import { getBlogArticle } from '@/lib/data/blog';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 import { notFound } from 'next/navigation';
+const FAQS = [
+  { q: "What is the best final year project for ECE students?", a: "ECE panels value working hardware: IoT health monitoring, LoRa-based smart agriculture, a CAN-bus vehicle monitor, gesture-controlled robots, or a VLSI design with FPGA implementation. Choose one with a clear live demo." },
+  { q: "Which domain is best for an ECE final year project — IoT, embedded or VLSI?", a: "IoT and embedded systems are the most demo-friendly and match most core job roles. VLSI suits students targeting chip design careers. Communication and biomedical projects are good if your college has the right lab equipment." },
+  { q: "Do ECE final year projects include hardware?", a: "Yes. WEBUILDPRO builds and tests the hardware in our Peenya, Bangalore lab, and provides the circuit diagram, code, report and PPT." },
+  { q: "Can I get an ECE major project delivered outside Bangalore?", a: "Yes. Projects are couriered fully tested pan-India, with setup and viva walkthrough over a video call." },
+  { q: "How much does an ECE final year project cost?", a: "Final year projects at WEBUILDPRO typically cost ₹12,000–₹20,000 including hardware (where needed), report, PPT and viva walkthrough; advanced or research-heavy projects can go higher. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
+
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-ece';
 const PAGE_TITLE = 'Final Year Projects for ECE: 40+ Project Ideas (2026)';
@@ -581,6 +590,7 @@ export default function ECEProjectIdeasPage() {
                   </li>
                 </ul>
               </div>
+              <FaqSection faqs={FAQS} />
             </article>
 
             {/* Table of contents */}

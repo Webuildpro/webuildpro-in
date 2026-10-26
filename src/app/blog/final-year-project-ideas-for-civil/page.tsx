@@ -7,8 +7,16 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
+
+const FAQS = [
+  { q: "What are good final year projects for civil engineering?", a: "Strong civil projects include structural analysis and design of a building in STAAD.Pro/ETABS, sustainable concrete mixes using waste materials, rainwater harvesting design, IoT-based structural health monitoring, and smart traffic studies." },
+  { q: "Are civil engineering projects only software-based?", a: "No. Civil projects can be analysis-based (STAAD.Pro, ETABS), experimental (concrete and soil testing), or IoT-based (structural health or water quality monitoring)." },
+  { q: "What is a good civil engineering major project idea?", a: "A comparative study of building design with conventional vs alternative materials, or IoT-based bridge health monitoring, works well as a major project because it combines analysis with real data." },
+  { q: "How much does a civil final year project cost?", a: "Final year projects at WEBUILDPRO typically cost ₹12,000–₹20,000 including hardware (where needed), report, PPT and viva walkthrough; advanced or research-heavy projects can go higher. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-civil';
@@ -194,6 +202,7 @@ export default function CivilFinalYearProjectsPage() {
                 <li><Link href="/blog/final-year-project-ideas-for-eee" className="text-sm text-primary hover:underline">Final Year Projects for EEE Students →</Link></li>
               </ul>
             </div>
+            <FaqSection faqs={FAQS} />
           </article>
 
           <aside className="hidden lg:block lg:col-span-1">

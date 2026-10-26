@@ -7,8 +7,16 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
+
+const FAQS = [
+  { q: "What are the best final year projects for AIML students?", a: "AIML panels look for deployed, end-to-end systems — a RAG chatbot over real documents, a computer vision system running on edge hardware, an agentic AI assistant, or a fine-tuned model with a clear evaluation." },
+  { q: "Which AI project is best for final year in 2026?", a: "Generative and agentic AI projects (RAG chatbots, AI agents, document assistants) and edge computer vision are the most relevant in 2026. Make sure you report honest metrics and can run a live demo." },
+  { q: "Do AIML projects come with source code and datasets?", a: "Yes. You get full source code, dataset preparation notebooks, the trained model, a deployed demo and a viva walkthrough." },
+  { q: "How much does an AIML final year project cost?", a: "Final year projects at WEBUILDPRO typically cost ₹12,000–₹20,000 including hardware (where needed), report, PPT and viva walkthrough; advanced or research-heavy projects can go higher. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-aiml';
@@ -189,6 +197,7 @@ export default function AIMLFinalYearProjectsPage() {
                 <li><Link href="/blog/final-year-project-ideas-for-ise" className="text-sm text-primary hover:underline">Final Year Projects for ISE Students →</Link></li>
               </ul>
             </div>
+            <FaqSection faqs={FAQS} />
           </article>
 
           <aside className="hidden lg:block lg:col-span-1">

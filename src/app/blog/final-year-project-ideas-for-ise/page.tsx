@@ -7,8 +7,16 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
+
+const FAQS = [
+  { q: "What are the best final year projects for ISE students?", a: "ISE final year projects that stand out are deployed systems: distributed applications, cybersecurity tools, DevSecOps pipelines, data platforms and full-stack apps with real users." },
+  { q: "What is the difference between CSE and ISE final year projects?", a: "The topics overlap heavily. ISE projects often lean towards information systems, databases, security and software architecture, while CSE projects lean more towards algorithms and AI. Either branch can pick from both lists." },
+  { q: "Do ISE projects come with source code?", a: "Yes. WEBUILDPRO delivers full source code, deployment, report, PPT and a viva walkthrough." },
+  { q: "How much does an ISE final year project cost?", a: "Final year projects at WEBUILDPRO typically cost ₹12,000–₹20,000 including hardware (where needed), report, PPT and viva walkthrough; advanced or research-heavy projects can go higher. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-ise';
@@ -592,6 +600,7 @@ export default function ISEFinalYearProjectsPage() {
                 ))}
               </ul>
             </div>
+            <FaqSection faqs={FAQS} />
           </article>
 
           {/* ── Sidebar ──────────────────────────────────────────────────── */}
