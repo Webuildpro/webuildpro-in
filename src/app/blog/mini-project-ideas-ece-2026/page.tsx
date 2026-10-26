@@ -7,6 +7,7 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
@@ -43,6 +44,15 @@ export const metadata: Metadata = {
   },
 };
 
+const faqs = [
+  { q: "What are some simple mini project ideas for ECE students?", a: "Simple ECE mini projects include an automatic street light with LDR, a gas leakage detector with buzzer, a smart dustbin with ultrasonic sensor, a digital thermometer with LCD, and an IR-based visitor counter. All use low-cost parts and demo reliably." },
+  { q: "Which mini project is best for ECE students in 2026?", a: "IoT mini projects using ESP32 are the strongest choice in 2026 — for example smart irrigation with soil moisture sensing, a health monitor that sends SpO2 and heart rate to a phone, or a smart energy meter. They combine electronics, programming and a visible dashboard." },
+  { q: "Are Arduino projects good for an ECE mini project?", a: "Yes. Arduino is ideal for ECE mini projects because components are cheap and widely available in Bangalore. Add a display, GSM/GPS module or a mobile app to make it stand out." },
+  { q: "What should an ECE mini project report include?", a: "Include the block diagram, circuit diagram, component list with specifications, working principle, code explanation, results with photos, applications and future scope. WEBUILDPRO prepares the report in your college format." },
+  { q: "How much does an ECE mini project cost?", a: "ECE mini projects at WEBUILDPRO typically cost ₹3,500–₹8,000 including components, report and PPT. Every project is tested in our Peenya, Bangalore lab before handover." },
+  { q: "Can I get an ECE mini project delivered outside Bangalore?", a: "Yes. Projects are built and tested in Bangalore and couriered pan-India, with a viva walkthrough over video call." },
+];
+
 const tocItems = [
   { id: 'iot-sensor-mini-projects', label: 'IoT & Sensor-Based Mini Projects' },
   { id: 'arduino-embedded-mini-projects', label: 'Arduino / Embedded Mini Projects' },
@@ -50,6 +60,7 @@ const tocItems = [
   { id: 'robotics-motor-mini-projects', label: 'Robotics & Motor Mini Projects' },
   { id: 'power-utility-mini-projects', label: 'Power & Utility Mini Projects' },
   { id: 'how-to-choose-ece-mini-project', label: 'How to Choose the Right ECE Mini Project' },
+  { id: 'faq', label: 'FAQs' },
 ];
 
 interface MiniProjectCardProps {
@@ -403,6 +414,9 @@ export default function MiniProjectIdeasECEPage() {
                   explained so you can defend it, WEBUILDPRO does exactly that.
                 </p>
               </div>
+
+              <FaqSection faqs={faqs} />
+
 
               {/* CTA Block */}
               <div className="bg-primary/5 border border-primary/20 rounded p-6 mb-10">

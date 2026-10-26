@@ -7,6 +7,7 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
+import FaqSection from '@/components/FaqSection';
 
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
@@ -43,6 +44,15 @@ export const metadata: Metadata = {
   },
 };
 
+const faqs = [
+  { q: "What are some simple mini project ideas for CSE students?", a: "Good simple CSE mini projects include a to-do app with login, a student result portal, a URL shortener, an expense tracker with charts, a weather app using an API, and a quiz app with leaderboard. Each can be built in 2–3 weeks and demos reliably." },
+  { q: "What is the best mini project for CSE 3rd year students?", a: "For 3rd year (5th–6th semester), pick a project with a database and at least one smart feature — for example a face recognition attendance system, a fake news detector, a movie recommender, or a full-stack job portal. These show more depth than basic CRUD apps." },
+  { q: "What are good minor project ideas for CSE?", a: "Minor projects and mini projects mean the same thing in most universities. Strong minor project ideas for CSE are a chatbot for college FAQs, a resume screener using NLP, a library management system, a phishing URL detector, and a hostel management web app." },
+  { q: "Do these CSE mini projects come with source code?", a: "Yes. WEBUILDPRO delivers every mini project with full source code, sets it up on your laptop, and explains each module so you can modify and defend it in viva." },
+  { q: "Which language is best for a CSE mini project?", a: "Python is the easiest for AI, ML and automation projects; JavaScript (React or MERN) is best for web apps; Java or Kotlin for Android. Choose the language your lab examiner is comfortable with and that you can explain confidently." },
+  { q: "How much does a CSE mini project cost in Bangalore?", a: "CSE mini projects at WEBUILDPRO typically cost ₹3,500–₹8,000 depending on features, AI components and documentation. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
+];
+
 const tocItems = [
   { id: 'web-development-mini-projects', label: 'Web Development Mini Projects' },
   { id: 'python-mini-projects', label: 'Python Mini Projects' },
@@ -50,6 +60,7 @@ const tocItems = [
   { id: 'app-development-mini-projects', label: 'App Development Mini Projects' },
   { id: 'utility-mini-system-projects', label: 'Utility & Mini System Projects' },
   { id: 'how-to-choose-cse-mini-project', label: 'How to Choose the Right CSE Mini Project' },
+  { id: 'faq', label: 'FAQs' },
 ];
 
 interface MiniProjectCardProps {
@@ -433,6 +444,8 @@ export default function MiniProjectIdeasCSEPage() {
                   WEBUILDPRO does for CSE students in Bangalore.
                 </p>
               </div>
+
+              <FaqSection faqs={faqs} />
 
               {/* CTA Block */}
               <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 mb-10">
