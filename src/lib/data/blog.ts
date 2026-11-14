@@ -136,11 +136,11 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     slug: 'mini-project-ideas-cse-2026',
-    title: 'Mini Project Ideas for CSE Students (2026)',
+    title: '30+ Simple Mini Project Ideas for CSE Students (2026)',
     description:
-      '30+ simple mini project ideas for CSE/ISE/BCA/MCA students in Bangalore. Web, Python, AI & app projects with source code. Perfect for 1st–6th semester students.',
+      '30+ simple mini project ideas for CSE students: web, Python, AI/ML and app projects with tech stack, difficulty and semester picks. Updated Nov 2026.',
     datePublished: '2026-08-03',
-    dateModified: '2026-08-03',
+    dateModified: '2026-11-14',
     readTime: '13 min read',
     tags: ['CSE Projects', 'Mini Projects', 'Python', 'Web Dev', 'AI ML'],
     content: `Mini project ideas for CSE students covering web development, Python, AI/ML, app development and utility system projects for 1st–6th semester. Built and delivered in Bangalore by WEBUILDPRO.`,
