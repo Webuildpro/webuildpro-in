@@ -22,7 +22,7 @@ const FAQS = [
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-mechanical';
 const PAGE_TITLE = 'Final Year Projects for Mechanical Engineering: 18 Ideas (2026)';
-const PAGE_DESCRIPTION = 'Explore 18 final year project ideas for Mechanical Engineering students in Bangalore. CFD simulations, FEA analysis, robotics, renewable energy systems, and manufacturing automation projects with complete CAD, simulation, and report support. WeBuildPro guides you end-to-end.';
+const PAGE_DESCRIPTION = '18 final year project ideas for Mechanical Engineering students in Bangalore: CFD, FEA, robotics and renewable energy, with CAD, simulation and report support.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919538208573?text=';
 
@@ -84,10 +84,8 @@ export default function MechanicalFinalYearProjectsPage() {
         { name: 'Final Year Project Ideas for Mechanical', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
-        title={PAGE_TITLE} description={PAGE_DESCRIPTION}
-        url={`${BASE_URL}/blog/${SLUG}`} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
-        authorName="WeBuildPro Bangalore" publisherName="WeBuildPro"
-        publisherLogo={`${BASE_URL}/logo.png`} images={[`${BASE_URL}/og/final-year-projects-mechanical.jpg`]}
+        headline={PAGE_TITLE} description={PAGE_DESCRIPTION}
+        slug={SLUG} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
       />
       <LazyPageExtras />
       <Header />

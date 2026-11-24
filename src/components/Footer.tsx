@@ -37,6 +37,24 @@ const companyLinks = [
   { label: 'Sitemap', href: '/sitemap' },
 ];
 
+const guideLinks = [
+  { label: 'IoT Projects for Final Year', href: '/blog/iot-projects-for-final-year' },
+  { label: 'Embedded Systems Projects', href: '/blog/embedded-systems-projects-for-final-year' },
+  { label: 'Robotics Projects', href: '/blog/robotics-projects-for-engineering-students' },
+  { label: 'Arduino Projects', href: '/blog/arduino-projects-for-engineering-students' },
+  { label: 'Electronics Projects', href: '/blog/electronics-projects-for-students' },
+  { label: 'Machine Learning Projects', href: '/blog/machine-learning-projects-for-final-year' },
+  { label: 'Python Projects', href: '/blog/python-projects-for-final-year' },
+  { label: 'Diploma Projects', href: '/blog/diploma-final-year-projects' },
+  { label: 'BCA Projects', href: '/blog/bca-final-year-projects' },
+  { label: 'MCA Projects', href: '/blog/mca-final-year-projects' },
+  { label: 'IEEE Projects in Bangalore', href: '/blog/ieee-projects-in-bangalore' },
+  { label: 'Final Year Project Cost', href: '/blog/final-year-project-cost-bangalore-2026' },
+  { label: 'Drone Development in India', href: '/blog/drone-development-india-2026' },
+  { label: 'Hardware Prototyping for Startups', href: '/blog/startups-bangalore-hardware-prototype' },
+  { label: 'Project FAQ', href: '/faq' },
+];
+
 const legalLinks = [
   { label: 'Privacy Policy', href: '/privacy-policy' },
   { label: 'Terms & Conditions', href: '/terms' },
@@ -191,6 +209,24 @@ export default function Footer() {
                 </p>
               </address>
             </div>
+          </div>
+        </div>
+        {/* Popular guides — sitewide internal links to high-volume owner pages */}
+        <div className="border-t border-border">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+            <h3 className="micro-label mb-4">Popular Guides</h3>
+            <ul className="flex flex-wrap gap-x-5 gap-y-2">
+              {guideLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         {/* Bottom bar — separated by 1px top border */}

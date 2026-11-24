@@ -6,7 +6,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'ieee-project-makers-bangalore-2026';
 const PAGE_TITLE = 'IEEE Project Makers in Bangalore (2026) — Who Actually Builds Working Projects?';
 const PAGE_DESCRIPTION =
-  'Find the best IEEE project maker in Bangalore for your 2026 final year project. WEBUILDPRO Peenya builds IEEE projects for ECE, CSE, EEE, AI-ML, Mechanical & Civil — with source code, documentation & viva prep. Call +91 95382 08573.';
+  'Looking for an IEEE project maker in Bangalore? WEBUILDPRO Peenya builds IEEE projects for all branches with source code and viva prep. Call +91 95382 08573.';
 const PAGE_DATE = '2026-10-10';
 
 export const metadata: Metadata = {

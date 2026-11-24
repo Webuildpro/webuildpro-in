@@ -13,7 +13,7 @@ import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'mini-projects-for-civil';
 const PAGE_TITLE = 'Mini Project Ideas for Civil Engineering Students (2026): 15 Simple Projects';
-const PAGE_DESCRIPTION = '15 mini project ideas for Civil Engineering students in Bangalore. Structural, environmental, construction materials, geotechnical & transportation projects with expert guidance at WEBUILDPRO.';
+const PAGE_DESCRIPTION = '15 mini project ideas for Civil Engineering students in Bangalore: structural, environmental, materials and geotechnical projects with expert guidance.';
 const PAGE_DATE = '2026-10-01';
 
 export const metadata: Metadata = {
@@ -92,12 +92,11 @@ export default function CivilMiniProjectsPage() {
     <>
       <BreadcrumbJsonLd items={breadcrumbs} />
       <BlogPostingJsonLd
-        title={PAGE_TITLE}
+        headline={PAGE_TITLE}
         description={PAGE_DESCRIPTION}
-        url={`${BASE_URL}/blog/${SLUG}`}
+        slug={SLUG}
         datePublished={PAGE_DATE}
         dateModified={PAGE_DATE}
-        authorName="WEBUILDPRO Bangalore"
       />
       <LazyPageExtras />
       <Header />

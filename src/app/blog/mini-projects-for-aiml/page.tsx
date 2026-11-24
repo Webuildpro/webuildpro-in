@@ -13,7 +13,7 @@ import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'mini-projects-for-aiml';
 const PAGE_TITLE = 'Mini Project Ideas for AIML Students (2026): 15 Simple Projects';
-const PAGE_DESCRIPTION = '15 mini project ideas for Artificial Intelligence and Machine Learning (AIML) students in Bangalore. ML, computer vision, NLP, data science & deep learning projects with expert guidance at WEBUILDPRO.';
+const PAGE_DESCRIPTION = '15 mini project ideas for AIML students in Bangalore: ML, computer vision, NLP and deep learning projects with expert guidance at WEBUILDPRO.';
 const PAGE_DATE = '2026-10-01';
 
 export const metadata: Metadata = {
@@ -92,12 +92,11 @@ export default function AimlMiniProjectsPage() {
     <>
       <BreadcrumbJsonLd items={breadcrumbs} />
       <BlogPostingJsonLd
-        title={PAGE_TITLE}
+        headline={PAGE_TITLE}
         description={PAGE_DESCRIPTION}
-        url={`${BASE_URL}/blog/${SLUG}`}
+        slug={SLUG}
         datePublished={PAGE_DATE}
         dateModified={PAGE_DATE}
-        authorName="WEBUILDPRO Bangalore"
       />
       <LazyPageExtras />
       <Header />

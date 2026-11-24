@@ -40,6 +40,13 @@ Rule: **one owner page per cluster.** New content for a cluster goes on its owne
 | embedded systems internship in bangalore | 100–1K | /blog/embedded-systems-internship-bangalore |
 | final year project cost | 10–100 | /blog/final-year-project-cost-bangalore-2026 |
 
+## Industrial / prototype track (no Keyword Planner data yet)
+Higher-margin growth path. Existing owner pages: `/industrial` (prototype development, NDA, fixed quote), `/blog/drone-development-india-2026` (drone rules + costs), `/blog/startups-bangalore-hardware-prototype` (startup founders).
+Next step: pull a Keyword Planner batch for "prototype development", "product development company bangalore", "drone manufacturer bangalore", "hardware startup prototype", "pcb design bangalore", "plc automation bangalore", then add rows here before writing new pages. Do not create a second page for any of these intents.
+
+## Internal linking
+The sitewide footer "Popular Guides" strip links every high-volume owner page above plus /faq and the two industrial posts, so none of them sits at 2 inbound links (blog index + sitemap) again. When a new owner page is added to this map, add it to `guideLinks` in `src/components/Footer.tsx` if its cluster is 1K+ monthly searches.
+
 ## Deliberately not targeted
 - Generic big-tech intern searches (google/amazon/microsoft intern) — wrong intent.
 - "arduino projects" (10K–100K) — hobbyist intent; covered indirectly by the engineering-students page.

@@ -14,7 +14,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Engineering Internships for BTech Students Bangalore | WEBUILDPRO',
+  title: 'Engineering Internships for BTech Students Bangalore',
   description:
     'Engineering internships in Bangalore for BTech students in CSE, ECE, EEE & Mechanical. Work on real hardware builds, take home a project and verifiable certificate. Call +91 95382 08573.',
   alternates: {

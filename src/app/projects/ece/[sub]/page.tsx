@@ -36,7 +36,7 @@ const ECE_SUBS: SubConfig[] = [
   {
     slug: 'iot-projects-in-bangalore',
     h1: 'IoT Projects in Bangalore',
-    metaTitle: 'IoT Projects in Bangalore (2025–2026) | WEBUILDPRO ECE',
+    metaTitle: 'IoT Projects in Bangalore (2025–2026)',
     metaDescription:
       'Get a fully-built IoT final-year project in Bangalore. WEBUILDPRO, Peenya, delivers working ESP32 hardware + cloud dashboard + source code for ECE students. WhatsApp +91 95382 08573.',
     intro:

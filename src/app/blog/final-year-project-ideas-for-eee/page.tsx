@@ -22,7 +22,7 @@ const FAQS = [
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-eee';
 const PAGE_TITLE = 'Final Year Projects for EEE: 16 Electrical Project Ideas (2026)';
-const PAGE_DESCRIPTION = 'Explore 16 final year project ideas for EEE students in Bangalore. Renewable energy systems, smart grid, EV charging, power electronics, industrial automation, and IoT-based electrical projects with complete hardware, simulation, and IEEE paper support. WeBuildPro guides you end-to-end.';
+const PAGE_DESCRIPTION = '16 final year project ideas for EEE students in Bangalore: renewable energy, smart grid, EV charging and power electronics, with hardware & IEEE paper support.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919538208573?text=';
 
@@ -84,10 +84,8 @@ export default function EEEFinalYearProjectsPage() {
         { name: 'Final Year Project Ideas for EEE', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
-        title={PAGE_TITLE} description={PAGE_DESCRIPTION}
-        url={`${BASE_URL}/blog/${SLUG}`} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
-        authorName="WeBuildPro Bangalore" publisherName="WeBuildPro"
-        publisherLogo={`${BASE_URL}/logo.png`} images={[`${BASE_URL}/og/final-year-projects-eee.jpg`]}
+        headline={PAGE_TITLE} description={PAGE_DESCRIPTION}
+        slug={SLUG} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
       />
       <LazyPageExtras />
       <Header />

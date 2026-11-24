@@ -5,7 +5,7 @@ import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'iot-projects-in-bangalore-2026';
-const PAGE_TITLE = 'IoT Projects in Bangalore (2025–2026): 50+ Ideas, Cost & Project Centre | WEBUILDPRO';
+const PAGE_TITLE = 'IoT Projects in Bangalore (2025–2026): 50+ Ideas & Cost';
 const PAGE_DESCRIPTION =
   '50+ IoT final-year project ideas in Bangalore with components, descriptions & cost. WEBUILDPRO, Peenya, delivers fully-built IoT projects for ECE students. WhatsApp +91 95382 08573.';
 const PAGE_DATE = '2026-10-11';

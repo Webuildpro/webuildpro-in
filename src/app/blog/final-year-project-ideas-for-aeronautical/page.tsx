@@ -21,7 +21,7 @@ const FAQS = [
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-aeronautical';
 const PAGE_TITLE = 'Final Year Projects for Aeronautical Engineering (2026): 17 Ideas';
-const PAGE_DESCRIPTION = 'Explore 17 final year project ideas for Aeronautical Engineering students in Bangalore. CFD aerodynamics, composite structures, UAV systems, propulsion testing, flight simulation, and avionics projects with complete simulation and report support. WeBuildPro guides you end-to-end.';
+const PAGE_DESCRIPTION = '17 final year project ideas for Aeronautical Engineering students in Bangalore: CFD, composites, UAV, propulsion, avionics, with simulation & report support.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919538208573?text=';
 
@@ -83,10 +83,8 @@ export default function AeronauticalFinalYearProjectsPage() {
         { name: 'Final Year Project Ideas for Aeronautical Engineering', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
-        title={PAGE_TITLE} description={PAGE_DESCRIPTION}
-        url={`${BASE_URL}/blog/${SLUG}`} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
-        authorName="WeBuildPro Bangalore" publisherName="WeBuildPro"
-        publisherLogo={`${BASE_URL}/logo.png`} images={[`${BASE_URL}/og/final-year-projects-aeronautical.jpg`]}
+        headline={PAGE_TITLE} description={PAGE_DESCRIPTION}
+        slug={SLUG} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
       />
       <LazyPageExtras />
       <Header />

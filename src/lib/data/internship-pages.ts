@@ -79,7 +79,7 @@ ${HOW}
     title: 'Internship for CSE Students in Bangalore (2026): AI/ML, Computer Vision & IoT',
     seoTitle: 'Internship for CSE Students in Bangalore (2026)',
     description:
-      'Project-based internship for CSE, ISE and AIML students in Bangalore — AI/ML & Computer Vision and IoT tracks where you deploy real models on real hardware. Online or offline, verifiable certificate.',
+      'Project-based internship for CSE, ISE and AIML students in Bangalore: AI/ML, computer vision and IoT tracks on real hardware. Online or offline, certificate.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '6 min read',
@@ -116,7 +116,7 @@ ${HOW}
     title: 'Internship for EEE Students in Bangalore (2026): Embedded, PCB & Automation',
     seoTitle: 'Internship for EEE Students in Bangalore (2026)',
     description:
-      'Hands-on internship for EEE and electrical engineering students in Bangalore — Embedded & IoT, PCB Design and Robotics & Automation (PLC) tracks. Online or offline, verifiable certificate.',
+      'Hands-on internship for EEE students in Bangalore: embedded & IoT, PCB design and PLC automation tracks. Online or offline, with verifiable certificate.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '6 min read',
@@ -153,7 +153,7 @@ ${HOW}
     title: 'Internship for Mechanical Engineering Students in Bangalore (2026): Robotics & Drones',
     seoTitle: 'Mechanical Engineering Internship in Bangalore (2026)',
     description:
-      'Hands-on internship for mechanical engineering students in Bangalore — Robotics & Automation and Drone Technology tracks with real builds. Online or offline, verifiable certificate from WEBUILDPRO.',
+      'Hands-on internship for mechanical engineering students in Bangalore: robotics, automation and drone tracks with real builds. Online or offline, certificate.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '6 min read',
@@ -263,7 +263,7 @@ ${HOW}
     title: 'Robotics Projects for Engineering Students (2026): 20 Ideas from Beginner to Final Year',
     seoTitle: 'Robotics Projects for Engineering Students (2026)',
     description:
-      '20 robotics project ideas for engineering students — line follower, obstacle avoiding, robotic arm, fire fighting and self-balancing robots, with components and difficulty. Built in Bangalore by WEBUILDPRO.',
+      '20 robotics project ideas for engineering students: line follower, robotic arm, fire fighting, self-balancing robots, with components and difficulty. Bangalore.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '8 min read',

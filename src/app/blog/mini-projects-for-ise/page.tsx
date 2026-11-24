@@ -92,12 +92,11 @@ export default function IseMiniProjectsPage() {
     <>
       <BreadcrumbJsonLd items={breadcrumbs} />
       <BlogPostingJsonLd
-        title={PAGE_TITLE}
+        headline={PAGE_TITLE}
         description={PAGE_DESCRIPTION}
-        url={`${BASE_URL}/blog/${SLUG}`}
+        slug={SLUG}
         datePublished={PAGE_DATE}
         dateModified={PAGE_DATE}
-        authorName="WEBUILDPRO Bangalore"
       />
       <LazyPageExtras />
       <Header />

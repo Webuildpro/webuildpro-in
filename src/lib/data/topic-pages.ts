@@ -15,7 +15,7 @@ export const topicArticles: BlogArticle[] = [
     title: 'Diploma Final Year Projects (2026): 24 Ideas for ECE, EEE, Mechanical & CS',
     seoTitle: 'Diploma Final Year Projects (2026): 24 Project Ideas',
     description:
-      '24 diploma final year project ideas for Electronics, Electrical, Mechanical and Computer Science polytechnic students — with components, difficulty and cost. Built and tested in Bangalore by WEBUILDPRO.',
+      '24 diploma final year project ideas for Electronics, Electrical, Mechanical and CS students, with components, difficulty and cost. WEBUILDPRO, Bangalore.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '10 min read',
@@ -191,7 +191,7 @@ BCA projects at WEBUILDPRO typically cost ₹3,500–₹12,000 depending on scop
     title: 'MCA Final Year Projects (2026): 20 Industry-Level Ideas',
     seoTitle: 'MCA Final Year Projects (2026): 20 Industry-Level Ideas',
     description:
-      '20 MCA final year project ideas for 2026 — full-stack, cloud, AI/ML, cybersecurity and DevOps projects that double as placement portfolio pieces. Source code and viva support from WEBUILDPRO, Bangalore.',
+      '20 MCA final year project ideas for 2026: full-stack, cloud, AI/ML, cybersecurity and DevOps, with source code and viva support from WEBUILDPRO, Bangalore.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '9 min read',
@@ -272,7 +272,7 @@ MCA projects typically cost ₹8,000–₹20,000 depending on scope. Get a fixed
     title: 'Python Projects for Final Year (2026): 25 Mini & Major Project Ideas',
     seoTitle: 'Python Projects for Final Year (2026): 25 Ideas',
     description:
-      '25 Python project ideas for final year and mini projects — AI/ML, computer vision, web apps with Django/Flask, automation and data science. Difficulty, libraries and source code support from WEBUILDPRO.',
+      '25 Python project ideas for final year and mini projects: AI/ML, computer vision, Django/Flask apps and automation, with libraries and source code support.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '10 min read',
@@ -359,7 +359,7 @@ WEBUILDPRO delivers Python projects with full source code, setup on your laptop,
     title: 'Machine Learning Projects for Final Year (2026): 20 Ideas with Datasets',
     seoTitle: 'Machine Learning Projects for Final Year (2026): 20 Ideas',
     description:
-      '20 machine learning project ideas for final year students — with the dataset, algorithm and evaluation metric for each. Healthcare, agriculture, finance, NLP and computer vision ML projects built by WEBUILDPRO, Bangalore.',
+      '20 machine learning project ideas for final year, each with dataset, algorithm and metric. Healthcare, finance, NLP and vision, built by WEBUILDPRO, Bangalore.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '10 min read',
@@ -445,7 +445,7 @@ ML final year projects typically cost ₹8,000–₹18,000 depending on dataset 
     title: 'IoT Projects for Final Year Engineering Students (2026): 22 Ideas',
     seoTitle: 'IoT Projects for Final Year Students (2026): 22 Ideas',
     description:
-      '22 IoT project ideas for final year engineering students — ESP32, Raspberry Pi and LoRa projects for healthcare, agriculture, smart city and industry, with components and difficulty. Built in Bangalore by WEBUILDPRO.',
+      '22 IoT project ideas for final year students: ESP32, Raspberry Pi and LoRa builds for healthcare, agriculture and smart city. WEBUILDPRO, Bangalore.',
     datePublished: UPDATED,
     dateModified: UPDATED,
     readTime: '10 min read',

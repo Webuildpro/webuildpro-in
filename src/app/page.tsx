@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: { absolute: 'Final Year Engineering Projects in Bangalore | WEBUILDPRO' },
   description:
-  'WEBUILDPRO offers final year engineering projects, mini projects, and internships for BTech students in Bangalore. ECE, EEE, CSE, AI-ML, Mechanical & Civil. Online delivery across India. Call +91 95382 08573.',
+  'WEBUILDPRO builds final year engineering projects, mini projects and internships for BTech students in Bangalore. Pan-India delivery. Call +91 95382 08573.',
   alternates: {
     canonical: BASE_URL
   },

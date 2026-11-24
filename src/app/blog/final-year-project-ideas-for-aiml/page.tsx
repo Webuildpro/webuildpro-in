@@ -21,7 +21,7 @@ const FAQS = [
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-aiml';
 const PAGE_TITLE = 'Final Year Projects for AIML: 17 AI & ML Project Ideas (2026)';
-const PAGE_DESCRIPTION = 'Explore 17 final year project ideas for AIML students in Bangalore. Large language models, computer vision systems, autonomous agents, reinforcement learning, generative AI, and production ML platforms with complete code, paper, and deployment support. WeBuildPro guides you end-to-end.';
+const PAGE_DESCRIPTION = '17 final year project ideas for AIML students: LLMs, computer vision, AI agents and reinforcement learning, with code, paper and deployment support. Bangalore.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919538208573?text=';
 
@@ -83,10 +83,8 @@ export default function AIMLFinalYearProjectsPage() {
         { name: 'Final Year Project Ideas for AIML', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
-        title={PAGE_TITLE} description={PAGE_DESCRIPTION}
-        url={`${BASE_URL}/blog/${SLUG}`} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
-        authorName="WeBuildPro Bangalore" publisherName="WeBuildPro"
-        publisherLogo={`${BASE_URL}/logo.png`} images={[`${BASE_URL}/og/final-year-projects-aiml.jpg`]}
+        headline={PAGE_TITLE} description={PAGE_DESCRIPTION}
+        slug={SLUG} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
       />
       <LazyPageExtras />
       <Header />

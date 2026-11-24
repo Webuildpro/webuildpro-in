@@ -22,7 +22,7 @@ const FAQS = [
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 const SLUG = 'final-year-project-ideas-for-cse';
 const PAGE_TITLE = 'Final Year Projects for CSE: 21 Ideas with Source Code (2026)';
-const PAGE_DESCRIPTION = 'Explore 21 final year project ideas for CSE students — major project topics for computer science final year. Full-stack web apps, AI/ML systems, cybersecurity tools, cloud-native apps, and blockchain projects with complete source code and IEEE paper support. WeBuildPro guides you end-to-end.';
+const PAGE_DESCRIPTION = '21 final year project ideas for CSE students: full-stack, AI/ML, cybersecurity, cloud and blockchain, with source code and IEEE paper support. Bangalore.';
 const PAGE_DATE = '2026-10-01';
 const WA_BASE = 'https://wa.me/919538208573?text=';
 
@@ -84,10 +84,8 @@ export default function CSEFinalYearProjectsPage() {
         { name: 'Final Year Project Ideas for CSE', url: `${BASE_URL}/blog/${SLUG}` },
       ]} />
       <BlogPostingJsonLd
-        title={PAGE_TITLE} description={PAGE_DESCRIPTION}
-        url={`${BASE_URL}/blog/${SLUG}`} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
-        authorName="WeBuildPro Bangalore" publisherName="WeBuildPro"
-        publisherLogo={`${BASE_URL}/logo.png`} images={[`${BASE_URL}/og/final-year-projects-cse.jpg`]}
+        headline={PAGE_TITLE} description={PAGE_DESCRIPTION}
+        slug={SLUG} datePublished={PAGE_DATE} dateModified={PAGE_DATE}
       />
       <LazyPageExtras />
       <Header />

@@ -25,7 +25,7 @@ const WA_BASE = 'https://wa.me/919538208573?text=';
 
 const PAGE_TITLE = 'Final Year Projects for ISE: 36 Project Ideas (2026)';
 const PAGE_DESCRIPTION =
-  'Explore 36 innovative final year project ideas for Information Science & Engineering students — full-stack systems, distributed computing, cybersecurity, DevSecOps, software architecture, and open-source platform engineering with expert mentorship.';
+  '36 final year project ideas for ISE students: full-stack, distributed systems, cybersecurity, DevSecOps and platform engineering, with mentorship. Bangalore.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -136,14 +136,11 @@ export default function ISEFinalYearProjectsPage() {
         ]}
       />
       <BlogPostingJsonLd
-        url={`${BASE_URL}/blog/${SLUG}`}
-        title={PAGE_TITLE}
+        slug={SLUG}
+        headline={PAGE_TITLE}
         description={PAGE_DESCRIPTION}
         datePublished={PAGE_DATE}
         dateModified={PAGE_DATE}
-        authorName="WeBuildPro"
-        publisherName="WeBuildPro"
-        publisherLogo={`${BASE_URL}/logo.png`}
         image={`${BASE_URL}/og/final-year-projects-ise.jpg`}
       />
       <LazyPageExtras />

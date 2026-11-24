@@ -12,7 +12,7 @@ function StatCard({ value, suffix, label }: {value: number;suffix: string;label:
   return (
     <div className="flex-1 min-w-0 text-center sm:text-left px-4 py-3 border-r border-border last:border-r-0">
       <div className="stat-number text-2xl sm:text-3xl font-bold text-foreground">
-        <span ref={ref}>0</span>
+        <span ref={ref}>{value}</span>
         {suffix}
       </div>
       <div className="text-xs text-muted-foreground mt-0.5 leading-tight">{label}</div>
