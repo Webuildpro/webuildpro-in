@@ -8,6 +8,7 @@ import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 import FaqSection from '@/components/FaqSection';
+import MoreGuides from '@/components/MoreGuides';
 import JsonLdScript from '@/components/JsonLdScript';
 import { itemListSchema } from '@/lib/jsonld';
 
@@ -449,6 +450,22 @@ export default function MiniProjectIdeasCSEPage() {
                   </a>
                 </div>
               </div>
+
+              <MoreGuides
+                heading="More mini project and project guides"
+                links={[
+                  { href: '/blog/mini-projects-for-aiml', label: 'Mini project ideas for AIML students' },
+                  { href: '/blog/mini-projects-for-ise', label: 'Mini project ideas for ISE students' },
+                  { href: '/blog/mini-projects-for-eee', label: 'Mini project ideas for EEE students' },
+                  { href: '/blog/mini-projects-for-mechanical', label: 'Mini project ideas for Mechanical students' },
+                  { href: '/blog/mini-projects-for-civil', label: 'Mini project ideas for Civil students' },
+                  { href: '/blog/mini-projects-for-aeronautical', label: 'Mini project ideas for Aeronautical students' },
+                  { href: '/blog/machine-learning-projects-for-final-year', label: 'Machine learning projects for final year' },
+                  { href: '/blog/best-ai-based-final-year-project-ideas-2026', label: 'Best AI based final year project ideas' },
+                  { href: '/blog/internship-for-cse-students-bangalore', label: 'Internship for CSE students in Bangalore' },
+                  { href: '/faq', label: 'Project and internship FAQ' },
+                ]}
+              />
 
               {/* Internal links */}
               <div className="border-t border-border pt-8">

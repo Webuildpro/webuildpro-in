@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LazyPageExtras from '@/components/LazyPageExtras';
+import MoreGuides from '@/components/MoreGuides';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 
@@ -433,6 +434,22 @@ export default function FinalYearProjectMakersBangalorePage() {
                     </Link>
                   ))}
                 </div>
+              </div>
+
+              <div className="mt-10">
+                <MoreGuides
+                  heading="Internships, guides and answers"
+                  links={[
+                    { href: '/blog/internship-for-cse-students-bangalore', label: 'Internship for CSE students in Bangalore' },
+                    { href: '/blog/internship-for-ece-students-bangalore', label: 'Internship for ECE students in Bangalore' },
+                    { href: '/blog/internship-for-eee-students-bangalore', label: 'Internship for EEE students in Bangalore' },
+                    { href: '/blog/internship-for-mechanical-engineering-students-bangalore', label: 'Mechanical engineering internship in Bangalore' },
+                    { href: '/blog/internship-for-aeronautical-engineering-students-bangalore', label: 'Aeronautical engineering internship in Bangalore' },
+                    { href: '/blog/iot-projects-in-bangalore-2026', label: 'IoT projects in Bangalore: 50+ ideas and cost' },
+                    { href: '/projects', label: 'All engineering projects in Bangalore, by branch' },
+                    { href: '/faq', label: 'Project and internship FAQ' },
+                  ]}
+                />
               </div>
 
               {/* Related posts */}

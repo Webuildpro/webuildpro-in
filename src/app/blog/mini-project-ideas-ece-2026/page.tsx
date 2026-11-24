@@ -8,6 +8,7 @@ import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 import FaqSection from '@/components/FaqSection';
+import MoreGuides from '@/components/MoreGuides';
 
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
@@ -454,6 +455,22 @@ export default function MiniProjectIdeasECEPage() {
                   </a>
                 </div>
               </div>
+
+              <MoreGuides
+                heading="More mini project and project guides"
+                links={[
+                  { href: '/blog/mini-projects-for-eee', label: 'Mini project ideas for EEE students' },
+                  { href: '/blog/mini-projects-for-mechanical', label: 'Mini project ideas for Mechanical students' },
+                  { href: '/blog/mini-projects-for-civil', label: 'Mini project ideas for Civil students' },
+                  { href: '/blog/mini-projects-for-aeronautical', label: 'Mini project ideas for Aeronautical students' },
+                  { href: '/blog/electronics-projects-for-students', label: 'Electronics projects for students' },
+                  { href: '/blog/robotics-projects-for-engineering-students', label: 'Robotics projects for engineering students' },
+                  { href: '/blog/iot-projects-in-bangalore-2026', label: 'IoT projects in Bangalore: 50+ ideas and cost' },
+                  { href: '/blog/internship-for-ece-students-bangalore', label: 'Internship for ECE students in Bangalore' },
+                  { href: '/blog/internship-for-eee-students-bangalore', label: 'Internship for EEE students in Bangalore' },
+                  { href: '/blog/embedded-systems-internship-bangalore', label: 'Embedded systems internship in Bangalore' },
+                ]}
+              />
 
               {/* Internal links */}
               <div className="border-t border-border pt-8 mb-8">
