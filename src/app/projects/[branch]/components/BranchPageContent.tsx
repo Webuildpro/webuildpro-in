@@ -149,6 +149,7 @@ function ProjectAccordion({ project, branch }: { project: Project; branch: strin
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
               href={`/contact?project=${encodeURIComponent(project.title)}`}
+              rel="nofollow"
               className="btn-primary flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold"
             >
               <Icon name="DocumentTextIcon" size={14} />

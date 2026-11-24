@@ -21,7 +21,7 @@ const PAGE_H1 = '30+ Simple Mini Project Ideas for CSE Students (2026)';
 const PAGE_DESCRIPTION =
   '30+ simple mini project ideas for CSE students: web, Python, AI/ML and app projects with tech stack, difficulty and semester picks. Updated Nov 2026.';
 const PAGE_DATE = '2026-08-03';
-const PAGE_MODIFIED = '2026-11-14';
+const PAGE_MODIFIED = '2026-11-24';
 const PAGE_UPDATED_LABEL = 'November 2026';
 
 export const metadata: Metadata = {
@@ -64,6 +64,10 @@ const faqs = [
   { q: "Which language is best for a CSE mini project?", a: "Python is the easiest for AI, ML and automation projects; JavaScript (React or MERN) is best for web apps; Java or Kotlin for Android. Choose the language your lab examiner is comfortable with and that you can explain confidently." },
   { q: "What are easy mini project ideas for CSE 1st and 2nd semester students?", a: "Start with a personal portfolio website, a to-do list app, a password generator in Python, a BMI calculator app or a simple quiz. They need only basic HTML, CSS, JavaScript or Python, take 1–2 weeks and are easy to explain in viva." },
   { q: "Which mini project is good for CSE 4th semester?", a: "Pick something with a database and one clear feature: a student result management system, a library management system, an expense tracker with charts, or an attendance system. They show real data handling without needing advanced ML." },
+  { q: "How long does a CSE mini project take to build?", a: "A beginner web or Python project takes 1–2 weeks. A database-driven system or a basic ML project takes 2–4 weeks including testing and the report. Start at least 5–6 weeks before the submission date so you have time for the report, PPT and viva practice." },
+  { q: "What should a CSE mini project report contain?", a: "Abstract, introduction, problem statement, existing vs proposed system, software and hardware requirements, system design (DFD, ER diagram, UML), implementation, test cases, screenshots of results, conclusion with future scope, and references. Follow your college template if it has one." },
+  { q: "Can I download a mini project from GitHub and submit it?", a: "Reusing a project unchanged is risky. Examiners often ask you to change something live or explain a module, and copied code fails that test. Use open-source code only as a base, customise it, credit it in your references, and make sure you can explain every file." },
+  { q: "Which mini project is good for CSE with a database?", a: "Library management, hospital appointment booking, online voting, hotel booking and employee payroll are all reliable database projects. They show tables, relationships, login and reports, which is what most examiners look for." },
   { q: "How much does a CSE mini project cost in Bangalore?", a: "CSE mini projects at WEBUILDPRO typically cost ₹3,500–₹8,000 depending on features, AI components and documentation. You get a fixed quote before work starts — WhatsApp +91 95382 08573." },
 ];
 
@@ -147,19 +151,71 @@ const projectSections: ProjectSection[] = [
       { title: 'Simple Chatbot', description: 'A rule-based Q&A bot for a website or college FAQ. A friendly way into NLP basics.', stack: 'Python, NLTK or Rasa, Flask', difficulty: 'Intermediate' },
     ],
   },
+  {
+    id: 'java-database-mini-projects',
+    label: 'Java & Database Mini Projects',
+    intro: 'Classic management systems built on Java or PHP with a SQL database. Examiners know these well, and they show tables, relationships, login and reports clearly.',
+    projects: [
+      { title: 'Hospital Appointment Booking System', description: 'Patients book slots with doctors, doctors manage their schedule and admins view reports. Covers roles, validation and date handling.', stack: 'Java (Spring Boot) or PHP, MySQL', difficulty: 'Intermediate' },
+      { title: 'Online Voting System', description: 'Verified voters cast one vote each, with an admin panel for candidates and live result counts. Shows authentication, constraints and basic security thinking.', stack: 'Python Flask or Java, MySQL, OTP or ID check', difficulty: 'Intermediate' },
+      { title: 'Hotel Room Booking System', description: 'Search available rooms by date, book, cancel and generate a bill. A good way to practise date-range queries and invoices.', stack: 'PHP or Node.js, MySQL', difficulty: 'Intermediate' },
+      { title: 'Employee Payroll Management', description: 'Store employee records, compute salary with allowances and deductions, and print payslips. Strong on SQL joins and report generation.', stack: 'Java, JDBC, MySQL', difficulty: 'Intermediate' },
+      { title: 'Bank Account Management (Java OOP)', description: 'Create accounts, deposit, withdraw, transfer and view statements using clean object-oriented design. A good first Java project for 3rd semester.', stack: 'Java, Swing or console, file or SQLite storage', difficulty: 'Beginner' },
+    ],
+  },
+  {
+    id: 'cybersecurity-data-science-mini-projects',
+    label: 'Cybersecurity & Data Science Mini Projects',
+    intro: 'These stand out in a stack of web apps. They use public datasets and standard libraries, so you can finish them without a GPU or a paid service.',
+    projects: [
+      { title: 'Phishing URL Detector', description: 'Extracts features from a link (length, symbols, domain age, HTTPS) and classifies it as safe or phishing with a trained model. Easy to demo by pasting real links.', stack: 'Python, Scikit-learn, Flask', difficulty: 'Intermediate' },
+      { title: 'Password Manager with Encryption', description: 'Stores site credentials encrypted behind a master password. Teaches hashing, symmetric encryption and safe storage.', stack: 'Python, cryptography (Fernet), SQLite, Tkinter', difficulty: 'Intermediate' },
+      { title: 'Network Packet Analyzer', description: 'Captures and summarises packets on your own network by protocol, source and size. For learning only: run it on a network you own.', stack: 'Python, Scapy, Matplotlib', difficulty: 'Intermediate' },
+      { title: 'Fake News Detector', description: 'Classifies news text as real or fake using TF-IDF features and logistic regression. A clean NLP pipeline you can explain step by step.', stack: 'Python, Pandas, Scikit-learn', difficulty: 'Intermediate' },
+      { title: 'Sales Dashboard with Data Visualisation', description: 'Loads a sales CSV and shows monthly trends, top products and regional splits in an interactive dashboard.', stack: 'Python, Pandas, Plotly, Streamlit', difficulty: 'Beginner' },
+      { title: 'Student Performance Predictor', description: 'Predicts final marks or pass/fail from attendance, internal marks and study hours. Small dataset, quick results and a useful story for viva.', stack: 'Python, Pandas, Scikit-learn', difficulty: 'Beginner' },
+    ],
+  },
 ];
 
 const semesterPicks = [
   { sem: '1st–2nd semester', picks: ['Personal Portfolio Website', 'To-Do List App', 'Password Generator & Strength Checker', 'BMI Calculator App'] },
   { sem: '3rd–4th semester', picks: ['Expense Tracker', 'Weather App (API-Based)', 'Student Result Management System', 'Library Management System'] },
   { sem: '5th–6th semester', picks: ['Movie Recommendation System', 'Spam Email Classifier', 'Face Detection App', 'Blog Website with Admin Panel'] },
+  { sem: 'Want to stand out', picks: ['Phishing URL Detector', 'Password Manager with Encryption', 'Fake News Detector', 'Hospital Appointment Booking System'] },
 ];
 
 const tocItems = [
   { id: 'quick-picks-by-semester', label: 'Quick Picks by Semester' },
   ...projectSections.map((sec) => ({ id: sec.id, label: sec.label })),
   { id: 'how-to-choose-cse-mini-project', label: 'How to Choose the Right CSE Mini Project' },
+  { id: 'mini-project-report-format', label: 'Mini Project Report: What to Include' },
+  { id: 'cse-mini-project-viva-questions', label: 'Viva Questions to Prepare' },
   { id: 'faq', label: 'FAQs' },
+];
+
+const reportSections = [
+  { name: 'Abstract', note: 'Half a page: the problem, your solution and the result.' },
+  { name: 'Introduction and problem statement', note: 'Who has the problem and why existing tools fall short.' },
+  { name: 'Existing vs proposed system', note: 'A short comparison table works well here.' },
+  { name: 'Requirements', note: 'Software, hardware and the libraries or APIs you used, with versions.' },
+  { name: 'System design', note: 'Architecture or block diagram, DFD, ER diagram and UML where relevant.' },
+  { name: 'Implementation', note: 'Module-wise explanation with key code snippets, not the whole code.' },
+  { name: 'Testing', note: 'A table of test cases with input, expected output and actual output.' },
+  { name: 'Results', note: 'Clear screenshots with captions for every main screen or output.' },
+  { name: 'Conclusion and future scope', note: 'What works, what does not yet, and the next features.' },
+  { name: 'References', note: 'Docs, datasets and any open-source code you built on.' },
+];
+
+const vivaQuestions = [
+  { q: 'Why did you choose this project?', a: 'Give one real problem it solves in one sentence, then say why this stack suits it.' },
+  { q: 'Explain the architecture in two minutes.', a: 'Walk through user, front end, back end, database in order. Practise with the diagram open.' },
+  { q: 'Why this database or algorithm and not another?', a: 'Know one alternative and one honest reason you rejected it (size, speed, simplicity).' },
+  { q: 'What happens if the user enters wrong input?', a: 'Show your validation and error messages live. This is the easiest place to impress.' },
+  { q: 'How did you test it?', a: 'Point to your test-case table, including at least one failure you found and fixed.' },
+  { q: 'Which part did you write yourself?', a: 'Be able to open any file and explain it line by line. If you used a library or template, say so.' },
+  { q: 'How would you improve it?', a: 'Name two realistic upgrades, such as roles, an API, deployment or a better model.' },
+  { q: 'Is the data or model accurate? How do you know?', a: 'For ML projects, quote accuracy and say how you split train and test data and why.' },
 ];
 
 function MiniProjectCard({ title, description, stack, difficulty }: MiniProject) {
@@ -280,7 +336,7 @@ export default function MiniProjectIdeasCSEPage() {
               <span>·</span>
               <span>{PAGE_UPDATED_LABEL}</span>
               <span>·</span>
-              <span>13 min read</span>
+              <span>17 min read</span>
             </div>
           </header>
 
@@ -336,7 +392,7 @@ export default function MiniProjectIdeasCSEPage() {
                 Short on time? Choose from these, matched to what you usually know at each stage. Full details for every
                 project are below.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                 {semesterPicks.map((row) => (
                   <div key={row.sem} className="bg-card border border-border rounded p-4">
                     <p className="text-xs font-bold text-foreground mb-2">{row.sem}</p>
@@ -396,6 +452,48 @@ export default function MiniProjectIdeasCSEPage() {
                   Ready to move up to a major project? Read{' '}
                   <Link href="/blog/final-year-project-ideas-for-cse" className="text-accent hover:underline">final year project ideas for CSE</Link>.
                 </p>
+              </div>
+
+              {/* Report format */}
+              <h2
+                id="mini-project-report-format"
+                className="text-xl font-bold text-foreground mt-10 mb-4 leading-snug scroll-mt-24"
+              >
+                Mini Project Report: What to Include
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                The report is often worth as many marks as the demo. Most colleges accept this structure; if yours has
+                a template, follow it and use this list as a checklist.
+              </p>
+              <ol className="bg-card border border-border rounded p-5 mb-8 space-y-3">
+                {reportSections.map((item, idx) => (
+                  <li key={item.name} className="text-sm text-muted-foreground leading-relaxed flex gap-3">
+                    <span className="font-mono text-muted-foreground/60 flex-shrink-0">{idx + 1}.</span>
+                    <span>
+                      <strong className="text-foreground">{item.name}.</strong> {item.note}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+
+              {/* Viva */}
+              <h2
+                id="cse-mini-project-viva-questions"
+                className="text-xl font-bold text-foreground mt-10 mb-4 leading-snug scroll-mt-24"
+              >
+                Viva Questions to Prepare
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                Examiners test whether you understand your own project. These eight questions come up again and again,
+                whatever the topic.
+              </p>
+              <div className="space-y-3 mb-8">
+                {vivaQuestions.map((item) => (
+                  <div key={item.q} className="bg-card border border-border rounded p-4">
+                    <h3 className="text-sm font-bold text-foreground mb-1">{item.q}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.a}</p>
+                  </div>
+                ))}
               </div>
 
               {/* GEO: Brand assertion — structured for AI extraction */}

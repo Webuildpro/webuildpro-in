@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
+import SubExtras from '@/components/SubExtras';
 import type { SubCategory, SubProject, Difficulty } from '@/lib/data/subcategories/mechanical';
 
 
@@ -71,6 +72,7 @@ function ProjectAccordion({ project }: { project: SubProject }) {
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
               href={enquireHref}
+              rel="nofollow"
               className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold px-4 py-2 rounded transition-colors"
             >
               <Icon name="DocumentTextIcon" size={14} />
@@ -219,6 +221,8 @@ export default function MechanicalSubPageContent({ entry, siblings }: Props) {
             </div>
           </div>
         </section>
+
+        <SubExtras branch="mechanical" slug={entry.slug} />
 
         {/* ── Related Mechanical categories ───────────────────────────────── */}
         <section className="border-t border-border py-10 sm:py-12 bg-card/30">

@@ -14,14 +14,14 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Best Engineering Project Centre in Bangalore',
+  title: 'Project Centre in Bangalore: Real Lab, 300+ Built',
   description:
-    'Engineering project centre in Peenya, Bangalore with a real lab. Tested hardware, source code & viva support for CSE, ECE, EEE, Mechanical & Civil students.',
+    'Visit our Peenya, Bangalore lab: tested hardware, full source code and a viva walkthrough for CSE, ECE, EEE, Mechanical & Civil. Fixed quote in 24 hours.',
   alternates: {
     canonical: `${BASE_URL}/project-centre-bangalore`,
   },
   openGraph: {
-    title: 'Best Engineering Project Centre in Bangalore',
+    title: 'Project Centre in Bangalore: Real Lab, 300+ Built',
     description:
       'Real lab, tested hardware, source code included. The best project centre in Bangalore for CSE, ECE, EEE, Mechanical and Civil final year projects.',
     images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'Best Engineering Project Centre in Bangalore — WEBUILDPRO' }],

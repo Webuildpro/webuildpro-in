@@ -104,7 +104,7 @@ export default function IeeeProjectsBangalorePage() {
             <h1 className="text-hero-lg font-bold text-foreground mb-3 leading-tight">
               IEEE Projects in Bangalore (2026): The Complete Guide to Choosing the Best IEEE Project Makers
             </h1>
-            <p className="text-muted-foreground text-sm mb-4">Last updated: August 2026</p>
+            <p className="text-muted-foreground text-sm mb-4">Last updated: November 2026</p>
             <p className="text-muted-foreground text-base mb-6">
               Best IEEE project centre in Bangalore for CSE, ECE, EEE, Mechanical &amp; Civil. 2026 IEEE final year
               projects built, tested &amp; delivered. WhatsApp +91 95382 08573.
@@ -526,6 +526,50 @@ export default function IeeeProjectsBangalorePage() {
                     </li>
                   ))}
                 </ol>
+              </section>
+
+              <CircuitDivider />
+
+              {/* H2: How to implement a base paper */}
+              <section id="implement-ieee-base-paper" className="mb-10 scroll-mt-24">
+                <h2 className="text-xl font-bold text-foreground mb-4">
+                  How to Implement an IEEE Base Paper (What Examiners Look For)
+                </h2>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  An IEEE project is judged on how well you understood and reproduced a published idea, not on how
+                  closely you copied it. These steps keep you on the right side of that line.
+                </p>
+                <ol className="space-y-3 mb-6">
+                  {[
+                    'Read the abstract, block diagram and conclusion first. Write the problem, the method and the headline result in three sentences.',
+                    'List every component, dataset or parameter the paper uses, and note which ones you must substitute and why.',
+                    'Reproduce one key result from the paper. A matching table or graph is the strongest proof you understood the method.',
+                    'Extend one thing: a new dataset, an extra sensor, a better threshold or a simple interface. This is your contribution.',
+                    'Compare your results with the paper in a table and explain any gap honestly.',
+                    'Cite the paper properly in the report, in IEEE reference style, and keep the base paper with you for the viva.',
+                  ].map((step, idx) => (
+                    <li key={step} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+                      <span className="font-mono text-muted-foreground/60 flex-shrink-0">{idx + 1}.</span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ol>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Not sure whether you need an IEEE title at all? Read{' '}
+                  <Link href="/blog/ieee-vs-non-ieee-projects" className="text-accent hover:underline">
+                    IEEE vs non-IEEE projects
+                  </Link>
+                  . For topic ideas by branch, see{' '}
+                  <Link href="/blog/final-year-project-ideas-for-cse" className="text-accent hover:underline">CSE</Link>,{' '}
+                  <Link href="/blog/final-year-project-ideas-for-ece" className="text-accent hover:underline">ECE</Link>,{' '}
+                  <Link href="/blog/final-year-project-ideas-for-eee" className="text-accent hover:underline">EEE</Link> and{' '}
+                  <Link href="/blog/final-year-project-ideas-for-mechanical" className="text-accent hover:underline">Mechanical</Link>{' '}
+                  final year project ideas, and{' '}
+                  <Link href="/blog/ieee-project-makers-bangalore-2026" className="text-accent hover:underline">
+                    how to choose IEEE project makers in Bangalore
+                  </Link>
+                  .
+                </p>
               </section>
 
               <CircuitDivider />

@@ -12,15 +12,15 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Engineering Company in Bangalore',
+  title: 'About WEBUILDPRO India: Engineering Lab in Peenya',
   description:
-    'WEBUILDPRO India is an engineering lab in Peenya, Bangalore that designs, builds and tests student projects, internships and industrial prototypes.',
+    'Meet WEBUILDPRO India: working engineers in a Peenya, Bangalore lab building student projects, internships and prototypes. 300+ projects, 4.8★ on Google.',
   alternates: {
     canonical: `${BASE_URL}/about`,
     languages: { 'en-IN': `${BASE_URL}/about` },
   },
   openGraph: {
-    title: 'Engineering Company in Bangalore',
+    title: 'About WEBUILDPRO India: Engineering Lab in Peenya',
     description:
       'A real engineering lab in Bangalore. Working engineers, not sales staff. 300+ projects, 4.8★ on Google.',
     images: [{ url: '/assets/images/og-webuildpro.jpg', width: 1200, height: 630, alt: 'WEBUILDPRO India engineering lab in Bangalore' }],

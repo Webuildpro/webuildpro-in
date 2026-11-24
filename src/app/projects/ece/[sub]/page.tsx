@@ -1,3 +1,4 @@
+import { subExtras } from '@/lib/data/subcategories/extras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import nextDynamic from 'next/dynamic';
@@ -258,8 +259,10 @@ export default async function EceSubPage({
   params: Promise<{ sub: string }>;
 }) {
   const { sub } = await params;
-  const config = ECE_SUBS.find((s) => s.slug === sub);
-  if (!config) notFound();
+  const baseConfig = ECE_SUBS.find((s) => s.slug === sub);
+  if (!baseConfig) notFound();
+  const extra = subExtras['ece/' + baseConfig.slug];
+  const config = extra ? { ...baseConfig, faq: [...baseConfig.faq, ...extra.faqs] } : baseConfig;
 
   const eceData = branchData['ece'];
   const filteredProjects = eceData.projects.filter((p) =>

@@ -143,6 +143,7 @@ export default function MiniProjectsPage() {
                     <div className="flex flex-col sm:flex-row gap-2 mt-auto">
                       <Link
                         href={`/contact?project=${encodeURIComponent(project.title)}`}
+                        rel="nofollow"
                         className="btn-primary flex items-center justify-center gap-1.5 px-4 py-2 text-xs font-semibold flex-1"
                       >
                         <Icon name="DocumentTextIcon" size={12} />

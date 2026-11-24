@@ -1,4 +1,5 @@
 import { cseSubCategories } from '@/lib/data/subcategories/cse';
+import { subExtras } from '@/lib/data/subcategories/extras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import nextDynamic from 'next/dynamic';
@@ -50,8 +51,10 @@ export default async function CseSubPage({
   params: Promise<{ sub: string }>;
 }) {
   const { sub } = await params;
-  const entry = cseSubCategories.find((s) => s.slug === sub);
-  if (!entry) notFound();
+  const baseEntry = cseSubCategories.find((s) => s.slug === sub);
+  if (!baseEntry) notFound();
+  const extra = subExtras['cse/' + baseEntry.slug];
+  const entry = extra ? { ...baseEntry, faqs: [...baseEntry.faqs, ...extra.faqs] } : baseEntry;
 
   const siblings = cseSubCategories.filter((s) => s.slug !== entry.slug);
 

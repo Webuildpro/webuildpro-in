@@ -1,4 +1,5 @@
 import { civilSubCategories } from '@/lib/data/subcategories/civil';
+import { subExtras } from '@/lib/data/subcategories/extras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import nextDynamic from 'next/dynamic';
@@ -50,8 +51,10 @@ export default async function CivilSubPage({
   params: Promise<{ sub: string }>;
 }) {
   const { sub } = await params;
-  const entry = civilSubCategories.find((s) => s.slug === sub);
-  if (!entry) notFound();
+  const baseEntry = civilSubCategories.find((s) => s.slug === sub);
+  if (!baseEntry) notFound();
+  const extra = subExtras['civil/' + baseEntry.slug];
+  const entry = extra ? { ...baseEntry, faqs: [...baseEntry.faqs, ...extra.faqs] } : baseEntry;
 
   const siblings = civilSubCategories.filter((s) => s.slug !== entry.slug);
 

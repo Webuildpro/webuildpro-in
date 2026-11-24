@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
+import SubExtras from '@/components/SubExtras';
 import type { Project, Difficulty } from '@/lib/data/projects';
 
 
@@ -246,6 +247,8 @@ export default function EceSubPageContent({ config, projects, siblings }: Props)
             </div>
           </div>
         </section>
+
+        <SubExtras branch="ece" slug={config.slug} />
 
         {/* ── Sibling sub-categories ──────────────────────────────────────── */}
         <section className="border-t border-border py-10 sm:py-12 bg-card/30">

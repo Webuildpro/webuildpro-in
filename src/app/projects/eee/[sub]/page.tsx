@@ -1,4 +1,5 @@
 import { eeeSubCategories } from '@/lib/data/subcategories/eee';
+import { subExtras } from '@/lib/data/subcategories/extras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import nextDynamic from 'next/dynamic';
@@ -50,8 +51,10 @@ export default async function EeeSubPage({
   params: Promise<{ sub: string }>;
 }) {
   const { sub } = await params;
-  const entry = eeeSubCategories.find((s) => s.slug === sub);
-  if (!entry) notFound();
+  const baseEntry = eeeSubCategories.find((s) => s.slug === sub);
+  if (!baseEntry) notFound();
+  const extra = subExtras['eee/' + baseEntry.slug];
+  const entry = extra ? { ...baseEntry, faqs: [...baseEntry.faqs, ...extra.faqs] } : baseEntry;
 
   const siblings = eeeSubCategories.filter((s) => s.slug !== entry.slug);
 

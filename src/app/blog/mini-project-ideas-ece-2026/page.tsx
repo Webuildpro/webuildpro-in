@@ -9,6 +9,8 @@ import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 import FaqSection from '@/components/FaqSection';
 import MoreGuides from '@/components/MoreGuides';
+import JsonLdScript from '@/components/JsonLdScript';
+import { itemListSchema } from '@/lib/jsonld';
 
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
@@ -18,6 +20,8 @@ const PAGE_TITLE = '30 Mini Project Ideas for ECE Students (2026)';
 const PAGE_DESCRIPTION =
   '30+ simple, working mini project ideas for ECE students in Bangalore. Arduino, IoT, sensors & communication — with source code & guidance. 1st–6th sem.';
 const PAGE_DATE = '2026-08-03';
+const PAGE_MODIFIED = '2026-11-24';
+const PAGE_UPDATED_LABEL = 'November 2026';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -32,7 +36,7 @@ export const metadata: Metadata = {
     description: PAGE_DESCRIPTION,
     type: 'article',
     publishedTime: PAGE_DATE,
-    modifiedTime: PAGE_DATE,
+    modifiedTime: PAGE_MODIFIED,
     authors: ['WEBUILDPRO India'],
     images: [
       {
@@ -51,16 +55,23 @@ const faqs = [
   { q: "Are Arduino projects good for an ECE mini project?", a: "Yes. Arduino is ideal for ECE mini projects because components are cheap and widely available in Bangalore. Add a display, GSM/GPS module or a mobile app to make it stand out." },
   { q: "What should an ECE mini project report include?", a: "Include the block diagram, circuit diagram, component list with specifications, working principle, code explanation, results with photos, applications and future scope. WEBUILDPRO prepares the report in your college format." },
   { q: "How much does an ECE mini project cost?", a: "ECE mini projects at WEBUILDPRO typically cost ₹3,500–₹8,000 including components, report and PPT. Every project is tested in our Peenya, Bangalore lab before handover." },
+  { q: "Arduino or ESP32: which should I use for my ECE mini project?", a: "Use Arduino Uno for simple single-sensor builds in 1st–4th semester because it is easy to explain. Use ESP32 or NodeMCU when you want Wi-Fi, Bluetooth or a phone dashboard. ESP32 is the better choice for 5th–6th semester since it shows IoT skills." },
+  { q: "How long does an ECE mini project take?", a: "A single-sensor Arduino project takes about 1–2 weeks. An IoT or GSM project takes 2–4 weeks including testing, the report and viva practice. Order components early because a missing sensor is the most common cause of delay." },
+  { q: "What viva questions are asked for an ECE mini project?", a: "Expect: what each component does, why you picked this microcontroller, how the circuit is powered, how you calibrated the sensor, what happens if a sensor fails, and what you would improve. See the viva section on this page for how to answer." },
+  { q: "Where can I buy electronics components for a mini project in Bangalore?", a: "SP Road in Bangalore is the main market for sensors, boards and modules, and several online stores deliver within a few days. Check that sensors are genuine and test each one before you build the final circuit." },
   { q: "Can I get an ECE mini project delivered outside Bangalore?", a: "Yes. Projects are built and tested in Bangalore and couriered pan-India, with a viva walkthrough over video call." },
 ];
 
 const tocItems = [
+  { id: 'quick-picks-by-semester', label: 'Quick Picks by Semester' },
   { id: 'iot-sensor-mini-projects', label: 'IoT & Sensor-Based Mini Projects' },
   { id: 'arduino-embedded-mini-projects', label: 'Arduino / Embedded Mini Projects' },
   { id: 'communication-mini-projects', label: 'Communication-Based Mini Projects' },
   { id: 'robotics-motor-mini-projects', label: 'Robotics & Motor Mini Projects' },
   { id: 'power-utility-mini-projects', label: 'Power & Utility Mini Projects' },
   { id: 'how-to-choose-ece-mini-project', label: 'How to Choose the Right ECE Mini Project' },
+  { id: 'ece-mini-project-component-list', label: 'Starter Component List' },
+  { id: 'ece-mini-project-viva-questions', label: 'Viva Questions to Prepare' },
   { id: 'faq', label: 'FAQs' },
 ];
 
@@ -69,6 +80,41 @@ interface MiniProjectCardProps {
   description: string;
   difficulty: 'Beginner' | 'Intermediate';
 }
+
+const semesterPicks = [
+  { sem: '1st–2nd semester', picks: ['Digital Thermometer with LCD', 'Automatic Street Light', 'Battery Level Indicator', 'PIR-Based Motion Detector Alarm'] },
+  { sem: '3rd–4th semester', picks: ['Gas Leakage Detector with Buzzer', 'Ultrasonic Water Level Indicator', 'RFID-Based Access System', 'Line-Following Robot'] },
+  { sem: '5th–6th semester', picks: ['IoT Temperature & Humidity Monitor', 'Heartbeat / Pulse Rate Monitor', 'GSM-Based SMS Alert System', 'Weather Station with Multiple Sensors'] },
+];
+
+const componentKit = [
+  { part: 'Arduino Uno (or compatible)', used: 'Most beginner builds', price: '₹450–700' },
+  { part: 'ESP32 or NodeMCU board', used: 'IoT builds with Wi-Fi or Bluetooth', price: '₹300–650' },
+  { part: 'DHT11 temperature and humidity sensor', used: 'Thermometer, weather station, IoT monitor', price: '₹70–150' },
+  { part: 'MQ-2 gas sensor module', used: 'Gas leakage detector, fire alarm', price: '₹100–200' },
+  { part: 'HC-SR04 ultrasonic sensor', used: 'Water level, smart dustbin, blind stick', price: '₹60–120' },
+  { part: 'PIR motion sensor (HC-SR501)', used: 'Motion alarm', price: '₹60–120' },
+  { part: 'IR obstacle sensor module', used: 'Line follower, visitor counter, fire alarm', price: '₹30–60' },
+  { part: 'LDR with resistor', used: 'Automatic street light', price: '₹5–30' },
+  { part: '16x2 LCD with I2C backpack', used: 'Any project that shows readings', price: '₹150–300' },
+  { part: '5V relay module', used: 'Switching lights, pumps and appliances', price: '₹50–100' },
+  { part: 'SG90 servo motor', used: 'Smart dustbin, door lock, robotic arm', price: '₹80–150' },
+  { part: 'L298N motor driver and DC motors', used: 'Robot cars', price: '₹250–500' },
+  { part: 'RC522 RFID module with tags', used: 'RFID access system', price: '₹100–200' },
+  { part: 'SIM800L GSM module', used: 'SMS alert system', price: '₹350–600' },
+  { part: 'Breadboard, jumper wires, buzzer, LEDs', used: 'Every project', price: '₹150–300' },
+];
+
+const vivaQuestions = [
+  { q: 'Why did you choose this microcontroller?', a: 'Match it to the need: Arduino for simple wired builds, ESP32 for Wi-Fi or Bluetooth. Say what you gave up in the choice.' },
+  { q: 'Explain the block diagram.', a: 'Go input, processing, output in order: sensor, microcontroller, then display, buzzer or app. Practise this with the diagram in front of you.' },
+  { q: 'How is the circuit powered, and why that voltage?', a: 'Know the supply for the board, the sensor and the actuator, and why a motor or relay needs a separate supply or driver.' },
+  { q: 'How does this sensor work?', a: 'Give the principle in one line, such as echo time for ultrasonic or resistance change for an LDR, plus its working range.' },
+  { q: 'How did you calibrate or test it?', a: 'Describe one real test, the threshold you chose and what you changed after seeing wrong readings.' },
+  { q: 'What happens if the sensor fails or the power drops?', a: 'Say what the system does in that case. Even a simple answer, like a default-off output, shows you thought about it.' },
+  { q: 'Explain your code.', a: 'Be ready to open the sketch and explain setup, the loop, one function and one threshold value.' },
+  { q: 'What would you improve?', a: 'Name two realistic upgrades, such as a mobile app, data logging, a better sensor or a PCB instead of a breadboard.' },
+];
 
 function MiniProjectCard({ title, description, difficulty }: MiniProjectCardProps) {
   const difficultyColor =
@@ -110,10 +156,46 @@ export default function MiniProjectIdeasECEPage() {
           { name: 'Mini Project Ideas for ECE Students (2026)', url: `/blog/${SLUG}` },
         ]}
       />
+      <JsonLdScript
+        nodes={[
+          itemListSchema('Mini Project Ideas for ECE Students (2026)', [
+            { name: "IoT Temperature & Humidity Monitor" },
+            { name: "Smart Home Light Automation" },
+            { name: "Gas Leakage Detector with Buzzer" },
+            { name: "Soil Moisture-Based Auto Plant Watering" },
+            { name: "IoT Air Quality Indicator" },
+            { name: "Ultrasonic Water Level Indicator" },
+            { name: "IoT Smart Dustbin" },
+            { name: "PIR-Based Motion Detector Alarm" },
+            { name: "Digital Thermometer with LCD" },
+            { name: "Password-Based Door Lock" },
+            { name: "RFID-Based Access System" },
+            { name: "Automatic Street Light" },
+            { name: "Heartbeat / Pulse Rate Monitor" },
+            { name: "Fire Alarm System" },
+            { name: "Obstacle-Detecting Blind Stick" },
+            { name: "Weather Station with Multiple Sensors" },
+            { name: "Bluetooth-Controlled Home Appliances" },
+            { name: "RF-Based Wireless Notice Board" },
+            { name: "IR Remote-Controlled Switching" },
+            { name: "GSM-Based SMS Alert System" },
+            { name: "Li-Fi Data Transmission (Basic)" },
+            { name: "Bluetooth-Controlled Robot Car" },
+            { name: "Line-Following Robot" },
+            { name: "Obstacle-Avoiding Robot" },
+            { name: "Gesture-Controlled Robot" },
+            { name: "Object-Following Robot" },
+            { name: "Solar-Powered Phone Charger" },
+            { name: "Automatic Water Pump Controller" },
+            { name: "Energy Meter with Display" },
+            { name: "Battery Level Indicator" },
+          ]),
+        ]}
+      />
       <BlogPostingJsonLd
         headline="Mini Project Ideas for ECE Students (2026)"
         datePublished={PAGE_DATE}
-        dateModified={PAGE_DATE}
+        dateModified={PAGE_MODIFIED}
         description={PAGE_DESCRIPTION}
         slug={SLUG}
       />
@@ -165,7 +247,7 @@ export default function MiniProjectIdeasECEPage() {
             <h1 className="text-hero-lg font-bold text-foreground mb-3 leading-tight">
               Mini Project Ideas for ECE Students (2026)
             </h1>
-            <p className="text-muted-foreground text-sm mb-4">Last updated: August 2026</p>
+            <p className="text-muted-foreground text-sm mb-4">Last updated: {PAGE_UPDATED_LABEL}</p>
             <p className="text-muted-foreground text-base mb-6">
               30+ simple, working mini project ideas for ECE students in Bangalore. Arduino, IoT, sensors &amp;
               communication — with source code &amp; guidance. 1st–6th sem.
@@ -173,9 +255,9 @@ export default function MiniProjectIdeasECEPage() {
             <div className="flex items-center gap-4 text-xs text-muted-foreground font-mono border-t border-border pt-4">
               <span>WEBUILDPRO India</span>
               <span>·</span>
-              <span>August 2026</span>
+              <span>{PAGE_UPDATED_LABEL}</span>
               <span>·</span>
-              <span>12 min read</span>
+              <span>16 min read</span>
             </div>
           </header>
 
@@ -206,6 +288,32 @@ export default function MiniProjectIdeasECEPage() {
                 </Link>{' '}
                 to understand how we build and deliver complete projects.
               </p>
+
+              {/* Quick picks */}
+              <h2
+                id="quick-picks-by-semester"
+                className="text-xl font-bold text-foreground mt-10 mb-4 leading-snug scroll-mt-24"
+              >
+                Quick Picks by Semester
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                Short on time? These projects match what ECE students usually know at each stage. The full list with
+                details follows.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                {semesterPicks.map((row) => (
+                  <div key={row.sem} className="bg-card border border-border rounded p-4">
+                    <p className="text-xs font-bold text-foreground mb-2">{row.sem}</p>
+                    <ul className="space-y-1">
+                      {row.picks.map((p) => (
+                        <li key={p} className="text-xs text-muted-foreground">
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
 
               {/* IoT & Sensor-Based */}
               <h2
@@ -414,6 +522,66 @@ export default function MiniProjectIdeasECEPage() {
                   demonstrate live rather than one that only works in theory. If you want it built, tested and
                   explained so you can defend it, WEBUILDPRO does exactly that.
                 </p>
+              </div>
+
+              {/* Component list */}
+              <h2
+                id="ece-mini-project-component-list"
+                className="text-xl font-bold text-foreground mt-10 mb-4 leading-snug scroll-mt-24"
+              >
+                Starter Component List
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                Most projects above use a small set of parts. Prices are rough market ranges for Bangalore and online
+                stores and change by shop, brand and season, so treat them as a budgeting guide and not a quote.
+              </p>
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full text-sm border border-border rounded">
+                  <thead>
+                    <tr className="bg-card text-left">
+                      <th className="p-3 font-bold text-foreground border-b border-border">Component</th>
+                      <th className="p-3 font-bold text-foreground border-b border-border">Used in</th>
+                      <th className="p-3 font-bold text-foreground border-b border-border whitespace-nowrap">Approx. price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {componentKit.map((row) => (
+                      <tr key={row.part} className="align-top">
+                        <td className="p-3 text-foreground border-b border-border">{row.part}</td>
+                        <td className="p-3 text-muted-foreground border-b border-border">{row.used}</td>
+                        <td className="p-3 text-muted-foreground border-b border-border whitespace-nowrap">{row.price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-8">
+                Buy one spare of the cheap sensors, and test every module on its own before wiring the final circuit.
+                Loose jumper wires and fake sensors cause most demo-day failures. Prefer not to source parts yourself?{' '}
+                <Link href="/mini-projects" className="text-accent hover:underline">
+                  WEBUILDPRO builds and tests the full project in our Peenya lab
+                </Link>
+                .
+              </p>
+
+              {/* Viva */}
+              <h2
+                id="ece-mini-project-viva-questions"
+                className="text-xl font-bold text-foreground mt-10 mb-4 leading-snug scroll-mt-24"
+              >
+                Viva Questions to Prepare
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                Examiners check whether you understand the hardware, not just whether it blinks. These questions come
+                up for almost every ECE mini project.
+              </p>
+              <div className="space-y-3 mb-8">
+                {vivaQuestions.map((item) => (
+                  <div key={item.q} className="bg-card border border-border rounded p-4">
+                    <h3 className="text-sm font-bold text-foreground mb-1">{item.q}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.a}</p>
+                  </div>
+                ))}
               </div>
 
               <FaqSection faqs={faqs} />

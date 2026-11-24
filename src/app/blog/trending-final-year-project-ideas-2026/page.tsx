@@ -8,6 +8,8 @@ import LazyPageExtras from '@/components/LazyPageExtras';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import BlogPostingJsonLd from '@/components/BlogPostingJsonLd';
 
+import FaqSection from '@/components/FaqSection';
+import MoreGuides from '@/components/MoreGuides';
 import Icon from '@/components/ui/AppIcon';
 import CircuitDivider from '@/components/CircuitDivider';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://webuildpro.in';
@@ -16,6 +18,14 @@ const PAGE_TITLE = 'Trending Final Year Project Ideas 2026 (AI, IoT, Drones)';
 const PAGE_DESCRIPTION =
   '50+ trending final year project ideas for 2026 across AI/ML, IoT, robotics, drones, embedded & blockchain. Built and tested in Bangalore — online & offline.';
 const PAGE_DATE = '2026-08-03';
+const PAGE_MODIFIED = '2026-11-24';
+
+const faqs = [
+  { q: 'Which final year project topic is trending in 2026?', a: 'AI and ML (computer vision, RAG chatbots, generative AI), IoT with edge processing, drones and robotics, embedded systems on ESP32 and STM32, and blockchain for verification are the topics this page covers. Pick the one that matches your branch and that you can finish.' },
+  { q: 'Is a trending topic better than a simple project for marks?', a: 'Not by itself. A simple project that works reliably and that you can explain beats a trending one that half-works. Trending topics help most when you add a clear real-world use and honest results.' },
+  { q: 'How do I pick a trending project that I can actually finish?', a: 'Scope it to one feature, confirm the components or dataset are available, and set a deadline for a working demo two weeks before submission. If it needs rare parts or a GPU, choose a lighter version.' },
+  { q: 'Can I combine two trending topics in one project?', a: 'Yes, for example IoT sensing with an ML prediction or a drone with computer vision. Keep each part simple, and be ready to explain how the parts connect in the viva.' },
+];
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -30,7 +40,7 @@ export const metadata: Metadata = {
     description: PAGE_DESCRIPTION,
     type: 'article',
     publishedTime: PAGE_DATE,
-    modifiedTime: PAGE_DATE,
+    modifiedTime: PAGE_MODIFIED,
     authors: ['WEBUILDPRO India'],
     images: [
       {
@@ -107,7 +117,7 @@ export default function TrendingFinalYearProjectIdeas2026Page() {
       <BlogPostingJsonLd
         headline="Trending Final Year Project Ideas 2026 (AI, IoT, Drones)"
         datePublished={PAGE_DATE}
-        dateModified={PAGE_DATE}
+        dateModified={PAGE_MODIFIED}
         description={PAGE_DESCRIPTION}
         slug={SLUG}
       />
@@ -151,7 +161,7 @@ export default function TrendingFinalYearProjectIdeas2026Page() {
             <h1 className="text-hero-lg font-bold text-foreground mb-3 leading-tight">
               Trending Final Year Project Ideas for 2026 (AI, IoT, Robotics, Drones &amp; More)
             </h1>
-            <p className="text-muted-foreground text-sm mb-4">Last updated: August 2026</p>
+            <p className="text-muted-foreground text-sm mb-4">Last updated: November 2026</p>
             <p className="text-muted-foreground text-base mb-6">
               50+ trending final year project ideas for 2026 across AI/ML, IoT, robotics, drones, embedded &amp;
               blockchain. Built and tested in Bangalore — online &amp; offline.
@@ -539,6 +549,22 @@ export default function TrendingFinalYearProjectIdeas2026Page() {
               </section>
 
               <CircuitDivider />
+
+              <FaqSection faqs={faqs} />
+
+              <MoreGuides
+                heading="Project ideas by branch and topic"
+                links={[
+                  { href: '/blog/final-year-project-ideas-for-cse', label: 'Final year project ideas for CSE' },
+                  { href: '/blog/final-year-project-ideas-for-ece', label: 'Final year project ideas for ECE' },
+                  { href: '/blog/final-year-project-ideas-for-eee', label: 'Final year project ideas for EEE' },
+                  { href: '/blog/final-year-project-ideas-for-mechanical', label: 'Final year project ideas for Mechanical' },
+                  { href: '/blog/machine-learning-projects-for-final-year', label: 'Machine learning projects for final year' },
+                  { href: '/blog/iot-projects-in-bangalore-2026', label: 'IoT projects in Bangalore: 50+ ideas and cost' },
+                  { href: '/blog/generative-ai-projects-for-final-year-2026', label: 'Generative AI projects for final year' },
+                  { href: '/blog/agentic-ai-projects-for-final-year-2026', label: 'Agentic AI projects for final year' },
+                ]}
+              />
 
               {/* ── CTA Section ── */}
               <section id="build-with-webuildpro" className="mb-12">

@@ -806,7 +806,7 @@ A partner who can answer all of these clearly is worth engaging. One who can't i
     seoTitle: 'Drone Development in India (2026): Rules & Costs',
     description: 'A practical guide to custom drone development in India in 2026 — DGCA regulations, realistic costs, what types of drones are actually buildable, and how to commission a custom drone in Bangalore.',
     datePublished: '2026-06-15',
-    dateModified: '2026-07-01',
+    dateModified: '2026-11-24',
     readTime: '11 min read',
     tags: ['Drone Development', 'Bangalore', 'Industrial Prototypes', 'DGCA'],
     content: `
@@ -893,12 +893,24 @@ Since 2022, all drones operating in India must be NPNT (No Permission No Takeoff
 
 When commissioning a custom drone, confirm that the flight controller firmware is NPNT compliant and that the drone is registered on the Digital Sky platform before delivery.
 
+## Building a drone as a student or research project
+
+Not every drone build is a commercial job. Many students and research groups build a small quadcopter to learn flight control, sensors and autonomous missions. A student project is much smaller in scope than the professional builds above, so choose one clear goal such as stable flight with telemetry, waypoint missions or a camera payload.
+
+See the [drone projects page for ECE students](/projects/ece/drone-projects-in-bangalore) for project titles, tools and viva focus, and the [mechanical robotics and mechatronics projects](/projects/mechanical/robotics-mechatronics-projects-in-bangalore) for frame and payload designs. Whatever you build, test in a permitted open area, follow the current Drone Rules and check Digital Sky before any flight.
+
 ## The Bangalore advantage for drone development
 
 Bangalore's industrial ecosystem — particularly the Peenya area — has the component sourcing, CNC machining, carbon fibre fabrication and electronics assembly capabilities that drone development requires. Iteration cycles that take weeks in other cities can happen in days here.
 
 WEBUILDPRO India builds custom drones in Bangalore for survey, inspection, agricultural and payload-carrying applications. All builds are done under NDA, NPNT compliant, and include test flights before delivery. [Request an NDA call](/contact).
     `.trim(),
+    faqs: [
+      { q: 'Do I need permission to fly a custom-built drone in India?', a: 'Rules depend on the drone weight, where you fly and whether the use is commercial. Check the current Drone Rules and the Digital Sky platform for airspace zones before every flight, and register where required.' },
+      { q: 'Can students build a drone for a final year project?', a: 'Yes. A small quadcopter with a flight controller, telemetry and a simple mission is a common ECE project. Keep the scope focused and test only in permitted areas.' },
+      { q: 'Which flight controller platforms are common for custom drones?', a: 'ArduPilot and PX4 are the most widely used open platforms, supported by tools such as Mission Planner and QGroundControl.' },
+      { q: 'How long does a custom drone take to build?', a: 'This guide estimates 10–14 weeks for a complete professional build with testing and documentation. A student-scale quadcopter takes less, depending on the features.' },
+    ],
   },
   {
     slug: 'best-project-centre-bangalore-guide',
@@ -1247,7 +1259,7 @@ WEBUILDPRO builds ECE final year projects in our Peenya lab in Bangalore. We des
     seoTitle: 'Mechanical Engineering Projects in Bangalore',
     description: 'Top mechanical engineering final year project ideas in Bangalore — fabrication, automation, design. Lead times, what equipment is needed, and where to build them.',
     datePublished: '2026-07-14',
-    dateModified: '2026-07-14',
+    dateModified: '2026-11-24',
     readTime: '10 min read',
     tags: ['Mechanical Projects in Bangalore', 'Mechanical Engineering', 'Final Year Projects'],
     content: `
@@ -1268,25 +1280,59 @@ This guide covers the best mechanical project ideas for Bangalore students, what
 ## Mechanical project ideas for Bangalore students
 
 **Robotics & Automation:**
-- [Automated Pick-and-Place SCARA Arm](/projects/mechanical) — SolidWorks, NEMA 17 steppers, Arduino. Advanced. 5–6 weeks.
-- [CNC Pen Plotter (A4 Format)](/projects/mechanical) — GRBL, NEMA 17, aluminium extrusion. Intermediate. 3 weeks.
-- [Automated Seed Sowing Machine](/projects/mechanical) — SolidWorks, servo motor, Arduino. Beginner. 3 weeks.
+- [Automated Pick-and-Place SCARA Arm](/projects/mechanical/robotics-mechatronics-projects-in-bangalore) — SolidWorks, NEMA 17 steppers, Arduino. Advanced. 5–6 weeks.
+- [CNC Pen Plotter (A4 Format)](/projects/mechanical/robotics-mechatronics-projects-in-bangalore) — GRBL, NEMA 17, aluminium extrusion. Intermediate. 3 weeks.
+- [Automated Seed Sowing Machine](/projects/mechanical/agricultural-projects-in-bangalore) — SolidWorks, servo motor, Arduino. Beginner. 3 weeks.
 
 **Renewable Energy:**
-- [Solar-Powered Agricultural Sprayer](/projects/mechanical) — 150W solar, GPS, BLDC motor. Intermediate. 4–5 weeks.
-- [Regenerative Braking Test Rig](/projects/mechanical) — BLDC motor, load cell, Arduino. Intermediate. 3–4 weeks.
-- [Compressed Air Energy Storage Model](/projects/mechanical) — Pneumatic cylinder, pressure vessel. Intermediate. 3–4 weeks.
+- [Solar-Powered Agricultural Sprayer](/projects/mechanical/agricultural-projects-in-bangalore) — 150W solar, GPS, BLDC motor. Intermediate. 4–5 weeks.
+- [Regenerative Braking Test Rig](/projects/mechanical/automobile-projects-in-bangalore) — BLDC motor, load cell, Arduino. Intermediate. 3–4 weeks.
+- [Compressed Air Energy Storage Model](/projects/mechanical/hydraulics-pneumatics-projects-in-bangalore) — Pneumatic cylinder, pressure vessel. Intermediate. 3–4 weeks.
 
 **Advanced Fabrication:**
-- [3D-Printed Myoelectric Prosthetic Hand](/projects/mechanical) — FDM PLA, MyoWare EMG, Arduino. Advanced. 5 weeks.
-- [Hydraulic Scissor Lift (1/5 Scale)](/projects/mechanical) — MIG welding, hydraulic cylinder. Beginner. 2–3 weeks.
+- [3D-Printed Myoelectric Prosthetic Hand](/projects/mechanical/robotics-mechatronics-projects-in-bangalore) — FDM PLA, MyoWare EMG, Arduino. Advanced. 5 weeks.
+- [Hydraulic Scissor Lift (1/5 Scale)](/projects/mechanical/hydraulics-pneumatics-projects-in-bangalore) — MIG welding, hydraulic cylinder. Beginner. 2–3 weeks.
 
 **Condition Monitoring:**
-- [Vibration-Based Condition Monitoring Rig](/projects/mechanical) — ADXL345, Arduino, MATLAB FFT. Intermediate. 4–5 weeks.
-- [Magnetic Levitation Demonstration System](/projects/mechanical) — Custom electromagnet, PID control. Advanced. 3–4 weeks.
+- [Vibration-Based Condition Monitoring Rig](/projects/mechanical/design-analysis-projects-in-bangalore) — ADXL345, Arduino, MATLAB FFT. Intermediate. 4–5 weeks.
+- [Magnetic Levitation Demonstration System](/projects/mechanical/robotics-mechatronics-projects-in-bangalore) — Custom electromagnet, PID control. Advanced. 3–4 weeks.
 
 **Sustainability:**
-- [Waste Plastic to Fuel Converter](/projects/mechanical) — SS304 reactor, PID controller. Intermediate. 4 weeks.
+- [Waste Plastic to Fuel Converter](/projects/mechanical/renewable-energy-projects-in-bangalore) — SS304 reactor, PID controller. Intermediate. 4 weeks.
+
+## Pick a project by sub-area
+
+If you are not sure where to start, choose the area that matches the subjects you scored best in, then open its page for the full project list, timelines and viva focus.
+
+- [Robotics and mechatronics projects](/projects/mechanical/robotics-mechatronics-projects-in-bangalore): arms, conveyors and inspection robots. Best if you like mechanisms and some programming.
+- [Hydraulics and pneumatics projects](/projects/mechanical/hydraulics-pneumatics-projects-in-bangalore): lifts, presses and cutting machines. Best if you want a strong working model with clear force calculations.
+- [Automobile projects](/projects/mechanical/automobile-projects-in-bangalore): braking, steering and tyre systems with a test rig.
+- [Design and analysis projects](/projects/mechanical/design-analysis-projects-in-bangalore): FEA and CFD studies. Best if you prefer simulation, ideally validated with a small test.
+- [Agricultural projects](/projects/mechanical/agricultural-projects-in-bangalore): sprayers, seeders and threshers with a clear real-world user.
+- [Renewable energy projects](/projects/mechanical/renewable-energy-projects-in-bangalore): wind, solar and energy-harvesting models.
+
+## What affects the cost of a mechanical project
+
+Mechanical projects cost more than electronics ones for three reasons: material, machining time and fabrication labour. A welded steel frame with a hydraulic cylinder costs more than an Arduino build of similar difficulty, and anything needing CNC or laser cutting adds machining charges. Costs also rise when you need a custom PCB, a gearbox or a motor with a controller.
+
+Ask for a fixed quote that lists materials, fabrication and testing separately, so you can see where the money goes and choose a simpler design where it helps.
+
+## Report and viva checklist for a mechanical project
+
+- Design calculations: loads, torque or force, factor of safety and why you chose the material.
+- Drawings: a CAD model and labelled part drawings, plus a bill of materials with quantities.
+- Test results: measured values in a table, compared with your calculated values.
+- Failure and safety: what could break, and what guards or limits you added.
+- Cost: total build cost and what a production version might cost.
+
+Examiners often ask you to explain one calculation step by step, so practise that for your main component.
+
+## Common mistakes to avoid
+
+- Starting fabrication before the design calculations are checked.
+- Choosing a project that depends on one hard-to-source part with a long lead time.
+- Reporting what the machine should do instead of what you measured.
+- Leaving no time for testing and adjustments before the viva.
 
 ## What fabrication equipment is needed?
 
@@ -1322,6 +1368,12 @@ WEBUILDPRO builds mechanical final year projects in our Peenya lab in Bangalore.
 
 [Browse all Mechanical project titles](/projects/mechanical) or [get a free quote](/contact). Fixed quote in 24 hours, no obligation.
     `.trim(),
+    faqs: [
+      { q: 'Which mechanical project is easiest to finish on time?', a: 'A hydraulic scissor lift, a pneumatic cutting machine or a seed sowing machine. They use standard parts, simple fabrication and clear calculations, so they are easy to explain in the viva.' },
+      { q: 'Do I need CAD for a mechanical final year project?', a: 'Yes. A CAD model and part drawings are expected in almost every report. SolidWorks, CATIA and Fusion 360 are the usual tools.' },
+      { q: 'How long does a mechanical final year project take?', a: 'Simple fabrication projects take 2–4 weeks. Projects with CNC parts, custom electronics or detailed testing take 5–6 weeks or more. Start early because fabrication cannot be rushed.' },
+      { q: 'Can a mechanical project include electronics?', a: 'Yes, and it often helps. A sensor and an Arduino can turn a mechanism into a mechatronics project with measurable results.' },
+    ],
   },
   {
     slug: 'eee-electrical-projects-bangalore',
